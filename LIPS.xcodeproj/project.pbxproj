@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		630CDF72131D585B006B2305 /* FluidManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630CDF70131D5856006B2305 /* FluidManagementViewController.m */; };
+		630CDF73131D585B006B2305 /* FluidManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630CDF71131D5858006B2305 /* FluidManagementViewController.xib */; };
+		6322B18B13214B6900F6B81C /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6322B18A13214B6900F6B81C /* Default-Portrait~ipad.png */; };
+		6322B18E13214B6E00F6B81C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6322B18D13214B6E00F6B81C /* Default-Landscape~ipad.png */; };
+		63238895132036C300B189F7 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 63238894132036C300B189F7 /* icon-72.png */; };
+		6336E74E131EA33600CF9851 /* DecisionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E74D131EA33600CF9851 /* DecisionFetcher.m */; };
+		6336E750131EA34300CF9851 /* BinaryDecisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */; };
+		6336E753131EA35200CF9851 /* BinaryDecisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6336E752131EA35100CF9851 /* BinaryDecisionViewController.m */; };
+		6351B999131DD0F1003D8A6A /* treatments.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6351B998131DD0F1003D8A6A /* treatments.plist */; };
+		6351B9A4131DD57F003D8A6A /* views.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6351B9A3131DD57F003D8A6A /* views.plist */; };
+		6351B9C0131E134D003D8A6A /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6351B9BF131E134D003D8A6A /* labels.txt */; };
+		6351B9C4131E14BC003D8A6A /* DataEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351B9C2131E14AE003D8A6A /* DataEntryController.m */; };
+		6351B9C5131E14BC003D8A6A /* DataEntryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6351B9C3131E14B4003D8A6A /* DataEntryController.xib */; };
+		6357BCA9131AADB400AD8190 /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6357BCA7131AADB400AD8190 /* SuggestionViewController.m */; };
+		6357BCAA131AADB400AD8190 /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */; };
+		6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6395CEAF13314CEC00617C76 /* Entitlements.plist */; };
+		63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */; };
+		63DF4FE0131EE2C700B285BD /* MultipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */; };
+		63F0E12E1318CAF000FB6ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12D1318CAF000FB6ADD /* UIKit.framework */; };
+		63F0E1301318CAF000FB6ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12F1318CAF000FB6ADD /* Foundation.framework */; };
+		63F0E1321318CAF000FB6ADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E1311318CAF000FB6ADD /* CoreGraphics.framework */; };
+		63F0E1381318CAF000FB6ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E1361318CAF000FB6ADD /* InfoPlist.strings */; };
+		63F0E13B1318CAF000FB6ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E13A1318CAF000FB6ADD /* main.m */; };
+		63F0E13E1318CAF000FB6ADD /* LIPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E13D1318CAF000FB6ADD /* LIPSAppDelegate.m */; };
+		63F0E1411318CAF000FB6ADD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E13F1318CAF000FB6ADD /* MainWindow.xib */; };
+		63F0E1441318CAF000FB6ADD /* LIPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E1431318CAF000FB6ADD /* LIPSViewController.m */; };
+		63F0E1471318CAF000FB6ADD /* LIPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */; };
+		63F0E14E1318CAF000FB6ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12D1318CAF000FB6ADD /* UIKit.framework */; };
+		63F0E14F1318CAF000FB6ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12F1318CAF000FB6ADD /* Foundation.framework */; };
+		63F0E1501318CAF000FB6ADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E1311318CAF000FB6ADD /* CoreGraphics.framework */; };
+		63F0E1581318CAF000FB6ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E1561318CAF000FB6ADD /* InfoPlist.strings */; };
+		63F0E15B1318CAF000FB6ADD /* LIPSTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E15A1318CAF000FB6ADD /* LIPSTests.h */; };
+		63F0E15D1318CAF000FB6ADD /* LIPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E15C1318CAF000FB6ADD /* LIPSTests.m */; };
+		63F0E1791318CD4600FB6ADD /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E1771318CD4600FB6ADD /* ScoreViewController.m */; };
+		63F0E17A1318CD4600FB6ADD /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */; };
+		63F621351331434100ABAEB0 /* Default-Landscape.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621321331434100ABAEB0 /* Default-Landscape.psd */; };
+		63F621361331434100ABAEB0 /* Default-Portrait.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621331331434100ABAEB0 /* Default-Portrait.psd */; };
+		63F621371331434100ABAEB0 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621341331434100ABAEB0 /* icon.psd */; };
+		63F6213B1331444700ABAEB0 /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F621391331444700ABAEB0 /* bigicon.png */; };
+		63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F6213A1331444700ABAEB0 /* bigicon.psd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63F0E1511318CAF000FB6ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63F0E1201318CAF000FB6ADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F0E1281318CAF000FB6ADD;
+			remoteInfo = LIPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		630CDF6F131D5855006B2305 /* FluidManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FluidManagementViewController.h; path = LIPS/FluidManagementViewController.h; sourceTree = "<group>"; };
+		630CDF70131D5856006B2305 /* FluidManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FluidManagementViewController.m; path = LIPS/FluidManagementViewController.m; sourceTree = "<group>"; };
+		630CDF71131D5858006B2305 /* FluidManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FluidManagementViewController.xib; path = LIPS/FluidManagementViewController.xib; sourceTree = "<group>"; };
+		6322B18A13214B6900F6B81C /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		6322B18D13214B6E00F6B81C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		63238894132036C300B189F7 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		6336E74C131EA33600CF9851 /* DecisionFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DecisionFetcher.h; path = LIPS/DecisionFetcher.h; sourceTree = "<group>"; };
+		6336E74D131EA33600CF9851 /* DecisionFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DecisionFetcher.m; path = LIPS/DecisionFetcher.m; sourceTree = "<group>"; };
+		6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BinaryDecisionViewController.xib; path = LIPS/BinaryDecisionViewController.xib; sourceTree = "<group>"; };
+		6336E751131EA35100CF9851 /* BinaryDecisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BinaryDecisionViewController.h; path = LIPS/BinaryDecisionViewController.h; sourceTree = "<group>"; };
+		6336E752131EA35100CF9851 /* BinaryDecisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BinaryDecisionViewController.m; path = LIPS/BinaryDecisionViewController.m; sourceTree = "<group>"; };
+		6351B998131DD0F1003D8A6A /* treatments.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = treatments.plist; path = LIPS/treatments.plist; sourceTree = "<group>"; };
+		6351B9A3131DD57F003D8A6A /* views.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = views.plist; path = LIPS/views.plist; sourceTree = "<group>"; };
+		6351B9BF131E134D003D8A6A /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		6351B9C1131E14AC003D8A6A /* DataEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataEntryController.h; path = LIPS/DataEntryController.h; sourceTree = "<group>"; };
+		6351B9C2131E14AE003D8A6A /* DataEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataEntryController.m; path = LIPS/DataEntryController.m; sourceTree = "<group>"; };
+		6351B9C3131E14B4003D8A6A /* DataEntryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataEntryController.xib; path = LIPS/DataEntryController.xib; sourceTree = "<group>"; };
+		6357BCA6131AADB400AD8190 /* SuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuggestionViewController.h; path = LIPS/SuggestionViewController.h; sourceTree = "<group>"; };
+		6357BCA7131AADB400AD8190 /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuggestionViewController.m; path = LIPS/SuggestionViewController.m; sourceTree = "<group>"; };
+		6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuggestionViewController.xib; path = LIPS/SuggestionViewController.xib; sourceTree = "<group>"; };
+		636C15BA1331718C00A8506B /* LIPSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIPSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6395CEAF13314CEC00617C76 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleChoiceViewController.h; path = LIPS/MultipleChoiceViewController.h; sourceTree = "<group>"; };
+		63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultipleChoiceViewController.m; path = LIPS/MultipleChoiceViewController.m; sourceTree = "<group>"; };
+		63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MultipleChoiceViewController.xib; path = LIPS/MultipleChoiceViewController.xib; sourceTree = "<group>"; };
+		63F0E12D1318CAF000FB6ADD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		63F0E12F1318CAF000FB6ADD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63F0E1311318CAF000FB6ADD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		63F0E1351318CAF000FB6ADD /* LIPS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LIPS-Info.plist"; sourceTree = "<group>"; };
+		63F0E1371318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63F0E1391318CAF000FB6ADD /* LIPS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LIPS-Prefix.pch"; sourceTree = "<group>"; };
+		63F0E13A1318CAF000FB6ADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63F0E13C1318CAF000FB6ADD /* LIPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIPSAppDelegate.h; sourceTree = "<group>"; };
+		63F0E13D1318CAF000FB6ADD /* LIPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIPSAppDelegate.m; sourceTree = "<group>"; };
+		63F0E1401318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		63F0E1421318CAF000FB6ADD /* LIPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LIPSViewController.h; path = LIPS/LIPSViewController.h; sourceTree = "<group>"; };
+		63F0E1431318CAF000FB6ADD /* LIPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LIPSViewController.m; path = LIPS/LIPSViewController.m; sourceTree = "<group>"; };
+		63F0E1461318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LIPSViewController.xib; sourceTree = "<group>"; };
+		63F0E1551318CAF000FB6ADD /* LIPSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LIPSTests-Info.plist"; sourceTree = "<group>"; };
+		63F0E1571318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63F0E1591318CAF000FB6ADD /* LIPSTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LIPSTests-Prefix.pch"; sourceTree = "<group>"; };
+		63F0E15A1318CAF000FB6ADD /* LIPSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIPSTests.h; sourceTree = "<group>"; };
+		63F0E15C1318CAF000FB6ADD /* LIPSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIPSTests.m; sourceTree = "<group>"; };
+		63F0E1761318CD4600FB6ADD /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreViewController.h; path = LIPS/ScoreViewController.h; sourceTree = "<group>"; };
+		63F0E1771318CD4600FB6ADD /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreViewController.m; path = LIPS/ScoreViewController.m; sourceTree = "<group>"; };
+		63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScoreViewController.xib; path = LIPS/ScoreViewController.xib; sourceTree = "<group>"; };
+		63F293A01331700A00338589 /* iLIPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLIPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F621321331434100ABAEB0 /* Default-Landscape.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-Landscape.psd"; sourceTree = "<group>"; };
+		63F621331331434100ABAEB0 /* Default-Portrait.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-Portrait.psd"; sourceTree = "<group>"; };
+		63F621341331434100ABAEB0 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
+		63F621391331444700ABAEB0 /* bigicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigicon.png; sourceTree = "<group>"; };
+		63F6213A1331444700ABAEB0 /* bigicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigicon.psd; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F0E1261318CAF000FB6ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F0E12E1318CAF000FB6ADD /* UIKit.framework in Frameworks */,
+				63F0E1301318CAF000FB6ADD /* Foundation.framework in Frameworks */,
+				63F0E1321318CAF000FB6ADD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F0E1491318CAF000FB6ADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F0E14E1318CAF000FB6ADD /* UIKit.framework in Frameworks */,
+				63F0E14F1318CAF000FB6ADD /* Foundation.framework in Frameworks */,
+				63F0E1501318CAF000FB6ADD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6336E738131E625500CF9851 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */,
+				63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */,
+				6336E751131EA35100CF9851 /* BinaryDecisionViewController.h */,
+				6336E752131EA35100CF9851 /* BinaryDecisionViewController.m */,
+				6357BCA6131AADB400AD8190 /* SuggestionViewController.h */,
+				6357BCA7131AADB400AD8190 /* SuggestionViewController.m */,
+				63F0E1421318CAF000FB6ADD /* LIPSViewController.h */,
+				63F0E1431318CAF000FB6ADD /* LIPSViewController.m */,
+				63F0E1761318CD4600FB6ADD /* ScoreViewController.h */,
+				63F0E1771318CD4600FB6ADD /* ScoreViewController.m */,
+				630CDF6F131D5855006B2305 /* FluidManagementViewController.h */,
+				630CDF70131D5856006B2305 /* FluidManagementViewController.m */,
+				6351B9C1131E14AC003D8A6A /* DataEntryController.h */,
+				6351B9C2131E14AE003D8A6A /* DataEntryController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6336E742131E628800CF9851 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */,
+				6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */,
+				6351B9C3131E14B4003D8A6A /* DataEntryController.xib */,
+				63F0E13F1318CAF000FB6ADD /* MainWindow.xib */,
+				6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */,
+				63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */,
+				63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */,
+				630CDF71131D5858006B2305 /* FluidManagementViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6336E748131E99DA00CF9851 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6351B998131DD0F1003D8A6A /* treatments.plist */,
+				6351B9A3131DD57F003D8A6A /* views.plist */,
+				6336E74C131EA33600CF9851 /* DecisionFetcher.h */,
+				6336E74D131EA33600CF9851 /* DecisionFetcher.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		63F0E11E1318CAF000FB6ADD = {
+			isa = PBXGroup;
+			children = (
+				6395CEAF13314CEC00617C76 /* Entitlements.plist */,
+				63F621391331444700ABAEB0 /* bigicon.png */,
+				63F6213A1331444700ABAEB0 /* bigicon.psd */,
+				63F621321331434100ABAEB0 /* Default-Landscape.psd */,
+				63F621331331434100ABAEB0 /* Default-Portrait.psd */,
+				63F621341331434100ABAEB0 /* icon.psd */,
+				6322B18D13214B6E00F6B81C /* Default-Landscape~ipad.png */,
+				6322B18A13214B6900F6B81C /* Default-Portrait~ipad.png */,
+				63238894132036C300B189F7 /* icon-72.png */,
+				6336E748131E99DA00CF9851 /* Model */,
+				6336E742131E628800CF9851 /* Views */,
+				6336E738131E625500CF9851 /* Controllers */,
+				63F0E1331318CAF000FB6ADD /* Other */,
+				63F0E1531318CAF000FB6ADD /* LIPSTests */,
+				63F0E12C1318CAF000FB6ADD /* Frameworks */,
+				63F0E12A1318CAF000FB6ADD /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
+		63F0E12A1318CAF000FB6ADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F293A01331700A00338589 /* iLIPS.app */,
+				636C15BA1331718C00A8506B /* LIPSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F0E12C1318CAF000FB6ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F0E12D1318CAF000FB6ADD /* UIKit.framework */,
+				63F0E12F1318CAF000FB6ADD /* Foundation.framework */,
+				63F0E1311318CAF000FB6ADD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63F0E1331318CAF000FB6ADD /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				63F0E13C1318CAF000FB6ADD /* LIPSAppDelegate.h */,
+				63F0E13D1318CAF000FB6ADD /* LIPSAppDelegate.m */,
+				63F0E1341318CAF000FB6ADD /* Supporting Files */,
+			);
+			name = Other;
+			path = LIPS;
+			sourceTree = "<group>";
+		};
+		63F0E1341318CAF000FB6ADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63F0E1351318CAF000FB6ADD /* LIPS-Info.plist */,
+				63F0E1361318CAF000FB6ADD /* InfoPlist.strings */,
+				63F0E1391318CAF000FB6ADD /* LIPS-Prefix.pch */,
+				6351B9BF131E134D003D8A6A /* labels.txt */,
+				63F0E13A1318CAF000FB6ADD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63F0E1531318CAF000FB6ADD /* LIPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				63F0E15A1318CAF000FB6ADD /* LIPSTests.h */,
+				63F0E15C1318CAF000FB6ADD /* LIPSTests.m */,
+				63F0E1541318CAF000FB6ADD /* Supporting Files */,
+			);
+			path = LIPSTests;
+			sourceTree = "<group>";
+		};
+		63F0E1541318CAF000FB6ADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63F0E1551318CAF000FB6ADD /* LIPSTests-Info.plist */,
+				63F0E1561318CAF000FB6ADD /* InfoPlist.strings */,
+				63F0E1591318CAF000FB6ADD /* LIPSTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F0E1281318CAF000FB6ADD /* iLIPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F0E1601318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "iLIPS" */;
+			buildPhases = (
+				63F0E1251318CAF000FB6ADD /* Sources */,
+				63F0E1261318CAF000FB6ADD /* Frameworks */,
+				63F0E1271318CAF000FB6ADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iLIPS;
+			productName = LIPS;
+			productReference = 63F293A01331700A00338589 /* iLIPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63F0E14C1318CAF000FB6ADD /* LIPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F0E1631318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "LIPSTests" */;
+			buildPhases = (
+				63F0E1481318CAF000FB6ADD /* Sources */,
+				63F0E1491318CAF000FB6ADD /* Frameworks */,
+				63F0E14A1318CAF000FB6ADD /* Resources */,
+				63F0E14B1318CAF000FB6ADD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F0E1521318CAF000FB6ADD /* PBXTargetDependency */,
+			);
+			name = LIPSTests;
+			productName = LIPSTests;
+			productReference = 636C15BA1331718C00A8506B /* LIPSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F0E1201318CAF000FB6ADD /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 63F0E1231318CAF000FB6ADD /* Build configuration list for PBXProject "LIPS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63F0E11E1318CAF000FB6ADD;
+			productRefGroup = 63F0E12A1318CAF000FB6ADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F0E1281318CAF000FB6ADD /* iLIPS */,
+				63F0E14C1318CAF000FB6ADD /* LIPSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F0E1271318CAF000FB6ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F0E1381318CAF000FB6ADD /* InfoPlist.strings in Resources */,
+				63F0E1411318CAF000FB6ADD /* MainWindow.xib in Resources */,
+				63F0E1471318CAF000FB6ADD /* LIPSViewController.xib in Resources */,
+				63F0E17A1318CD4600FB6ADD /* ScoreViewController.xib in Resources */,
+				6357BCAA131AADB400AD8190 /* SuggestionViewController.xib in Resources */,
+				630CDF73131D585B006B2305 /* FluidManagementViewController.xib in Resources */,
+				6351B999131DD0F1003D8A6A /* treatments.plist in Resources */,
+				6351B9A4131DD57F003D8A6A /* views.plist in Resources */,
+				6351B9C0131E134D003D8A6A /* labels.txt in Resources */,
+				6351B9C5131E14BC003D8A6A /* DataEntryController.xib in Resources */,
+				6336E750131EA34300CF9851 /* BinaryDecisionViewController.xib in Resources */,
+				63DF4FE0131EE2C700B285BD /* MultipleChoiceViewController.xib in Resources */,
+				63238895132036C300B189F7 /* icon-72.png in Resources */,
+				6322B18B13214B6900F6B81C /* Default-Portrait~ipad.png in Resources */,
+				6322B18E13214B6E00F6B81C /* Default-Landscape~ipad.png in Resources */,
+				63F621351331434100ABAEB0 /* Default-Landscape.psd in Resources */,
+				63F621361331434100ABAEB0 /* Default-Portrait.psd in Resources */,
+				63F621371331434100ABAEB0 /* icon.psd in Resources */,
+				63F6213B1331444700ABAEB0 /* bigicon.png in Resources */,
+				63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */,
+				6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F0E14A1318CAF000FB6ADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F0E1581318CAF000FB6ADD /* InfoPlist.strings in Resources */,
+				63F0E15B1318CAF000FB6ADD /* LIPSTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63F0E14B1318CAF000FB6ADD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F0E1251318CAF000FB6ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F0E13B1318CAF000FB6ADD /* main.m in Sources */,
+				63F0E13E1318CAF000FB6ADD /* LIPSAppDelegate.m in Sources */,
+				63F0E1441318CAF000FB6ADD /* LIPSViewController.m in Sources */,
+				63F0E1791318CD4600FB6ADD /* ScoreViewController.m in Sources */,
+				6357BCA9131AADB400AD8190 /* SuggestionViewController.m in Sources */,
+				630CDF72131D585B006B2305 /* FluidManagementViewController.m in Sources */,
+				6351B9C4131E14BC003D8A6A /* DataEntryController.m in Sources */,
+				6336E74E131EA33600CF9851 /* DecisionFetcher.m in Sources */,
+				6336E753131EA35200CF9851 /* BinaryDecisionViewController.m in Sources */,
+				63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F0E1481318CAF000FB6ADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F0E15D1318CAF000FB6ADD /* LIPSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63F0E1521318CAF000FB6ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F0E1281318CAF000FB6ADD /* iLIPS */;
+			targetProxy = 63F0E1511318CAF000FB6ADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63F0E1361318CAF000FB6ADD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F0E1371318CAF000FB6ADD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63F0E13F1318CAF000FB6ADD /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F0E1401318CAF000FB6ADD /* en */,
+			);
+			name = MainWindow.xib;
+			path = LIPS;
+			sourceTree = "<group>";
+		};
+		63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F0E1461318CAF000FB6ADD /* en */,
+			);
+			name = LIPSViewController.xib;
+			path = LIPS;
+			sourceTree = "<group>";
+		};
+		63F0E1561318CAF000FB6ADD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F0E1571318CAF000FB6ADD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6395CEAC13314BAD00617C76 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Distribution;
+		};
+		6395CEAD13314BAD00617C76 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LIPS/LIPS-Prefix.pch";
+				INFOPLIST_FILE = "LIPS/LIPS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		6395CEAE13314BAD00617C76 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LIPS.app/LIPS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LIPSTests/LIPSTests-Prefix.pch";
+				INFOPLIST_FILE = "LIPSTests/LIPSTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+		63F0E15E1318CAF000FB6ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		63F0E15F1318CAF000FB6ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		63F0E1611318CAF000FB6ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LIPS/LIPS-Prefix.pch";
+				INFOPLIST_FILE = "LIPS/LIPS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63F0E1621318CAF000FB6ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LIPS/LIPS-Prefix.pch";
+				INFOPLIST_FILE = "LIPS/LIPS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		63F0E1641318CAF000FB6ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LIPS.app/LIPS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LIPSTests/LIPSTests-Prefix.pch";
+				INFOPLIST_FILE = "LIPSTests/LIPSTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		63F0E1651318CAF000FB6ADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LIPS.app/LIPS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LIPSTests/LIPSTests-Prefix.pch";
+				INFOPLIST_FILE = "LIPSTests/LIPSTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F0E1231318CAF000FB6ADD /* Build configuration list for PBXProject "LIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F0E15E1318CAF000FB6ADD /* Debug */,
+				63F0E15F1318CAF000FB6ADD /* Release */,
+				6395CEAC13314BAD00617C76 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F0E1601318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "iLIPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F0E1611318CAF000FB6ADD /* Debug */,
+				63F0E1621318CAF000FB6ADD /* Release */,
+				6395CEAD13314BAD00617C76 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F0E1631318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "LIPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F0E1641318CAF000FB6ADD /* Debug */,
+				63F0E1651318CAF000FB6ADD /* Release */,
+				6395CEAE13314BAD00617C76 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63F0E1201318CAF000FB6ADD /* Project object */;
+}
