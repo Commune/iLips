@@ -7,6 +7,7 @@
 //
 
 #import "PatientInfoScreen.h"
+#import "DataEntryController.h"
 
 
 @implementation PatientInfoScreen
@@ -15,15 +16,52 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		// Custom initialization
+		
     }
     return self;
 }
 
 -(IBAction) submit:(id)sender {
-	if ([sex isEnabledForSegmentAtIndex:0]) {
-		
+	int gender = sex.selectedSegmentIndex;
+	float h = height.value;
+	float w = weight.value;
+	int patientLoc = patientLocation.selectedSegmentIndex;
+	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:];
+	[self.navigationController pushViewController:[[DataEntryController alloc] init] animated:YES];
+}
+
+-(IBAction) heightValChanged:(UISlider *) sender {
+	heightVal.text = [NSString stringWithFormat:@"%0.0f", sender.value];
+}
+
+-(IBAction) weightValChanged:(UISlider *) sender {
+	weightVal.text = [NSString stringWithFormat:@"%0.1f", sender.value];
+}
+
+-(IBAction) infectionChanged:(UISegmentedControl *)sender {
+	if (infectionPresent.selectedSegmentIndex == 0) {
+		[infectionLocationLabel setHidden:NO];
+		[infectionSource setHidden:NO];
+	} else {
+		[infectionLocationLabel setHidden:YES];
+		[infectionSource setHidden:YES];
 	}
+}
+
+-(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+	return 1;
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+	return [infectionLocations count];
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+	return [infectionLocations objectAtIndex:row];
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+	
 }
 
 
@@ -32,7 +70,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	if (!infectionLocations) {
+		infectionLocations = [[NSMutableArray alloc] init];
+		[infectionLocations addObject:@"Arm"];
+		[infectionLocations addObject:@"Leg"];
+		[infectionLocations addObject:@"Foot"];
+		[infectionLocations addObject:@"Head"];
+		[infectionLocations addObject:@"Chest"];
+	}
 }
 
 - (void)viewDidUnload

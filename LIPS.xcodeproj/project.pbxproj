@@ -47,6 +47,9 @@
 		63F621371331434100ABAEB0 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621341331434100ABAEB0 /* icon.psd */; };
 		63F6213B1331444700ABAEB0 /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F621391331444700ABAEB0 /* bigicon.png */; };
 		63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F6213A1331444700ABAEB0 /* bigicon.psd */; };
+		A008E3311337D20E00C828D1 /* PatientInfoScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */; };
+		A008E3321337D20E00C828D1 /* PatientInfoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A008E3301337D20E00C828D1 /* PatientInfoScreen.xib */; };
+		A0FFC53613341D4500A425EC /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFC53513341D4500A425EC /* Patient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,11 @@
 		63F621341331434100ABAEB0 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
 		63F621391331444700ABAEB0 /* bigicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigicon.png; sourceTree = "<group>"; };
 		63F6213A1331444700ABAEB0 /* bigicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigicon.psd; sourceTree = "<group>"; };
+		A008E32E1337D20E00C828D1 /* PatientInfoScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientInfoScreen.h; path = LIPS/PatientInfoScreen.h; sourceTree = "<group>"; };
+		A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientInfoScreen.m; path = LIPS/PatientInfoScreen.m; sourceTree = "<group>"; };
+		A008E3301337D20E00C828D1 /* PatientInfoScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientInfoScreen.xib; path = LIPS/PatientInfoScreen.xib; sourceTree = "<group>"; };
+		A0FFC53413341D4500A425EC /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Patient.h; path = LIPS/Patient.h; sourceTree = "<group>"; };
+		A0FFC53513341D4500A425EC /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patient.m; path = LIPS/Patient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,8 @@
 		6336E738131E625500CF9851 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A008E32E1337D20E00C828D1 /* PatientInfoScreen.h */,
+				A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */,
 				63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */,
 				63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */,
 				6336E751131EA35100CF9851 /* BinaryDecisionViewController.h */,
@@ -162,6 +172,7 @@
 		6336E742131E628800CF9851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A008E3301337D20E00C828D1 /* PatientInfoScreen.xib */,
 				63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */,
 				6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */,
 				6351B9C3131E14B4003D8A6A /* DataEntryController.xib */,
@@ -177,6 +188,8 @@
 		6336E748131E99DA00CF9851 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0FFC53413341D4500A425EC /* Patient.h */,
+				A0FFC53513341D4500A425EC /* Patient.m */,
 				6351B998131DD0F1003D8A6A /* treatments.plist */,
 				6351B9A3131DD57F003D8A6A /* views.plist */,
 				6336E74C131EA33600CF9851 /* DecisionFetcher.h */,
@@ -358,6 +371,7 @@
 				63F6213B1331444700ABAEB0 /* bigicon.png in Resources */,
 				63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */,
 				6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */,
+				A008E3321337D20E00C828D1 /* PatientInfoScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +417,8 @@
 				6336E74E131EA33600CF9851 /* DecisionFetcher.m in Sources */,
 				6336E753131EA35200CF9851 /* BinaryDecisionViewController.m in Sources */,
 				63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */,
+				A0FFC53613341D4500A425EC /* Patient.m in Sources */,
+				A008E3311337D20E00C828D1 /* PatientInfoScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

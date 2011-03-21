@@ -47,7 +47,7 @@
 	}
 	if (!lipsFlags) {
 		NSMutableArray* temp = [NSMutableArray array];
-		for (int i = 0; i < 22; i++) {
+		for (int i = 0; i < 21; i++) {
 			[temp addObject:[NSNumber numberWithBool:NO]];
 		}
 		lipsFlags = [[NSArray alloc] initWithArray:temp];
@@ -61,21 +61,14 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self initValsAndFlags];
-//        NSArray* nibViews =  [[NSBundle mainBundle] loadNibNamed:@"DataEntryController" owner:self options:nil];
-//        portraitView = [nibViews objectAtIndex:0];
-//        
-//        nibViews =  [[NSBundle mainBundle] loadNibNamed:@"DataEntryControllerLandscape" owner:self options:nil];
-//        landscapeView = [nibViews objectAtIndex:0];
-        
-//        [self viewDidLoad];
     }
     return self;
 }
 
 
-- (void)submit:(id)sender {
+- (IBAction)submit:(id)sender {
     float total = 0;
-	for (int i = 1; i < 23; i++) {
+	for (int i = 1; i < 22; i++) {
 		UISwitch *aSwitch = (UISwitch*)[self.view viewWithTag:i];
 		if (aSwitch.on) {
 			NSLog(@"%@", [lipsVals componentsJoinedByString:@" "]);

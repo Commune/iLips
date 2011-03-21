@@ -11,13 +11,18 @@
 
 @interface Patient : NSObject {
     NSArray *conditionFlags;
-	int height;
-	int weight;
+	float height;
+	float weight;
 	int sex;
+	NSString *patientLocation;
+	NSString *infectionLocation;
 }
 
--(BOOL)checkCondition:(id)sender:(int)conditionNumber;
+-(BOOL)checkCondition:(int)conditionNumber;
+-(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc;
+-(void)printSelf;
 
-@property (assign) int height, weight, sex;
+@property (assign) int sex;
+@property (assign) float weight, height;
 
 @end

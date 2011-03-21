@@ -13,6 +13,7 @@
 #import "DataEntryController.h"
 #import "DecisionFetcher.h"
 #import "BinaryDecisionViewController.h"
+#import "PatientInfoScreen.h"
 
 @implementation LIPSViewController
 
@@ -21,14 +22,7 @@
     navController = [[UINavigationController alloc] initWithRootViewController:self];
     [navController setDelegate:self];
     
-    [navController pushViewController:[[DataEntryController alloc] init] animated:NO];
-    
-    //BinaryDecisionViewController *vc = [[BinaryDecisionViewController alloc] initWithName:@"Infection" arguments:[NSArray arrayWithObjects:@"Does the patient have an infection?", nil]];
-    //[navController pushViewController:vc animated:NO];
-    
-//    [DecisionFetcher fetchNextViewAfter:@"Infection"];
-    
-    //[navController pushViewController:[[FluidManagementViewController alloc] init] animated:NO];
+    [navController pushViewController:[[PatientInfoScreen alloc] init] animated:NO];
     
     self.view = navController.view;
 }
