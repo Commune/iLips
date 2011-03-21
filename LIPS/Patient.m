@@ -32,4 +32,6 @@
 	}
 }
 
+@synthesize height, weight, sex;
+
 @end

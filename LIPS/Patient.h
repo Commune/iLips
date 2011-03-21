@@ -11,8 +11,13 @@
 
 @interface Patient : NSObject {
     NSArray *conditionFlags;
+	int height;
+	int weight;
+	int sex;
 }
 
--(BOOL)checkCondition:(id)sender:(int)conditionNumber;	
+-(BOOL)checkCondition:(id)sender:(int)conditionNumber;
+
+@property (assign) int height, weight, sex;
 
 @end
