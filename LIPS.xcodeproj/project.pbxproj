@@ -172,6 +172,7 @@
 		6336E742131E628800CF9851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6351B9A3131DD57F003D8A6A /* views.plist */,
 				A008E3301337D20E00C828D1 /* PatientInfoScreen.xib */,
 				63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */,
 				6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */,
@@ -191,7 +192,6 @@
 				A0FFC53413341D4500A425EC /* Patient.h */,
 				A0FFC53513341D4500A425EC /* Patient.m */,
 				6351B998131DD0F1003D8A6A /* treatments.plist */,
-				6351B9A3131DD57F003D8A6A /* views.plist */,
 				6336E74C131EA33600CF9851 /* DecisionFetcher.h */,
 				6336E74D131EA33600CF9851 /* DecisionFetcher.m */,
 			);

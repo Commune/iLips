@@ -18,6 +18,6 @@
 	IBOutlet UIButton *moreButton;
 }
 
--(id)initWithName:(NSString*)name arguments:(NSArray*)args;
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args;
 -(IBAction)more:(id)sender;
 @end

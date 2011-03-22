@@ -11,11 +11,11 @@
 
 @implementation FluidManagementViewController
 
--(id)initWithName:(NSString*)name arguments:(NSArray*)ignore
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)ignore
 {
     self = [self init];
     if(self) {
-        self.navigationItem.title = name;
+        self.navigationItem.title = title;
     }
     return self;
 }
