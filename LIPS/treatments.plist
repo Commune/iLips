@@ -2,6 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Bleeding or Ischemia 1</key>
+	<dict>
+		<key>No</key>
+		<string>Resuscitate</string>
+		<key>Yes</key>
+		<string>Resuscitate, Transfuse</string>
+	</dict>
+	<key>Bleeding or Ischemia 2</key>
+	<dict>
+		<key>No</key>
+		<string>Fluids2</string>
+		<key>Yes</key>
+		<string>Fluids1</string>
+	</dict>
 	<key>Infection</key>
 	<dict>
 		<key>No</key>
@@ -23,31 +37,10 @@
 	</dict>
 	<key>Shock</key>
 	<dict>
-		<key>Yes</key>
-		<string>Bleeding or Ischemia 1</string>
 		<key>No</key>
-		<string>Shock in Last 12 Hours</string>
-	</dict>
-	<key>Bleeding or Ischemia 1</key>
-	<dict>
-		<key>Yes</key>
-		<string>Resuscitate, Transfuse</string>
-		<key>No</key>
-		<string>Resuscitate</string>
-	</dict>
-	<key>Shock in Last 12 Hours</key>
-	<dict>
-		<key>Yes</key>
 		<string>Stop</string>
-		<key>No</key>
-		<string>Bleeding or Ischemia 2</string>
-	</dict>
-	<key>Bleeding or Ischemia 2</key>
-	<dict>
 		<key>Yes</key>
-		<string>Fluids1</string>
-		<key>No</key>
-		<string>Fluids2</string>
+		<string>Bleeding or Ischemia</string>
 	</dict>
 </dict>
 </plist>

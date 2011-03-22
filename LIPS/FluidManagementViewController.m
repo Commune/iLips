@@ -20,6 +20,36 @@
     return self;
 }
 
+- (IBAction)cvpUnknown:(id)sender {
+	for(UIView *outlet in CVPKnownOutlets) {
+		outlet.hidden = YES;
+	}
+	for(UIView *outlet in CVPUnknownOutlets) {
+		outlet.hidden = NO;
+	}
+	CVPKnown = NO;
+}
+
+- (IBAction)cvpKnown:(UISwitch*)sender {
+	if(sender.on) {
+		for(UIView *outlet in CVPKnownOutlets) {
+			outlet.hidden = NO;
+		}
+		for(UIView *outlet in CVPUnknownOutlets) {
+			outlet.hidden = YES;
+		}
+		CVPKnown = YES;
+	} else {
+		for(UIView *outlet in CVPKnownOutlets) {
+			outlet.hidden = YES;
+		}
+		for(UIView *outlet in CVPUnknownOutlets) {
+			outlet.hidden = NO;
+		}
+		CVPKnown = NO;
+	}
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +62,9 @@
 
 - (void)dealloc
 {
+	[CVPKnownOutlets release];
+	[CVPUnknownOutlets release];
+	[CVPKnownOutlets release];
     [super dealloc];
 }
 
@@ -50,22 +83,28 @@
     NSString * newTreatment;
     if(MAPSlider.value >= 60 && vasopressorSwitch.on) {
         if(urineSlider.value < .5) {
-            if(CVPSlider.value > 8) {
-                newTreatment = @"Administer furosemide and reassess in 1 hour";
+			if(!CVPKnown) {
+				newTreatment = @"Determine volume status.";
+			}
+            else if(CVPSlider.value > 8) {
+                newTreatment = @"Administer furosemide and reassess in 1 hour.";
             }
             else {
-                newTreatment = @"Give fluid bolus as fast as possible and reassess in 1 hour";
+                newTreatment = @"Give fluid bolus as fast as possible and reassess in 1 hour.";
             }
         } else {
-            if(CVPSlider.value >= 4) {
-                newTreatment = @"Administer furosemide and reassess in 4 hours";
+			if(!CVPKnown) {
+				newTreatment = @"Limit fluids. Consider Lasix.";
+			}
+			else if(CVPSlider.value >= 4) {
+                newTreatment = @"Administer furosemide and reassess in 4 hours.";
             }
             else {
                 newTreatment = @"No intervention is required.  Reasess in 4 hours.";
             }
         }
     } else {
-        newTreatment = @"No treatment is suggested if the patient's mean arterial pressure is less than 60 mm Hg or if patient has been off vasopressors for less than 12 hours.";
+        newTreatment = @"Maintain a CVP of 8-12 with fluids.";
     }
     treatmentLabel.text = newTreatment;
 
@@ -125,6 +164,26 @@
     [CVPLabel release];
     [urineLabel release];
     [MAPLabel release];
+	[cvpUnknown release];
+	cvpUnknown = nil;
+	[cvpUnknownButton release];
+	cvpUnknownButton = nil;
+	[cvpKnownSwitch release];
+	cvpKnownSwitch = nil;
+	[cvpUnknownLabel release];
+	cvpUnknownLabel = nil;
+	[cvpNameLabel release];
+	cvpNameLabel = nil;
+	[cvpKnownQuestion release];
+	cvpKnownQuestion = nil;
+	[CVPKnownOutlets release];
+	CVPKnownOutlets = nil;
+	[CVPKnownOutlets release];
+	CVPKnownOutlets = nil;
+	[CVPUnknownOutlets release];
+	CVPUnknownOutlets = nil;
+	[CVPKnownOutlets release];
+	CVPKnownOutlets = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

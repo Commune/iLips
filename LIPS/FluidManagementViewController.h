@@ -24,8 +24,15 @@
     IBOutlet UILabel *treatmentLabel;
     
     IBOutlet UILabel *updateLabel;
+	
+	IBOutletCollection(UIView) NSArray *CVPUnknownOutlets;
+	IBOutletCollection(UIView) NSArray *CVPKnownOutlets;
+	
+	BOOL CVPKnown;
 }
 
 -(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)ignore;
+-(IBAction)cvpUnknown:(id)sender;
+-(IBAction)cvpKnown:(UISwitch*)sender;
 
 @end

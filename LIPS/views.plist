@@ -30,18 +30,7 @@ Source Control:
 		<key>Class</key>
 		<string>SuggestionViewController</string>
 	</dict>
-	<key>Bleeding or Ischemia 1</key>
-	<dict>
-		<key>Title</key>
-		<string>Bleeding/Ischemia</string>
-		<key>Arguments</key>
-		<array>
-			<string>Is the patient experiencing bleeding or ischemia?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-	</dict>
-	<key>Bleeding or Ischemia 2</key>
+	<key>Bleeding or Ischemia</key>
 	<dict>
 		<key>Title</key>
 		<string>Bleeding/Ischemia</string>
@@ -58,30 +47,6 @@ Source Control:
 		<string>Fluid Management</string>
 		<key>Class</key>
 		<string>FluidManagementViewController</string>
-	</dict>
-	<key>Fluids1</key>
-	<dict>
-		<key>Title</key>
-		<string>Fluid Management</string>
-		<key>Arguments</key>
-		<array>
-			<string>-Avoid fluid overload targeting CVP and urine output as per Fluid Management Goals in MORE-Transfuse as needed</string>
-			<string>Fluids</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-	</dict>
-	<key>Fluids2</key>
-	<dict>
-		<key>Title</key>
-		<string>Fluid Management</string>
-		<key>Arguments</key>
-		<array>
-			<string>-Avoid fluid overload targeting CVP and urine output as per Fluid Management Goals in MORE-RBC transfusion should be avoid unless Hb &lt; 7 g/dL-Plasma and platelet transfusion should be avoided prior to minimally invasive procedures unless there is active bleeding</string>
-			<string>Fluids</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
 	</dict>
 	<key>Infection</key>
 	<dict>
@@ -123,7 +88,7 @@ Source Control:
 		<string>Resuscitate</string>
 		<key>Arguments</key>
 		<array>
-			<string>Resuscitate as needed.</string>
+			<string>Resuscitate with Isotonic crystalloid or colloid and transfuse with blood to obtain euvolemia, adequate urine output</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
@@ -134,7 +99,9 @@ Source Control:
 		<string>Resuscitate and Transfuse</string>
 		<key>Arguments</key>
 		<array>
-			<string>Resuscitate and transfuse with blood and fluids as needed.</string>
+			<string>-Resuscitate as needed, consider vasopressor to get MAP&gt;60
+-Avoid fluid overload targeting CVP and urine output as per Fluid Management Goals in MORE-Avoid RBC transfusion unless Hgb &lt; 7g/dL</string>
+			<string>Fluids</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
@@ -150,24 +117,13 @@ Source Control:
 		<key>Class</key>
 		<string>BinaryDecisionViewController</string>
 	</dict>
-	<key>Shock in Last 12 Hours</key>
-	<dict>
-		<key>Title</key>
-		<string>Recent Shock</string>
-		<key>Arguments</key>
-		<array>
-			<string>Has the patient been in shock any time in the last 12 hours?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-	</dict>
 	<key>Stop</key>
 	<dict>
 		<key>Title</key>
 		<string>Stop</string>
 		<key>Arguments</key>
 		<array>
-			<string>STOP</string>
+			<string>Stop/Maintain Euvolumia (CVP 8-10)</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
