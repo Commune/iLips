@@ -26,6 +26,6 @@
     IBOutlet UILabel *updateLabel;
 }
 
--(id)initWithName:(NSString*)name arguments:(NSArray*)ignore;
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)ignore;
 
 @end

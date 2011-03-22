@@ -13,9 +13,10 @@
 @implementation MultipleChoiceViewController
 
 
--(id)initWithName:(NSString*)name arguments:(NSArray*)args {
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args {
     self = [self init];
     if(self) {
+		self.navigationItem.title = title;
         nodeName = name;
         question = [args objectAtIndex:0];
         choices = [[NSMutableArray alloc] init];
@@ -55,7 +56,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = nodeName;
     questionLabel.text = question;
     
     CGFloat width = (self.view.frame.size.width - 2 * LR_PADDING - ([choices count]-1)*BUTTON_PADDING)/[choices count];

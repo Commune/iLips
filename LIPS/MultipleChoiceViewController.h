@@ -14,11 +14,9 @@
     NSString *question;
     NSMutableArray *choices;
     NSMutableArray *choiceButtons;
-
-    
     IBOutlet UILabel *questionLabel;
 }
 
--(id)initWithName:(NSString*)name arguments:(NSArray*)args;
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args;
 
 @end

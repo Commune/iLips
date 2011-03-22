@@ -12,11 +12,11 @@
 
 @implementation SuggestionViewController
 
--(id)initWithName:(NSString*)name arguments:(NSArray*)args
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args
 {
     self = [super init];
     if (self) {
-        self.navigationItem.title = name;
+        self.navigationItem.title = title;
         text = [args objectAtIndex:0];
 		if([args count] > 1) {
 			moreView = [DecisionFetcher fetchViewForNode:[args objectAtIndex:1]];

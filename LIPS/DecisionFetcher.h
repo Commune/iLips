@@ -10,7 +10,7 @@
 
 
 @interface DecisionFetcher : NSObject {
-    
+     
 }
 +(UIViewController*)fetchNextViewAfter:(NSString*)nodeName;
 +(UIViewController*)fetchViewForNode:(NSString*)nodeName;

@@ -11,11 +11,12 @@
 
 
 @implementation BinaryDecisionViewController
--(id)initWithName:(NSString *)name arguments:(NSArray *)args 
+
+-(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args 
 {
     self = [self init];
     if(self) {
-        self.navigationItem.title = name;
+        self.navigationItem.title = title;
         nodeName = name;
         question = [args objectAtIndex:0];
     }

@@ -53,7 +53,7 @@ static NSMutableDictionary *responses;
 	NSDictionary *viewDescription = [views objectForKey:nodeName];
     NSString *viewClassName = [viewDescription objectForKey:@"Class"];
     Class viewClass = NSClassFromString(viewClassName);
-    UIViewController *nextView = [[viewClass alloc] initWithName:nodeName arguments:[viewDescription objectForKey:@"Arguments"]];
+    UIViewController *nextView = [[viewClass alloc] initWithName:nodeName title:[viewDescription objectForKey:@"Title"] arguments:[viewDescription objectForKey:@"Arguments"]];
 	return nextView;
 }
 
