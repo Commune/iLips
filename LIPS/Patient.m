@@ -52,6 +52,8 @@
 	}
 	
 	NSLog(@"I weigh exactly %0.1f kilograms, and am %0.0f inches tall", weight, height);
+	NSLog(@"I am currently located in the %@", patientLocation);
+	NSLog(@"My infection is currently located in my %@", infectionLocation);
 }
 
 @synthesize height, weight, sex;
