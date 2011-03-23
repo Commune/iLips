@@ -56,6 +56,7 @@
 	if (self == [super init]) {
 		[self initValsAndFlags];
 		thePatient = p;
+		self.navigationItem.hidesBackButton = NO;
 	}
 	return self;
 }
@@ -98,8 +99,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.navigationItem setHidesBackButton:YES];
-    [self.navigationItem setTitle:@"Initial Info"];
+    [self.navigationItem setTitle:@"Patient Condition"];
     [self willRotateToInterfaceOrientation:UIInterfaceOrientationLandscapeLeft duration:0];
 }
 

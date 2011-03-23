@@ -28,6 +28,9 @@
 		if (!infecLoc) {
 			infecLoc = [[NSString alloc] init];
 		}
+		
+		self.navigationItem.hidesBackButton = YES;
+		self.navigationItem.title = @"Initial Patient Information";
 	}
 	return self;
 }
