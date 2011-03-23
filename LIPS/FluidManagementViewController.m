@@ -17,6 +17,7 @@
     if(self) {
         self.navigationItem.title = title;
     }
+	CVPKnown = YES;
     return self;
 }
 
@@ -31,23 +32,20 @@
 }
 
 - (IBAction)cvpKnown:(UISwitch*)sender {
-	if(sender.on) {
-		for(UIView *outlet in CVPKnownOutlets) {
-			outlet.hidden = NO;
-		}
-		for(UIView *outlet in CVPUnknownOutlets) {
-			outlet.hidden = YES;
-		}
-		CVPKnown = YES;
-	} else {
-		for(UIView *outlet in CVPKnownOutlets) {
-			outlet.hidden = YES;
-		}
-		for(UIView *outlet in CVPUnknownOutlets) {
-			outlet.hidden = NO;
-		}
-		CVPKnown = NO;
-	}
+//	CVPKnown = sender.on;
+//	NSLog(@"%@",CVPKnownOutlets);
+//	NSLog(@"%@",CVPUnknownOutlets);
+//
+//	
+//	for(id outlet in CVPKnownOutlets) {
+//		[outlet performSelectorOnMainThread:@selector(setHidden:) withObject:CVPKnown waitUntilDone:YES];
+//		//[outlet setHidden:CVPKnown];
+//	}
+//	for(id outlet in CVPUnknownOutlets) {
+//		[outlet setHidden:!CVPKnown];
+//	}
+////	[CVPKnownOutlets setValue:CVPKnown forKey:@"hidden"];
+////	[CVPUnknownOutlets setValue:!CVPKnown forKey:@"hidden"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

@@ -66,6 +66,7 @@
     }
     
     [self.navigationItem setTitle:@"LIPS Score"];
+	[self.navigationController setNavigationBarHidden:NO];
 }
 
 

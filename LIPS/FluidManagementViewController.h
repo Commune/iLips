@@ -25,8 +25,8 @@
     
     IBOutlet UILabel *updateLabel;
 	
-	IBOutletCollection(UIView) NSArray *CVPUnknownOutlets;
-	IBOutletCollection(UIView) NSArray *CVPKnownOutlets;
+	IBOutletCollection(id) NSArray *CVPUnknownOutlets;
+	IBOutletCollection(id) NSArray *CVPKnownOutlets;
 	
 	BOOL CVPKnown;
 }
