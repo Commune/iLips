@@ -26,7 +26,8 @@
 	float h = height.value;
 	float w = weight.value;
 	int patientLoc = patientLocation.selectedSegmentIndex;
-	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:];
+	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:infecLoc];
+	[patient printSelf];
 	[self.navigationController pushViewController:[[DataEntryController alloc] init] animated:YES];
 }
 
@@ -61,7 +62,7 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-	
+	infecLoc = [infectionLocations objectAtIndex:row];
 }
 
 
@@ -77,6 +78,10 @@
 		[infectionLocations addObject:@"Foot"];
 		[infectionLocations addObject:@"Head"];
 		[infectionLocations addObject:@"Chest"];
+	}
+	
+	if (!infecLoc) {
+		infecLoc = [[NSString alloc] init];
 	}
 }
 
