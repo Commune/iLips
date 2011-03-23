@@ -17,9 +17,6 @@
 - (void) initValsAndFlags 
 {
     if (!lipsVals) {
-		//NSString *path = [[NSBundle mainBundle] pathForResource:@"labels" ofType:@"txt"];
-		//NSArray *array = [[NSArray alloc] initWithContentsOfFile:path];
-		//NSLog(@"%@", [array componentsJoinedByString:@" "]);
 		NSNumber *shock = [NSNumber numberWithFloat:2];
 		NSNumber *aspiration = [NSNumber numberWithFloat:2];
 		NSNumber *sepsis = [NSNumber numberWithFloat:1];
@@ -34,7 +31,6 @@
 		NSNumber *contusion = [NSNumber numberWithFloat:1.5];
 		NSNumber *fractures = [NSNumber numberWithFloat:1.5];
 		NSNumber *abuse = [NSNumber numberWithFloat:1];
-		NSNumber *obesity = [NSNumber numberWithFloat:1];
 		NSNumber *hypo = [NSNumber numberWithFloat:1];
 		NSNumber *chemo = [NSNumber numberWithFloat:1];
 		NSNumber *fio2 = [NSNumber numberWithFloat:2];
@@ -43,7 +39,7 @@
 		NSNumber *acid = [NSNumber numberWithFloat:1.5];
 		NSNumber *diabetes = [NSNumber numberWithFloat:-1];
 		NSArray *temp = [NSArray arrayWithObjects:shock, aspiration, sepsis, pneumonia, spine, abdomen, cardiac, vascular, brain, smoke,
-						 drowning, contusion, fractures, abuse, obesity, hypo, chemo, fio2, tach, spo2, acid, diabetes, nil];
+						 drowning, contusion, fractures, abuse, hypo, chemo, fio2, tach, spo2, acid, diabetes, nil];
 		lipsVals = [[NSArray alloc] initWithArray:temp];
 	}
 	if (!lipsFlags) {
@@ -57,12 +53,11 @@
 }
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil: (Patient *)p
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self initValsAndFlags];
-		thePatient = p;
     }
     return self;
 }
@@ -76,11 +71,11 @@
 			NSLog(@"%@", [lipsVals componentsJoinedByString:@" "]);
 			CGFloat temp = [[lipsVals objectAtIndex:i - 1] floatValue];
 			total += temp;
-			[lipsFlags replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
+			//[lipsFlags replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
 		}
 	}
 	
-	[thePatient setConditionsArray:lipsFlags];
+	//[thePatient setConditionsArray:lipsFlags];
     
 	
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
