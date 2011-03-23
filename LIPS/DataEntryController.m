@@ -52,14 +52,12 @@
 	}
 }
 
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        [self initValsAndFlags];
-    }
-    return self;
+-(id)initWithPatient:(Patient *)p {
+	if (self == [super init]) {
+		[self initValsAndFlags];
+		thePatient = p;
+	}
+	return self;
 }
 
 
@@ -68,16 +66,14 @@
 	for (int i = 1; i < 22; i++) {
 		UISwitch *aSwitch = (UISwitch*)[self.view viewWithTag:i];
 		if (aSwitch.on) {
-			NSLog(@"%@", [lipsVals componentsJoinedByString:@" "]);
 			CGFloat temp = [[lipsVals objectAtIndex:i - 1] floatValue];
 			total += temp;
-			//[lipsFlags replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
+			[lipsFlags replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
 		}
 	}
 	
-	//[thePatient setConditionsArray:lipsFlags];
-    
-	
+	total += [thePatient getAdditionalRisks];
+		
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
 	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
 	

@@ -22,5 +22,6 @@
 }
 
 -(IBAction) submit:(id)sender;
+-(id)initWithPatient:(Patient *)p;
 
 @end

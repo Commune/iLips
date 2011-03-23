@@ -13,60 +13,59 @@
 
 
 -(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc {
-	if (!conditionFlags) {
-		NSMutableArray* temp = [NSMutableArray array];
-		for (int i = 0; i < 22; i++) {
-			[temp addObject:[NSNumber numberWithBool:NO]];
-		}
-		conditionFlags = [[NSArray alloc] initWithArray:temp];
-	}
 	sex = gender;
 	height = h;
 	weight = w;
 	infectionLocation = [[NSString alloc] initWithString:infectionLoc];
-	if (patientLoc == 0) {
-		patientLocation = @"ICU";
-	} else if (patientLoc == 1) {
-		patientLocation = @"PACU";
-	} else if (patientLoc == 2) {
-		patientLocation = @"OR";
-	}
-	
+	patientLocation = [self getPatientLocation:patientLoc];
+	[self initializeSymptoms];
+	[self getAdditionalRisks];	
 	return self;
 }
 
--(BOOL)checkCondition:(int)conditionNumber {
-	NSNumber *result = [conditionFlags objectAtIndex:conditionNumber];
-	if (result == 0) {
-		return FALSE;
+-(NSString *)getPatientLocation:(int)patientLoc {
+	if (patientLoc == 0) {
+		return @"ICU";
+	} else if (patientLoc == 1) {
+		return @"PACU";
+	} else if (patientLoc == 2) {
+		return @"OR";
+	} else if (patientLoc == 3) {
+		return @"Floor";
+	} else if (patientLoc == 4) {
+		return @"ER";
 	} else {
-		return TRUE;
+		return nil;
 	}
+}
+
+-(void)initializeSymptoms {
+	NSString *finalPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"conditions.plist"];
+	symptoms = [[NSMutableDictionary alloc] initWithContentsOfFile:finalPath];
 }
 
 -(void) printSelf {
+	NSString *gender;
 	if (sex == 0) {
-		NSLog(@"I am a male!");
+		gender = @"I am a male!\n";
 	} else {
-		NSLog(@"I am a female!");
+		gender = @"I am a female!\n";
 	}
 	
-	NSLog(@"I weigh exactly %0.1f kilograms, and am %0.0f inches tall", weight, height);
-	NSLog(@"I am currently located in the %@", patientLocation);
-	NSLog(@"My infection is currently located in my %@", infectionLocation);
-	NSLog(@"%@", [conditionFlags componentsJoinedByString:@" "]);
-}
-
--(void)setConditionsArray:(NSMutableArray *)conditions {
-	conditionFlags = conditions;
+	NSString *mesurements = [NSString stringWithFormat:@"\nI am %0.0f inches tall, and weigh %0.1f kilograms.", height, weight];
+	NSString *pLoc = [NSString stringWithFormat:@"\nI am currently located in the %@", patientLocation];
+	NSString *iLoc = [NSString stringWithFormat:@"\nMy infection is currently located in my %@", infectionLocation];
+	NSString *symp = [NSString stringWithFormat:@"%@", symptoms];
+	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@", gender, mesurements, pLoc, iLoc, symp];
 }
 
 -(int)getAdditionalRisks {
 	float mheight = height * 0.0254;
-	NSLog(@"%f", mheight);
 	int bmi = weight / powf(mheight, 2);
-	NSLog(@"%d", bmi);
+	NSMutableDictionary *condition  = [symptoms objectForKey:@"Obesity"];
 	if (bmi > 30) {
+		[condition setObject:[NSNumber numberWithBool:YES] forKey:@"Present"];
+		[symptoms setValue:condition forKey:@"Obesity"];
 		return 1;
 	} else {
 		return 0;

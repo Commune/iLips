@@ -14,11 +14,22 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+	if (self) {
+		if (!infectionLocations) {
+			infectionLocations = [[NSMutableArray alloc] init];
+			[infectionLocations addObject:@"Arm"];
+			[infectionLocations addObject:@"Leg"];
+			[infectionLocations addObject:@"Foot"];
+			[infectionLocations addObject:@"Head"];
+			[infectionLocations addObject:@"Chest"];
+		}
 		
-    }
-    return self;
+		if (!infecLoc) {
+			infecLoc = [[NSString alloc] init];
+		}
+	}
+	return self;
 }
 
 -(IBAction) submit:(id)sender {
@@ -29,6 +40,8 @@
 	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:infecLoc];
 	[self.navigationController pushViewController:[[DataEntryController alloc] initWithPatient:patient] animated:YES];
 }
+
+// methods for interacting with view
 
 -(IBAction) heightSliderChanged:(UISlider *) sender {
 	heightVal.text = [NSString stringWithFormat:@"%0.0f", sender.value];
@@ -94,23 +107,13 @@
 }
 
 
+// initialization methods
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	if (!infectionLocations) {
-		infectionLocations = [[NSMutableArray alloc] init];
-		[infectionLocations addObject:@"Arm"];
-		[infectionLocations addObject:@"Leg"];
-		[infectionLocations addObject:@"Foot"];
-		[infectionLocations addObject:@"Head"];
-		[infectionLocations addObject:@"Chest"];
-	}
-	
-	if (!infecLoc) {
-		infecLoc = [[NSString alloc] init];
-	}
 }
 
 - (void)viewDidUnload
