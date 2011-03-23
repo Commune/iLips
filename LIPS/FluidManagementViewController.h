@@ -25,14 +25,13 @@
     
     IBOutlet UILabel *updateLabel;
 	
-	IBOutletCollection(id) NSArray *CVPUnknownOutlets;
-	IBOutletCollection(id) NSArray *CVPKnownOutlets;
-	
+	IBOutletCollection(id) NSArray *CVPKnownOutlets;	
 	BOOL CVPKnown;
 }
 
+@property (readwrite) BOOL CVPKnown;
+
 -(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)ignore;
--(IBAction)cvpUnknown:(id)sender;
--(IBAction)cvpKnown:(UISwitch*)sender;
+-(IBAction)cvpKnownSwitched:(UIButton*)sender;
 
 @end

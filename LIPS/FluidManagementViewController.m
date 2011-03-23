@@ -17,35 +17,22 @@
     if(self) {
         self.navigationItem.title = title;
     }
-	CVPKnown = YES;
+	CVPKnown = NO;
     return self;
 }
 
+-(BOOL) CVPKnown {
+	return CVPKnown;
+}
+
+
+
 - (IBAction)cvpUnknown:(id)sender {
-	for(UIView *outlet in CVPKnownOutlets) {
-		outlet.hidden = YES;
-	}
-	for(UIView *outlet in CVPUnknownOutlets) {
-		outlet.hidden = NO;
-	}
-	CVPKnown = NO;
+	self.CVPKnown = NO;
 }
 
 - (IBAction)cvpKnown:(UISwitch*)sender {
-//	CVPKnown = sender.on;
-//	NSLog(@"%@",CVPKnownOutlets);
-//	NSLog(@"%@",CVPUnknownOutlets);
-//
-//	
-//	for(id outlet in CVPKnownOutlets) {
-//		[outlet performSelectorOnMainThread:@selector(setHidden:) withObject:CVPKnown waitUntilDone:YES];
-//		//[outlet setHidden:CVPKnown];
-//	}
-//	for(id outlet in CVPUnknownOutlets) {
-//		[outlet setHidden:!CVPKnown];
-//	}
-////	[CVPKnownOutlets setValue:CVPKnown forKey:@"hidden"];
-////	[CVPUnknownOutlets setValue:!CVPKnown forKey:@"hidden"];
+	self.CVPKnown = YES;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -60,8 +47,6 @@
 
 - (void)dealloc
 {
-	[CVPKnownOutlets release];
-	[CVPUnknownOutlets release];
 	[CVPKnownOutlets release];
     [super dealloc];
 }
@@ -152,6 +137,19 @@
     [vasopressorSwitch addTarget:self action:@selector(updateTreatment) forControlEvents:UIControlEventAllEvents];
 }
 
+-(void) setCVPKnown:(BOOL)isKnown {
+	CVPKnown = isKnown;	
+	for(UIView *outlet in CVPKnownOutlets) {
+		outlet.hidden = !isKnown;
+	}	
+}
+
+- (void)cvpKnownSwitched:(UIButton *)sender {
+	self.CVPKnown = !CVPKnown;
+	[self updateTreatment];
+	NSString *knownString = !CVPKnown?@"known":@"unknown";
+	[sender setTitle:[NSString stringWithFormat:@"The patient's CVP is %@.",knownString] forState:UIControlStateNormal];
+}
 
 - (void)viewDidUnload
 {
@@ -162,12 +160,6 @@
     [CVPLabel release];
     [urineLabel release];
     [MAPLabel release];
-	[CVPKnownOutlets release];
-	CVPKnownOutlets = nil;
-	[CVPKnownOutlets release];
-	CVPKnownOutlets = nil;
-	[CVPUnknownOutlets release];
-	CVPUnknownOutlets = nil;
 	[CVPKnownOutlets release];
 	CVPKnownOutlets = nil;
     [super viewDidUnload];
