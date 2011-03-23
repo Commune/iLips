@@ -56,6 +56,10 @@
 	NSLog(@"My infection is currently located in my %@", infectionLocation);
 }
 
+-(void)setConditionsArray:(NSMutableArray *)conditions {
+	conditionFlags = conditions;
+}
+
 @synthesize height, weight, sex;
 
 @end

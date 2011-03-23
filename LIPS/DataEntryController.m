@@ -9,6 +9,7 @@
 #import "DataEntryController.h"
 #import "ScoreViewController.h"
 #import "DecisionFetcher.h"
+#import "Patient.h"
 
 
 @implementation DataEntryController
@@ -50,17 +51,18 @@
 		for (int i = 0; i < 21; i++) {
 			[temp addObject:[NSNumber numberWithBool:NO]];
 		}
-		lipsFlags = [[NSArray alloc] initWithArray:temp];
+		lipsFlags = [[NSMutableArray alloc] initWithArray:temp];
 		
 	}
 }
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil: (Patient *)p
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self initValsAndFlags];
+		thePatient = p;
     }
     return self;
 }
@@ -74,8 +76,11 @@
 			NSLog(@"%@", [lipsVals componentsJoinedByString:@" "]);
 			CGFloat temp = [[lipsVals objectAtIndex:i - 1] floatValue];
 			total += temp;
+			[lipsFlags replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
 		}
 	}
+	
+	[thePatient setConditionsArray:lipsFlags];
     
 	
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";

@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Patient.h"
 
 
 @interface DataEntryController : UIViewController {
     NSArray *lipsVals;
-	NSArray *lipsFlags;
+	NSMutableArray *lipsFlags;
     UIView *portraitView;
     UIView *landscapeView;
 	
 	IBOutlet UISwitch *shockSwitch;
+	
+	Patient *thePatient;
 }
 
 -(IBAction) submit:(id)sender;
