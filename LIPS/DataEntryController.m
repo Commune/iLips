@@ -44,7 +44,7 @@
 	}
 	if (!lipsFlags) {
 		NSMutableArray* temp = [NSMutableArray array];
-		for (int i = 0; i < 21; i++) {
+		for (int i = 0; i < 22; i++) {
 			[temp addObject:[NSNumber numberWithBool:NO]];
 		}
 		lipsFlags = [[NSMutableArray alloc] initWithArray:temp];
