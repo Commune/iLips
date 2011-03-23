@@ -164,18 +164,6 @@
     [CVPLabel release];
     [urineLabel release];
     [MAPLabel release];
-	[cvpUnknown release];
-	cvpUnknown = nil;
-	[cvpUnknownButton release];
-	cvpUnknownButton = nil;
-	[cvpKnownSwitch release];
-	cvpKnownSwitch = nil;
-	[cvpUnknownLabel release];
-	cvpUnknownLabel = nil;
-	[cvpNameLabel release];
-	cvpNameLabel = nil;
-	[cvpKnownQuestion release];
-	cvpKnownQuestion = nil;
 	[CVPKnownOutlets release];
 	CVPKnownOutlets = nil;
 	[CVPKnownOutlets release];
