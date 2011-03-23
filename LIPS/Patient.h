@@ -25,6 +25,7 @@
 -(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc;
 -(void)printSelf;
 -(void)setConditionsArray:(NSMutableArray *)conditions;
+-(int)getAdditionalRisks;
 
 @property (assign) int sex;
 @property (assign) float weight, height;

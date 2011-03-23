@@ -27,16 +27,44 @@
 	float w = weight.value;
 	int patientLoc = patientLocation.selectedSegmentIndex;
 	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:infecLoc];
-	[patient printSelf];
-	[self.navigationController pushViewController:[[DataEntryController alloc] init] animated:YES];
+	[self.navigationController pushViewController:[[DataEntryController alloc] initWithPatient:patient] animated:YES];
 }
 
--(IBAction) heightValChanged:(UISlider *) sender {
+-(IBAction) heightSliderChanged:(UISlider *) sender {
 	heightVal.text = [NSString stringWithFormat:@"%0.0f", sender.value];
+	heightText.text = [NSString stringWithFormat:@"%0.0f", sender.value];
 }
 
--(IBAction) weightValChanged:(UISlider *) sender {
+-(IBAction) weightSliderChanged:(UISlider *) sender {
 	weightVal.text = [NSString stringWithFormat:@"%0.1f", sender.value];
+	weightText.text = [NSString stringWithFormat:@"%0.1f", sender.value];
+
+}
+
+-(IBAction) weightTextChanged:(UITextField *)sender {
+	float tWeight = [sender.text floatValue];
+	if (tWeight < 35 || tWeight > 140) {
+		sender.text = @"35";
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please enter a valid weight" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	} else {
+		weightVal.text = [NSString stringWithFormat:@"%0.1f", tWeight];
+		weight.value = tWeight;
+	}
+}
+
+-(IBAction) heightTextChanged:(UITextField *)sender {
+	float tHeight = [sender.text floatValue];
+	if (tHeight < 54 || tHeight > 84) {
+		sender.text = @"54";
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Please enter a valid weight" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	} else {
+		heightVal.text = [NSString stringWithFormat:@"%0.0f", tHeight];
+		height.value = tHeight;
+	}
 }
 
 -(IBAction) infectionChanged:(UISegmentedControl *)sender {

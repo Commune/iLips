@@ -54,10 +54,23 @@
 	NSLog(@"I weigh exactly %0.1f kilograms, and am %0.0f inches tall", weight, height);
 	NSLog(@"I am currently located in the %@", patientLocation);
 	NSLog(@"My infection is currently located in my %@", infectionLocation);
+	NSLog(@"%@", [conditionFlags componentsJoinedByString:@" "]);
 }
 
 -(void)setConditionsArray:(NSMutableArray *)conditions {
 	conditionFlags = conditions;
+}
+
+-(int)getAdditionalRisks {
+	float mheight = height * 0.0254;
+	NSLog(@"%f", mheight);
+	int bmi = weight / powf(mheight, 2);
+	NSLog(@"%d", bmi);
+	if (bmi > 30) {
+		return 1;
+	} else {
+		return 0;
+	}
 }
 
 @synthesize height, weight, sex;

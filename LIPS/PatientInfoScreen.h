@@ -18,6 +18,8 @@
 	IBOutlet UIButton *submit;
 	IBOutlet UILabel *heightVal;
 	IBOutlet UILabel *weightVal;
+	IBOutlet UITextField *heightText;
+	IBOutlet UITextField *weightText;
 	IBOutlet UISegmentedControl *infectionPresent;
 	IBOutlet UILabel *infectionLocationLabel;
 	IBOutlet UIPickerView *infectionSource;
@@ -31,8 +33,10 @@
 }
 
 -(IBAction) submit:(id)sender;
--(IBAction) heightValChanged:(UISlider *) sender;
--(IBAction) weightValChanged:(UISlider *) sender;
+-(IBAction) heightSliderChanged:(UISlider *) sender;
+-(IBAction) weightSliderChanged:(UISlider *) sender;
+-(IBAction) heightTextChanged:(UITextField *) sender;
+-(IBAction) weightTextChanged:(UITextField *) sender;
 -(IBAction) infectionChanged:(UISegmentedControl *) sender;
 
 @end
