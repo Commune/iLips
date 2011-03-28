@@ -4,10 +4,10 @@
 <dict>
 	<key>Bleeding or Ischemia</key>
 	<dict>
-		<key>Yes</key>
-		<string>Resuscitate</string>
 		<key>No</key>
 		<string>Resuscitate, Transfuse</string>
+		<key>Yes</key>
+		<string>Resuscitate</string>
 	</dict>
 	<key>Infection</key>
 	<dict>
@@ -34,6 +34,15 @@
 		<string>Stop</string>
 		<key>Yes</key>
 		<string>Bleeding or Ischemia</string>
+	</dict>
+	<key>Respiratory Status</key>
+	<dict>
+		<key>Non-Invasive Ventilation</key>
+		<string></string>
+		<key>Not Vented</key>
+		<string></string>
+		<key>Intubation/Mechanical Ventilation Required</key>
+		<string></string>
 	</dict>
 </dict>
 </plist>

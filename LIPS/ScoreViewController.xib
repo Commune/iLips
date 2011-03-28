@@ -3,12 +3,12 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1056</int>
 		<string key="IBDocument.SystemVersion">10J567</string>
-		<string key="IBDocument.InterfaceBuilderVersion">1294</string>
+		<string key="IBDocument.InterfaceBuilderVersion">1305</string>
 		<string key="IBDocument.AppKitVersion">1038.35</string>
 		<string key="IBDocument.HIToolboxVersion">462.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">294</string>
+			<string key="NS.object.0">300</string>
 		</object>
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -49,7 +49,7 @@
 						<string key="NSFrame">{{0, 260}, {768, 169}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="335441559"/>
+						<reference key="NSNextKeyView" ref="281490308"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">1</int>
@@ -100,6 +100,7 @@
 						<string key="NSFrame">{{164, 755}, {456, 98}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -152,26 +153,28 @@
 					<object class="IBUILabel" id="281490308">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483329</int>
-						<string key="NSFrame">{{122, 541}, {540, 183}}</string>
+						<string key="NSFrame">{{119, 407}, {547, 297}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="335441559"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">Treatment is suggested.</string>
+						<string key="IBUIText">Patient is at high risk for developing ALI/ARDS. Strategies to reduce risk are reccomended.</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica</string>
-							<double key="NSSize">49</double>
+							<double key="NSSize">24</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<reference key="IBUITextColor" ref="500665122"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
-						<int key="IBUINumberOfLines">2</int>
+						<int key="IBUINumberOfLines">3</int>
 						<int key="IBUITextAlignment">1</int>
+						<int key="IBUILineBreakMode">0</int>
 					</object>
 				</object>
 				<string key="NSFrame">{{0, 20}, {768, 1004}}</string>
@@ -424,6 +427,6 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<string key="IBCocoaTouchPluginVersion">294</string>
+		<string key="IBCocoaTouchPluginVersion">300</string>
 	</data>
 </archive>

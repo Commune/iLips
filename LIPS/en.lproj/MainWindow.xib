@@ -40,7 +40,7 @@
 			</object>
 			<object class="IBUIWindow" id="62075450">
 				<reference key="NSNextResponder"/>
-				<int key="NSvFlags">292</int>
+				<int key="NSvFlags">301</int>
 				<string key="NSFrameSize">{768, 1024}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
@@ -50,9 +50,6 @@
 				</object>
 				<bool key="IBUIOpaque">NO</bool>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 				<bool key="IBUIResizesToFullScreen">YES</bool>
 			</object>
