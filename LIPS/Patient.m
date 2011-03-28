@@ -57,9 +57,24 @@
 	NSString *iLoc = [NSString stringWithFormat:@"\nMy infection is currently located in my %@", infectionLocation];
 	NSString *symp = [NSString stringWithFormat:@"%@", symptoms];
 	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@", gender, mesurements, pLoc, iLoc, symp];
+	NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 }
 
--(int)getAdditionalRisks {
+-(float)calculateScore {
+	float total = 0;
+	NSEnumerator *enumerator = [symptoms keyEnumerator];
+	id key;
+	while ((key = [enumerator nextObject])) {
+		NSMutableDictionary *condition = [symptoms objectForKey:key];
+		if ([condition objectForKey:@"Present"] == [NSNumber numberWithInt:YES]) {
+			total += [[condition objectForKey:@"Risk Factor"] floatValue];
+		}
+	}
+	total += [self getAdditionalRisks];
+	return total;
+}
+
+-(float)getAdditionalRisks {
 	float mheight = height * 0.0254;
 	int bmi = weight / powf(mheight, 2);
 	NSMutableDictionary *condition  = [symptoms objectForKey:@"Obesity"];
@@ -70,6 +85,12 @@
 	} else {
 		return 0;
 	}
+}
+
+-(void)tripCondition:(NSString *)symptom:(int)present {
+	NSMutableDictionary *condition = [symptoms objectForKey:symptom];
+	[condition setObject:[NSNumber numberWithInt:present] forKey:@"Present"];
+	[symptoms setValue:condition forKey:symptom];
 }
 
 @synthesize height, weight, sex;

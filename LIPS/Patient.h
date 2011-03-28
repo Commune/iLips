@@ -10,7 +10,7 @@
 
 
 @interface Patient : NSObject {
-	NSDictionary *symptoms;
+	NSMutableDictionary *symptoms;
 	
 	float height;
 	float weight;
@@ -23,9 +23,11 @@
 
 -(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc;
 -(void)printSelf;
--(int)getAdditionalRisks;
+-(float)getAdditionalRisks;
 -(void)initializeSymptoms;
 -(NSString *)getPatientLocation:(int)ploc;
+-(void)tripCondition:(NSString *)symptom:(int)present;
+-(float)calculateScore;
 
 @property (assign) int sex;
 @property (assign) float weight, height;

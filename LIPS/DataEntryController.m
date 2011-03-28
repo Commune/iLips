@@ -14,66 +14,65 @@
 
 @implementation DataEntryController
 
-- (void) initValsAndFlags 
-{
-    if (!lipsVals) {
-		NSNumber *shock = [NSNumber numberWithFloat:2];
-		NSNumber *aspiration = [NSNumber numberWithFloat:2];
-		NSNumber *sepsis = [NSNumber numberWithFloat:1];
-		NSNumber *pneumonia = [NSNumber numberWithFloat:1.5];
-		NSNumber *spine = [NSNumber numberWithFloat:1];
-		NSNumber *abdomen = [NSNumber numberWithFloat:2];
-		NSNumber *cardiac = [NSNumber numberWithFloat:2.5];
-		NSNumber *vascular = [NSNumber numberWithFloat:3.5];
-		NSNumber *brain = [NSNumber numberWithFloat:2];
-		NSNumber *smoke = [NSNumber numberWithFloat:2];
-		NSNumber *drowning = [NSNumber numberWithFloat:2];
-		NSNumber *contusion = [NSNumber numberWithFloat:1.5];
-		NSNumber *fractures = [NSNumber numberWithFloat:1.5];
-		NSNumber *abuse = [NSNumber numberWithFloat:1];
-		NSNumber *hypo = [NSNumber numberWithFloat:1];
-		NSNumber *chemo = [NSNumber numberWithFloat:1];
-		NSNumber *fio2 = [NSNumber numberWithFloat:2];
-		NSNumber *tach = [NSNumber numberWithFloat:1.5];
-		NSNumber *spo2 = [NSNumber numberWithFloat:1];
-		NSNumber *acid = [NSNumber numberWithFloat:1.5];
-		NSNumber *diabetes = [NSNumber numberWithFloat:-1];
-		NSArray *temp = [NSArray arrayWithObjects:shock, aspiration, sepsis, pneumonia, spine, abdomen, cardiac, vascular, brain, smoke,
-						 drowning, contusion, fractures, abuse, hypo, chemo, fio2, tach, spo2, acid, diabetes, nil];
-		lipsVals = [[NSArray alloc] initWithArray:temp];
-	}
-	if (!lipsFlags) {
-		NSMutableArray* temp = [NSMutableArray array];
-		for (int i = 0; i < 22; i++) {
-			[temp addObject:[NSNumber numberWithBool:NO]];
-		}
-		lipsFlags = [[NSMutableArray alloc] initWithArray:temp];
-		
-	}
-}
-
 -(id)initWithPatient:(Patient *)p {
 	if (self == [super init]) {
-		[self initValsAndFlags];
 		thePatient = p;
 		self.navigationItem.hidesBackButton = NO;
 	}
 	return self;
 }
 
+-(IBAction)valueChanged:(UISwitch *)sender {
+	if (sender ==  shockSwitch) {
+		NSLog(@"Shock.");
+		NSLog(@"%d", sender.on);
+		[thePatient tripCondition:@"Shock":sender.on];
+	} else if (sender == aspirationSwitch) {
+		[thePatient tripCondition:@"Aspiration":sender.on];
+	} else if (sender == sepsisSwitch) {
+		[thePatient tripCondition:@"Sepsis":sender.on];
+	} else if (sender == pneumoniaSwitch) {
+		[thePatient tripCondition:@"Pneumonia":sender.on];
+	} else if (sender == contusionSwitch) {
+		[thePatient tripCondition:@"Lung Contusion":sender.on];
+	} else if (sender == smokeSwitch) {
+		[thePatient tripCondition:@"Smoke Inhalation":sender.on];
+	} else if (sender == drowningSwitch ) {
+		[thePatient tripCondition:@"Near Drowning":sender.on];
+	} else if (sender == fracturesSwitch) {
+		[thePatient tripCondition:@"Multiple Fractures":sender.on];
+	} else if (sender == brainSwitch) {
+		[thePatient tripCondition:@"Traumatic Brain Injury":sender.on];
+	} else if (sender == cardiacSwitch) {
+		[thePatient tripCondition:@"Cardiac Surgery":sender.on];
+	} else if (sender == vascularSwitch) {
+		[thePatient tripCondition:@"Vascular Surgery":sender.on];
+	} else if (sender == spineSwitch) {
+		[thePatient tripCondition:@"Spine Surgery":sender.on];
+	} else if (sender == abdomenSwitch) {
+		[thePatient tripCondition:@"Acute Abdomen Surgery":sender.on];
+	} else if (sender == emergencySwitch) {
+		[thePatient tripCondition:@"Emergency Surgery":sender.on];
+	} else if (sender == alchySwitch) {
+		[thePatient tripCondition:@"Alcohol Abuse":sender.on];
+	} else if (sender == hypoSwitch) {
+		[thePatient tripCondition:@"Albumin < 3.5 g/dL":sender.on];
+	} else if (sender == chemoSwitch) {
+		[thePatient tripCondition:@"Chemotherapy":sender.on];
+	} else if (sender == fio2Switch) {
+		[thePatient tripCondition:@"FiO2 > 35%":sender.on];
+	} else if (sender == spo2Switch) {
+		[thePatient tripCondition:@"Oxygen Saturation < 95%":sender.on];
+	} else if (sender == acidosisSwitch) {
+		[thePatient tripCondition:@"At least one Arterial pH < 7.35":sender.on];
+	} else if (sender == diabetesSwitch) {
+		[thePatient tripCondition:@"Diabetes Mellitus and has sepsis":sender.on];
+	}
+}
+
 
 - (IBAction)submit:(id)sender {
-    float total = 0;
-	for (int i = 1; i < 22; i++) {
-		UISwitch *aSwitch = (UISwitch*)[self.view viewWithTag:i];
-		if (aSwitch.on) {
-			CGFloat temp = [[lipsVals objectAtIndex:i - 1] floatValue];
-			total += temp;
-			[lipsFlags replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:YES]];
-		}
-	}
-	
-	total += [thePatient getAdditionalRisks];
+    float total = [thePatient calculateScore];
 		
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
 	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
