@@ -22,6 +22,7 @@
 		6351B9C5131E14BC003D8A6A /* DataEntryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6351B9C3131E14B4003D8A6A /* DataEntryController.xib */; };
 		6357BCA9131AADB400AD8190 /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6357BCA7131AADB400AD8190 /* SuggestionViewController.m */; };
 		6357BCAA131AADB400AD8190 /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */; };
+		636DBCB513405B7000AD6089 /* conditions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 636DBCB413405B7000AD6089 /* conditions.plist */; };
 		6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6395CEAF13314CEC00617C76 /* Entitlements.plist */; };
 		63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */; };
 		63DF4FE0131EE2C700B285BD /* MultipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */; };
@@ -84,6 +85,7 @@
 		6357BCA7131AADB400AD8190 /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuggestionViewController.m; path = LIPS/SuggestionViewController.m; sourceTree = "<group>"; };
 		6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuggestionViewController.xib; path = LIPS/SuggestionViewController.xib; sourceTree = "<group>"; };
 		636C15BA1331718C00A8506B /* LIPSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIPSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		636DBCB413405B7000AD6089 /* conditions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conditions.plist; sourceTree = "<group>"; };
 		6395CEAF13314CEC00617C76 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleChoiceViewController.h; path = LIPS/MultipleChoiceViewController.h; sourceTree = "<group>"; };
 		63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultipleChoiceViewController.m; path = LIPS/MultipleChoiceViewController.m; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		6336E748131E99DA00CF9851 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				636DBCB413405B7000AD6089 /* conditions.plist */,
 				A0FFC53413341D4500A425EC /* Patient.h */,
 				A0FFC53513341D4500A425EC /* Patient.m */,
 				6351B998131DD0F1003D8A6A /* treatments.plist */,
@@ -372,6 +375,7 @@
 				63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */,
 				6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */,
 				A0E8995813391BB200B46495 /* PatientInfoScreen.xib in Resources */,
+				636DBCB513405B7000AD6089 /* conditions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
