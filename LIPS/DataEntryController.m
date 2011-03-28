@@ -72,6 +72,9 @@
 
 
 - (IBAction)submit:(id)sender {
+	// Add patient to SQLite database
+	[thePatient addToLocalDatabase];
+	
     float total = [thePatient calculateScore];
 		
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
