@@ -7,7 +7,9 @@
 //
 
 #import "Patient.h"
- 
+#import "JSON.h"
+#import "SQLiteAdapter.h"
+#import "PatientEntry.h"
 
 @implementation Patient
 
@@ -20,6 +22,8 @@
 	patientLocation = [self getPatientLocation:patientLoc];
 	[self initializeSymptoms];
 	[self getAdditionalRisks];	
+	sqliteAdapter = [[SQLiteAdapter alloc] init];
+	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
 	return self;
 }
 
@@ -88,6 +92,7 @@
 		}
 	}
 	NSLog(@"-----");
+	NSLog(@"%@",[self toJSON]);
 	total += [self getAdditionalRisks];
 	return total;
 }
@@ -109,6 +114,29 @@
 	NSMutableDictionary *condition = [symptoms objectForKey:symptom];
 	[condition setObject:[NSNumber numberWithInt:present] forKey:@"Present"];
 	[symptoms setValue:condition forKey:symptom];
+}
+
+
+-(NSString *)toJSON {
+	NSMutableDictionary *allPatientData = [[NSMutableDictionary alloc] init];
+	[allPatientData setObject:[NSNumber numberWithFloat:height] forKey:@"Height"];
+	[allPatientData setObject:[NSNumber numberWithFloat:weight] forKey:@"Weight"];
+	[allPatientData setObject:[NSNumber numberWithInt:sex] forKey:@"Sex"];
+	[allPatientData setObject:patientLocation forKey:@"Patient Location"];
+	[allPatientData setObject:infectionLocation forKey:@"Infection Location"];
+	[allPatientData setObject:symptoms forKey:@"Symptoms"];
+	return [allPatientData JSONRepresentation];
+}
+
+-(NSString *)getID {
+	return patientID;
+}
+
+-(int)addToLocalDatabase {
+	PatientEntry *patient = [[PatientEntry alloc] initWithId:[self getID] data:[self toJSON]];
+	[sqliteAdapter deletePatient:patient];
+	int ret = [sqliteAdapter addPatient:patient];
+	return ret;
 }
 
 @synthesize height, weight, sex;

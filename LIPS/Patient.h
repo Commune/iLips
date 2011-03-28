@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class SQLiteAdapter;
 
 @interface Patient : NSObject {
 	NSMutableDictionary *symptoms;
@@ -19,6 +20,10 @@
 	NSString *patientLocation;
 	NSString *infectionLocation;
 	
+	SQLiteAdapter *sqliteAdapter;
+	
+	NSString *patientID;
+	
 }
 
 -(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc;
@@ -29,6 +34,9 @@
 -(void)tripCondition:(NSString *)symptom:(int)present;
 -(float)calculateScore;
 -(NSString *)getConditions;
+-(NSString *)toJSON;
+-(NSString *)getID;
+-(int)addToLocalDatabase;
 
 @property (assign) int sex;
 @property (assign) float weight, height;
