@@ -4,76 +4,76 @@
 <dict>
 	<key>Antibiotics</key>
 	<dict>
-		<key>Title</key>
-		<string>Antibiotics</string>
 		<key>Arguments</key>
 		<array>
-			<string>Antibiotics:
--Rapid administration of appropriate antibiotics</string>
+			<string>&lt;ul&gt;&lt;font size=&quot;5&quot;&gt;Antibiotics&lt;/font&gt;
+&lt;li&gt;Rapid administration of appropriate antibiotics
+&lt;/li&gt;&lt;/ul&gt;</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Antibiotics</string>
 	</dict>
 	<key>Antibiotics and Source Control</key>
 	<dict>
-		<key>Title</key>
-		<string>Antibiotics and Source Control</string>
 		<key>Arguments</key>
 		<array>
-			<string>Antibiotics:
--Administer appropriate antibiotics within 6 hours.
-Source Control:
--Early imaging to confirm source if appropriate
--Early surgical/interventional evaluation if appropriate
--Early drainage of purulent collection or removal of infected device if relevant</string>
+			<string>&lt;ul&gt;&lt;font size=&quot;5&quot;&gt;Antibiotics&lt;/font&gt;
+&lt;li&gt;Administer appropriate antibiotics within 6 hours.
+&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;font size=&quot;5&quot;&gt;Source Control&lt;/font&gt;
+&lt;li&gt;Early imaging to confirm source if appropriate
+&lt;/li&gt;&lt;li&gt;Early surgical/interventional evaluation if appropriate
+&lt;/li&gt;&lt;li&gt;Early drainage of purulent collection or removal of infected device if relevant
+&lt;/li&gt;&lt;/ul&gt;</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Antibiotics and Source Control</string>
 	</dict>
 	<key>Bleeding or Ischemia</key>
 	<dict>
-		<key>Title</key>
-		<string>Bleeding/Ischemia</string>
 		<key>Arguments</key>
 		<array>
 			<string>Is the patient experiencing bleeding or ischemia?</string>
 		</array>
 		<key>Class</key>
 		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>Bleeding/Ischemia</string>
 	</dict>
 	<key>Fluids</key>
 	<dict>
-		<key>Title</key>
-		<string>Fluid Management</string>
 		<key>Class</key>
 		<string>FluidManagementViewController</string>
+		<key>Title</key>
+		<string>Fluid Management</string>
 	</dict>
 	<key>Infection</key>
 	<dict>
-		<key>Title</key>
-		<string>Infection</string>
 		<key>Arguments</key>
 		<array>
 			<string>Is there an infection?</string>
 		</array>
 		<key>Class</key>
 		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>Infection</string>
 	</dict>
 	<key>Removable Source</key>
 	<dict>
-		<key>Title</key>
-		<string>Removable Source</string>
 		<key>Arguments</key>
 		<array>
 			<string>Is there a removable source?</string>
 		</array>
 		<key>Class</key>
 		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>Removable Source</string>
 	</dict>
 	<key>Respiratory Support</key>
 	<dict>
-		<key>Title</key>
-		<string>Respiratory Support</string>
 		<key>Arguments</key>
 		<array>
 			<string>Respiratory Support</string>
@@ -81,52 +81,56 @@ Source Control:
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Respiratory Support</string>
 	</dict>
 	<key>Resuscitate</key>
 	<dict>
-		<key>Title</key>
-		<string>Resuscitate</string>
 		<key>Arguments</key>
 		<array>
 			<string>Resuscitate with Isotonic crystalloid or colloid and transfuse with blood to obtain euvolemia, adequate urine output</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Resuscitate</string>
 	</dict>
 	<key>Resuscitate, Transfuse</key>
 	<dict>
-		<key>Title</key>
-		<string>Resuscitate and Transfuse</string>
 		<key>Arguments</key>
 		<array>
-			<string>-Resuscitate as needed, consider vasopressor to get MAP&gt;60
--Avoid fluid overload targeting CVP and urine output as per Fluid Management Goals in MORE-Avoid RBC transfusion unless Hgb &lt; 7g/dL</string>
+			<string>&lt;li&gt;Resuscitate as needed, consider vasopressor to get MAP&amp;gt;60
+&lt;/li&gt;&lt;li&gt;Avoid fluid overload targeting CVP and urine output as per Fluid Management Goals in MORE
+&lt;/li&gt;&lt;li&gt;Avoid RBC transfusion unless Hgb &amp;lt; 7g/dL
+&lt;/li&gt;</string>
 			<string>Fluids</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Resuscitate and Transfuse</string>
 	</dict>
 	<key>Shock</key>
 	<dict>
-		<key>Title</key>
-		<string>Shock</string>
 		<key>Arguments</key>
 		<array>
 			<string>Is the patient in shock?</string>
 		</array>
 		<key>Class</key>
 		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>Shock</string>
 	</dict>
 	<key>Stop</key>
 	<dict>
-		<key>Title</key>
-		<string>Stop</string>
 		<key>Arguments</key>
 		<array>
 			<string>Stop/Maintain Euvolumia (CVP 8-10)</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Stop</string>
 	</dict>
 </dict>
 </plist>

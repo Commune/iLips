@@ -91,8 +91,6 @@
 			total += [[condition objectForKey:@"Risk Factor"] floatValue];
 		}
 	}
-	NSLog(@"-----");
-	NSLog(@"%@",[self toJSON]);
 	total += [self getAdditionalRisks];
 	return total;
 }

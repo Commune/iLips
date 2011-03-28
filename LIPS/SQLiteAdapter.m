@@ -79,8 +79,8 @@
     int errorcode=[self runQuery:query];
     if(errorcode==SQLITE_DONE)
         [patients addObject:patient];
-	NSLog(@"%@",query);
-	NSLog(@"%@",patients);
+//	NSLog(@"%@",query);
+//	NSLog(@"%@",patients);
     return errorcode;
 }
 

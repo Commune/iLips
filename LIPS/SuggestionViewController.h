@@ -14,7 +14,7 @@
 	
 	UIViewController *moreView;
 	
-    IBOutlet UITextView *suggestionTextView;
+    IBOutlet UIWebView *suggestionWebView;
 	IBOutlet UIButton *moreButton;
 }
 

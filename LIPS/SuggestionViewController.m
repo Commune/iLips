@@ -41,6 +41,7 @@
 
 - (void)dealloc
 {
+    [suggestionWebView release];
     [super dealloc];
 }
 
@@ -57,7 +58,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    suggestionTextView.text = text; 
+	suggestionWebView.userInteractionEnabled = NO;
+	[suggestionWebView loadHTMLString:text baseURL:nil];
 	if(moreView) {
 		moreButton.hidden = NO;
 	}
@@ -65,7 +67,8 @@
 
 - (void)viewDidUnload
 {
-    [suggestionTextView release];
+    [suggestionWebView release];
+    suggestionWebView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
