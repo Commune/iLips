@@ -28,6 +28,7 @@
 -(NSString *)getPatientLocation:(int)ploc;
 -(void)tripCondition:(NSString *)symptom:(int)present;
 -(float)calculateScore;
+-(NSString *)getConditions;
 
 @property (assign) int sex;
 @property (assign) float weight, height;

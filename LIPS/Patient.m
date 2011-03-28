@@ -56,8 +56,24 @@
 	NSString *pLoc = [NSString stringWithFormat:@"\nI am currently located in the %@", patientLocation];
 	NSString *iLoc = [NSString stringWithFormat:@"\nMy infection is currently located in my %@", infectionLocation];
 	NSString *symp = [NSString stringWithFormat:@"%@", symptoms];
-	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@", gender, mesurements, pLoc, iLoc, symp];
+	NSString *conditionTitle = @"Conditions:";
+	NSString *conditions = [self getConditions];
+	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", gender, mesurements, pLoc, iLoc, symp, conditionTitle, conditions];
 	NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+	[result writeToFile:[path stringByAppendingPathComponent:@"output.txt"] atomically:NO encoding:NSUTF8StringEncoding error:nil];
+}
+
+-(NSString *)getConditions {
+	NSString *result = [[NSString alloc] init];
+	NSEnumerator *enumerator = [symptoms keyEnumerator];
+	NSString *key;
+	while ((key = [enumerator nextObject])) {
+		NSMutableDictionary *condition = [symptoms objectForKey:key];
+		if ([condition objectForKey:@"Present"] == [NSNumber numberWithBool:YES]) {
+			[result stringByAppendingString:key];
+		}
+	}
+	return result;
 }
 
 -(float)calculateScore {
@@ -66,10 +82,12 @@
 	id key;
 	while ((key = [enumerator nextObject])) {
 		NSMutableDictionary *condition = [symptoms objectForKey:key];
-		if ([condition objectForKey:@"Present"] == [NSNumber numberWithInt:YES]) {
+		if ([condition objectForKey:@"Present"] == [NSNumber numberWithInt:1]) {
+			NSLog(@"Got here.");
 			total += [[condition objectForKey:@"Risk Factor"] floatValue];
 		}
 	}
+	NSLog(@"-----");
 	total += [self getAdditionalRisks];
 	return total;
 }
