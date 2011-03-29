@@ -12,11 +12,13 @@
 @interface ScoreViewController : UIViewController {
     IBOutlet UILabel *scoreLabel;
     float score;
-    IBOutlet UIButton *suggestionButton;
     IBOutlet UILabel *lowScoreLabel;
 	IBOutlet UILabel *alertLabel;
+    IBOutlet UIButton *infectionButton;
+    IBOutlet UIButton *shockButton;
 }
-- (IBAction)findSuggestion:(id)sender;
+- (IBAction)infectionTreatment:(id)sender;
+- (IBAction)shockTreatment:(id)sender;
 
 - (id)initWithScore:(float)lipsScore;
 

@@ -75,4 +75,8 @@ static Patient *patient;
 	}
 }
 
++(NSString *)responseForQuestion:(NSString *)question {
+	return [responses objectForKey:question];
+}
+
 @end

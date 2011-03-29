@@ -20,12 +20,20 @@
     return self;
 }
 
-- (IBAction)findSuggestion:(id)sender 
+- (void)findSuggestion:(NSString*)response
 {
     [DecisionFetcher resetDecisions];
-    [DecisionFetcher assignResponse:@"Score" withValue:@"Default"];
-    [self.navigationController pushViewController:[DecisionFetcher fetchNextViewAfter:@"Score"] animated:YES];
+	[DecisionFetcher assignResponse:response withValue:@"Yes"];
+    [self.navigationController pushViewController:[DecisionFetcher fetchNextViewAfter:response] animated:YES];
 
+}
+
+- (IBAction)infectionTreatment:(id)sender {
+	[self findSuggestion:@"Infection"];
+}
+
+- (IBAction)shockTreatment:(id)sender {
+	[self findSuggestion:@"Shock"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,6 +47,8 @@
 
 - (void)dealloc
 {
+	[infectionButton release];
+	[shockButton release];
     [super dealloc];
 }
 
@@ -58,7 +68,12 @@
 
     scoreLabel.text = [NSString stringWithFormat:@"%.2f",score];
     if(score>=4) {
-        [suggestionButton setHidden:NO];
+		if([[DecisionFetcher responseForQuestion:@"Infection"] isEqualToString:@"Yes"]) {
+            infectionButton.hidden = NO;
+		}
+        if([[DecisionFetcher responseForQuestion:@"Shock"] isEqualToString:@"Yes"]) {
+            shockButton.hidden = NO;
+		}
 		[alertLabel setHidden:NO];
 		[self.view setBackgroundColor:[UIColor redColor]];
     } else {
@@ -72,8 +87,11 @@
 
 - (void)viewDidUnload
 {
-    [suggestionButton release];
     [lowScoreLabel release];
+	[infectionButton release];
+	infectionButton = nil;
+	[shockButton release];
+	shockButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
