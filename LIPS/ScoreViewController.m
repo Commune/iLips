@@ -74,10 +74,9 @@
         if([[DecisionFetcher responseForQuestion:@"Shock"] isEqualToString:@"Yes"]) {
             shockButton.hidden = NO;
 		}
-		[alertLabel setHidden:NO];
+		alertLabel.hidden = NO;
+		lowScoreLabel.hidden = YES;
 		[self.view setBackgroundColor:[UIColor redColor]];
-    } else {
-        [lowScoreLabel setHidden:NO];
     }
     
     [self.navigationItem setTitle:@"LIPS Score"];
