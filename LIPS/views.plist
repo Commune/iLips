@@ -50,40 +50,16 @@
 		<key>Title</key>
 		<string>Fluid Management</string>
 	</dict>
-	<key>Infection_DELETE</key>
+	<key>Infection Location-RS</key>
 	<dict>
 		<key>Arguments</key>
 		<array>
-			<string>Is there an infection?</string>
+			<string>Infection Location</string>
 		</array>
 		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
+		<string>AliasDummyScreen</string>
 		<key>Title</key>
-		<string>Infection</string>
-	</dict>
-	<key>Infection-Lung</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / macrolide / 3rd gen cephalosporin )OR( Vancomycin /  fluoroquinolone )*Consider treatment for influenza</string>
-			<string>( Vancomycin / anti-pseudomonal PCN)OR( Vancomycin /  fluoroquinolone / Aminoglycoside )*Consider treatment for influenza</string>
-			<string>( Vancomycin / anti-pseudomonal PCN / macrolide )*Consider treatment for PCP, fungals, Tb*Consider treatment for influenza</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Lung</string>
-	</dict>
-	<key>Removable Source</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is there a removable source?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>Removable Source</string>
+		<string>N/A</string>
 	</dict>
 	<key>Infection-CNS</key>
 	<dict>
@@ -98,6 +74,95 @@
 		<key>Title</key>
 		<string>Infection in Central Nervous System</string>
 	</dict>
+	<key>Infection-Lung</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / macrolide / 3rd gen cephalosporin )OR( Vancomycin /  fluoroquinolone )*Consider treatment for influenza</string>
+			<string>( Vancomycin / anti-pseudomonal PCN)OR( Vancomycin /  fluoroquinolone / Aminoglycoside )*Consider treatment for influenza</string>
+			<string>( Vancomycin / anti-pseudomonal PCN / macrolide )*Consider treatment for PCP, fungals, Tb*Consider treatment for influenza</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Lung</string>
+	</dict>
+	<key>Infection-Abdomen</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / amino-PCN )OR( Vancomycin /  fluoroquinolone / metronidazole)*Consider broader C.Diff coverage with PO vancomycin</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin /  fluoroquinolone / metronidazole )*Consider broader C.Diff coverage with PO vancomycin</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin /  fluoroquinolone / metronidazole / aminoglycoside )*Consider treatment for fungals, Tb*Consider broader C.Diff coverage with PO vancomycin</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Abdomen</string>
+	</dict>
+	<key>Infection-IV Catheter</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string></string>
+			<string>( Vancomycin / anti-pseudomonal PCN )</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in IV Catheter</string>
+	</dict>
+	<key>Infection-Skin/Tissue</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin )*Consider anti-pseudomonal PCN if diabetic or vascular disease*Consider clindamycin for suspected toxic shock syndrome</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )*Consider clindamycin for suspected toxic shock syndrome</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )*Consider clindamycin for suspected toxic shock syndrome</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Skin/Tissue</string>
+	</dict>
+	<key>Infection-Unknown</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / anti-pseudomonal PCN )</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )</string>
+			<string>( Vanco / carbapenem / fluoroquinolone )</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection - Source Unknown</string>
+	</dict>
+	<key>Infection-Urine</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( 3rd generation cephalosporin )OR( fluoroquinolone )</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin /  fluoroquinolone )</string>
+			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin / fluoroquinolone / Aminoglycoside )*Consider treatment for fungals, Tb</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Urine</string>
+	</dict>
+	<key>Removable Source</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>Is there a removable source?</string>
+		</array>
+		<key>Class</key>
+		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>Removable Source</string>
+	</dict>
 	<key>Respiratory Support</key>
 	<dict>
 		<key>Arguments</key>
@@ -109,17 +174,6 @@
 		<string>SuggestionViewController</string>
 		<key>Title</key>
 		<string>Respiratory Support</string>
-	</dict>
-	<key>Infection Location-RS</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Infection Location</string>
-		</array>
-		<key>Class</key>
-		<string>AliasDummyScreen</string>
-		<key>Title</key>
-		<string>N/A</string>
 	</dict>
 	<key>Resuscitate</key>
 	<dict>

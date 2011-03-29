@@ -67,14 +67,31 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+/*
+ Vertically aligns text in UILabel 
+ */
+- (void)setUILabel:(UILabel *)myLabel withMaxFrame:(CGRect)maxFrame withText:(NSString *)theText {
+	CGSize stringSize = [theText sizeWithFont:myLabel.font constrainedToSize:maxFrame.size lineBreakMode:myLabel.lineBreakMode];
+	
+	myLabel.frame = CGRectMake(myLabel.frame.origin.x, 
+							   myLabel.frame.origin.y, 
+							   myLabel.frame.size.width, 
+							   stringSize.height
+							   );
+	myLabel.text = theText;
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	empiricSuggestionLabel.text = empiricSuggestion;
-	previousContactSuggestionLabel.text = previousContactSuggestion;
-	immuneSuppressedSuggestionLabel.text = immuneSuppressedSuggestion;
+	
+	[self setUILabel:empiricSuggestionLabel withMaxFrame:empiricSuggestionLabel.frame withText:empiricSuggestion];
+	
+	[self setUILabel:previousContactSuggestionLabel withMaxFrame:previousContactSuggestionLabel.frame withText:previousContactSuggestion];
+	
+	[self setUILabel:immuneSuppressedSuggestionLabel withMaxFrame:immuneSuppressedSuggestionLabel.frame withText:immuneSuppressedSuggestion];
 }
 
 - (void)viewDidUnload
