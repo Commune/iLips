@@ -10,6 +10,7 @@
 #import "JSON.h"
 #import "SQLiteAdapter.h"
 #import "PatientEntry.h"
+#import "DecisionFetcher.h"
 
 @implementation Patient
 
@@ -24,6 +25,7 @@
 	[self getAdditionalRisks];	
 	sqliteAdapter = [[SQLiteAdapter alloc] init];
 	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
+	[DecisionFetcher addPatientProperties:self];
 	return self;
 }
 
@@ -137,6 +139,6 @@
 	return ret;
 }
 
-@synthesize height, weight, sex;
+@synthesize height, weight, sex, patientLocation, infectionLocation;
 
 @end

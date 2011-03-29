@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class Patient;
 
 @interface DecisionFetcher : NSObject {
-     
 }
 +(UIViewController*)fetchNextViewAfter:(NSString*)nodeName;
 +(UIViewController*)fetchViewForNode:(NSString*)nodeName;
 +(void)assignResponse:(NSString*)questionName withValue:(NSString*)value;
 +(void)resetDecisions;
++(void)addPatientProperties:(Patient*)aPatient;
 @end

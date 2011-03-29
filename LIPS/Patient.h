@@ -40,5 +40,6 @@
 
 @property (assign) int sex;
 @property (assign) float weight, height;
+@property (assign) NSString *patientLocation, *infectionLocation;
 
 @end

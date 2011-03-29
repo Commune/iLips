@@ -18,11 +18,19 @@
 	if (self) {
 		if (!infectionLocations) {
 			infectionLocations = [[NSMutableArray alloc] init];
-			[infectionLocations addObject:@"Arm"];
-			[infectionLocations addObject:@"Leg"];
-			[infectionLocations addObject:@"Foot"];
-			[infectionLocations addObject:@"Head"];
-			[infectionLocations addObject:@"Chest"];
+//			[infectionLocations addObject:@"Arm"];
+//			[infectionLocations addObject:@"Leg"];
+//			[infectionLocations addObject:@"Foot"];
+//			[infectionLocations addObject:@"Head"];
+//			[infectionLocations addObject:@"Chest"];
+			
+			[infectionLocations addObject:@"Lung"];
+			[infectionLocations addObject:@"Abdomen"];
+			[infectionLocations addObject:@"Urine"];
+			[infectionLocations addObject:@"CNS"];
+			[infectionLocations addObject:@"IV Catheter"];
+			[infectionLocations addObject:@"Skin/Tissue"];
+			[infectionLocations addObject:@"Unknown"];
 		}
 		
 		if (!infecLoc) {
@@ -40,7 +48,7 @@
 	float h = height.value;
 	float w = weight.value;
 	int patientLoc = patientLocation.selectedSegmentIndex;
-	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:infecLoc];
+	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc:infection?infecLoc:@""];
 	[self.navigationController pushViewController:[[DataEntryController alloc] initWithPatient:patient] animated:YES];
 }
 
@@ -84,13 +92,18 @@
 }
 
 -(IBAction) infectionChanged:(UISegmentedControl *)sender {
-	if (infectionPresent.selectedSegmentIndex == 0) {
-		[infectionLocationLabel setHidden:NO];
-		[infectionSource setHidden:NO];
-	} else {
-		[infectionLocationLabel setHidden:YES];
-		[infectionSource setHidden:YES];
-	}
+	infection = infectionPresent.selectedSegmentIndex == 0;
+	
+	infectionLocationLabel.hidden = !infection;
+	infectionSource.hidden = !infection;
+//	
+//	if (infectionPresent.selectedSegmentIndex == 0) {
+//		[infectionLocationLabel setHidden:NO];
+//		[infectionSource setHidden:NO];
+//	} else {
+//		[infectionLocationLabel setHidden:YES];
+//		[infectionSource setHidden:YES];
+//	}
 }
 
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {

@@ -28,6 +28,8 @@
 	NSMutableArray *infectionLocations;
 	NSString *infecLoc;
 	
+	BOOL infection;
+	
 	NSDictionary *symptoms;
 	
 	Patient *patient;

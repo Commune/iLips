@@ -8,12 +8,14 @@
 
 #import "DecisionFetcher.h"
 #import "BinaryDecisionViewController.h"
+#import "Patient.h"
 
 @implementation DecisionFetcher
 
 static NSDictionary *treatments;
 static NSDictionary *views;
 static NSMutableDictionary *responses;
+static Patient *patient;
 
 +(void)initialize {
     if(!treatments) {
@@ -31,15 +33,17 @@ static NSMutableDictionary *responses;
     }
 }
 
+
 +(void)resetDecisions {
     responses = [[[NSMutableDictionary alloc] init] retain];
+	[self addPatientProperties:patient];
 }
 
 +(UIViewController *)fetchNextViewAfter:(NSString *)nodeName {
     NSLog(@"%@",treatments);
     NSLog(@"%@",views);
     NSLog(@"%@",responses);
-
+	
     while ([responses objectForKey:nodeName]) {
         NSDictionary *treatmentOptions = [treatments objectForKey:nodeName];
         nodeName = [treatmentOptions objectForKey:[responses objectForKey:nodeName]];
@@ -59,6 +63,16 @@ static NSMutableDictionary *responses;
 
 +(void)assignResponse:(NSString *)questionName withValue:(NSString *)value {
     [responses setObject:value forKey:questionName];
+}
+
++(void)addPatientProperties:(Patient *)aPatient {
+	if(aPatient) {
+	patient = aPatient;
+	[patient retain];
+	[self assignResponse:@"Infection" withValue:[patient.infectionLocation isEqualToString:@""]?@"No":@"Yes"];
+	[self assignResponse:@"Infection Location" withValue:patient.infectionLocation];
+	[self assignResponse:@"Patient Location" withValue:patient.patientLocation];
+	}
 }
 
 @end

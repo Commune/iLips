@@ -50,7 +50,7 @@
 		<key>Title</key>
 		<string>Fluid Management</string>
 	</dict>
-	<key>Infection</key>
+	<key>Infection_DELETE</key>
 	<dict>
 		<key>Arguments</key>
 		<array>
@@ -60,6 +60,19 @@
 		<string>BinaryDecisionViewController</string>
 		<key>Title</key>
 		<string>Infection</string>
+	</dict>
+	<key>Infection-Lung</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / macrolide / 3rd gen cephalosporin )OR( Vancomycin /  fluoroquinolone )*Consider treatment for influenza</string>
+			<string>( Vancomycin / anti-pseudomonal PCN)OR( Vancomycin /  fluoroquinolone / Aminoglycoside )*Consider treatment for influenza</string>
+			<string>( Vancomycin / anti-pseudomonal PCN / macrolide )*Consider treatment for PCP, fungals, Tb*Consider treatment for influenza</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Lung</string>
 	</dict>
 	<key>Removable Source</key>
 	<dict>
@@ -72,6 +85,19 @@
 		<key>Title</key>
 		<string>Removable Source</string>
 	</dict>
+	<key>Infection-CNS</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / ceftriaxone )*Consider treatment for viral*Consider ampicillin for Listeria</string>
+			<string>( Vancomycin / cefepime )*Consider treatment for viral*Consider ampicillin for Listeria</string>
+			<string>( Vancomycin / cefepime / acyclovir / ampicillin )*Consider treatment for fungals, Tb</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Central Nervous System</string>
+	</dict>
 	<key>Respiratory Support</key>
 	<dict>
 		<key>Arguments</key>
@@ -83,6 +109,17 @@
 		<string>SuggestionViewController</string>
 		<key>Title</key>
 		<string>Respiratory Support</string>
+	</dict>
+	<key>Infection Location-RS</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>Infection Location</string>
+		</array>
+		<key>Class</key>
+		<string>AliasDummyScreen</string>
+		<key>Title</key>
+		<string>N/A</string>
 	</dict>
 	<key>Resuscitate</key>
 	<dict>

@@ -12,21 +12,40 @@
 	<key>Infection</key>
 	<dict>
 		<key>No</key>
-		<string>Fluids</string>
+		<string>Stop</string>
 		<key>Yes</key>
-		<string>Removable Source</string>
+		<string>Infection Location</string>
 	</dict>
-	<key>Removable Source</key>
+	<key>Infection Location</key>
 	<dict>
-		<key>No</key>
-		<string>Antibiotics</string>
-		<key>Yes</key>
-		<string>Antibiotics and Source Control</string>
+		<key>Abdomen</key>
+		<string>Infection-Abdomen</string>
+		<key>CNS</key>
+		<string>Infection-CNS</string>
+		<key>IV Catheter</key>
+		<string>Infection-IV Catheter</string>
+		<key>Lung</key>
+		<string>Infection-Lung</string>
+		<key>Skin/Tissue</key>
+		<string>Infection-Skin/Tissue</string>
+		<key>Unknown</key>
+		<string>Infection-Unknown</string>
+		<key>Urine</key>
+		<string>Infection-Urine</string>
+	</dict>
+	<key>Respiratory Status</key>
+	<dict>
+		<key>Intubation/Mechanical Ventilation Required</key>
+		<string></string>
+		<key>Non-Invasive Ventilation</key>
+		<string></string>
+		<key>Not Vented</key>
+		<string></string>
 	</dict>
 	<key>Score</key>
 	<dict>
 		<key>Default</key>
-		<string>Shock</string>
+		<string>Infection</string>
 	</dict>
 	<key>Shock</key>
 	<dict>
@@ -34,15 +53,6 @@
 		<string>Stop</string>
 		<key>Yes</key>
 		<string>Bleeding or Ischemia</string>
-	</dict>
-	<key>Respiratory Status</key>
-	<dict>
-		<key>Non-Invasive Ventilation</key>
-		<string></string>
-		<key>Not Vented</key>
-		<string></string>
-		<key>Intubation/Mechanical Ventilation Required</key>
-		<string></string>
 	</dict>
 </dict>
 </plist>
