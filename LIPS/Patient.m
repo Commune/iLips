@@ -61,12 +61,13 @@
 	NSString *mesurements = [NSString stringWithFormat:@"\nI am %0.0f inches tall, and weigh %0.1f kilograms.", height, weight];
 	NSString *pLoc = [NSString stringWithFormat:@"\nI am currently located in the %@", patientLocation];
 	NSString *iLoc = [NSString stringWithFormat:@"\nMy infection is currently located in my %@", infectionLocation];
-	NSString *symp = [NSString stringWithFormat:@"%@", symptoms];
-	NSString *conditionTitle = @"Conditions:";
+	NSString *conditionTitle = @"\nConditions:\n";
 	NSString *conditions = [self getConditions];
-	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@%@%@", gender, mesurements, pLoc, iLoc, symp, conditionTitle, conditions];
+	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@%@", gender, mesurements, pLoc, iLoc, conditionTitle, conditions];
 	NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 	[result writeToFile:[path stringByAppendingPathComponent:@"output.txt"] atomically:NO encoding:NSUTF8StringEncoding error:nil];
+	NSString *file = [[NSString alloc] initWithContentsOfFile:[path stringByAppendingPathComponent:@"output.txt"] encoding:NSUTF8StringEncoding error:nil];
+	NSLog(@"%@", file);
 }
 
 -(NSString *)getConditions {
@@ -75,8 +76,8 @@
 	NSString *key;
 	while ((key = [enumerator nextObject])) {
 		NSMutableDictionary *condition = [symptoms objectForKey:key];
-		if ([condition objectForKey:@"Present"] == [NSNumber numberWithBool:YES]) {
-			[result stringByAppendingString:key];
+		if ([condition objectForKey:@"Present"] == [NSNumber numberWithInt:YES]) {
+			result = [result stringByAppendingString:[NSString stringWithFormat:@"\n%@", key]];
 		}
 	}
 	return result;
@@ -89,7 +90,6 @@
 	while ((key = [enumerator nextObject])) {
 		NSMutableDictionary *condition = [symptoms objectForKey:key];
 		if ([condition objectForKey:@"Present"] == [NSNumber numberWithInt:1]) {
-			NSLog(@"Got here.");
 			total += [[condition objectForKey:@"Risk Factor"] floatValue];
 		}
 	}

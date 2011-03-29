@@ -80,6 +80,8 @@
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
 	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
 	
+	[thePatient printSelf];
+	
     [self.navigationController pushViewController:[[ScoreViewController alloc] initWithScore:total] animated:YES];
 }
 

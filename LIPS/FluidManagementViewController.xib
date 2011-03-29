@@ -51,7 +51,7 @@
 						<string key="NSFrame">{{72, 125}, {568, 23}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="130199701"/>
+						<reference key="NSNextKeyView" ref="187738355"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -107,9 +107,9 @@
 							<double key="NSSize">17</double>
 							<int key="NSfFlags">16</int>
 						</object>
-						<object class="NSColor" key="IBUITextColor" id="933018106">
+						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -129,7 +129,10 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Urine Output (ml/kg/hr)</string>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<object class="NSColor" key="IBUITextColor" id="563352400">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MQA</bytes>
+						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -148,7 +151,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">MAP (mm Hg)</string>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<reference key="IBUITextColor" ref="563352400"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -167,7 +170,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">6.0</string>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<reference key="IBUITextColor" ref="563352400"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -187,7 +190,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">1.00</string>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<reference key="IBUITextColor" ref="563352400"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -207,7 +210,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">90.0</string>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<reference key="IBUITextColor" ref="563352400"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -239,7 +242,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Off vasopressors for at least 12 hours?</string>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<reference key="IBUITextColor" ref="563352400"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -286,7 +289,10 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText"/>
 						<reference key="IBUIFont" ref="241368124"/>
-						<reference key="IBUITextColor" ref="933018106"/>
+						<object class="NSColor" key="IBUITextColor" id="933018106">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
+						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">13</float>
@@ -298,7 +304,7 @@
 						<string key="NSFrame">{{212, 155}, {289, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="579515244"/>
+						<reference key="NSNextKeyView" ref="130199701"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -310,10 +316,7 @@
 						</object>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">The patient's CVP is known.</string>
-						<object class="NSColor" key="IBUIHighlightedTitleColor">
-							<int key="NSColorSpace">3</int>
-							<bytes key="NSWhite">MQA</bytes>
-						</object>
+						<reference key="IBUIHighlightedTitleColor" ref="563352400"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
@@ -324,21 +327,12 @@
 						</object>
 					</object>
 				</object>
-				<string key="NSFrame">{{0, 20}, {768, 1004}}</string>
+				<string key="NSFrameSize">{768, 1004}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="187738355"/>
-				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
-				</object>
+				<reference key="NSNextKeyView" ref="579515244"/>
+				<reference key="IBUIBackgroundColor" ref="933018106"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>
 		</object>
@@ -492,15 +486,15 @@
 							<reference ref="222970048"/>
 							<reference ref="579515244"/>
 							<reference ref="130199701"/>
-							<reference ref="654553827"/>
 							<reference ref="704544654"/>
-							<reference ref="994991434"/>
 							<reference ref="794840668"/>
 							<reference ref="995142972"/>
-							<reference ref="811019757"/>
-							<reference ref="639634120"/>
 							<reference ref="1038850983"/>
 							<reference ref="187738355"/>
+							<reference ref="654553827"/>
+							<reference ref="811019757"/>
+							<reference ref="639634120"/>
+							<reference ref="994991434"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
