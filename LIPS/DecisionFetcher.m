@@ -40,9 +40,9 @@ static Patient *patient;
 }
 
 +(UIViewController *)fetchNextViewAfter:(NSString *)nodeName {
-    NSLog(@"%@",treatments);
-    NSLog(@"%@",views);
-    NSLog(@"%@",responses);
+//    NSLog(@"%@",treatments);
+//    NSLog(@"%@",views);
+//    NSLog(@"%@",responses);
 	
     while ([responses objectForKey:nodeName]) {
         NSDictionary *treatmentOptions = [treatments objectForKey:nodeName];
