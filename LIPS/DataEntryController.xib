@@ -881,7 +881,7 @@
 					<object class="IBUILabel" id="691990776">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{103, 486}, {132, 21}}</string>
+						<string key="NSFrame">{{103, 486}, {163, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="526700716"/>
@@ -891,6 +891,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Emergency Surgery</string>
+						<reference key="IBUIFont" ref="72887928"/>
 						<reference key="IBUITextColor" ref="881815307"/>
 						<reference key="IBUIHighlightedColor" ref="992855901"/>
 						<int key="IBUIBaselineAdjustment">1</int>

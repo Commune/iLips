@@ -94,16 +94,11 @@
 -(IBAction) infectionChanged:(UISegmentedControl *)sender {
 	infection = infectionPresent.selectedSegmentIndex == 0;
 	
+	infecLoc = [infectionLocations objectAtIndex:[infectionSource selectedRowInComponent:0]];
+	
 	infectionLocationLabel.hidden = !infection;
 	infectionSource.hidden = !infection;
-//	
-//	if (infectionPresent.selectedSegmentIndex == 0) {
-//		[infectionLocationLabel setHidden:NO];
-//		[infectionSource setHidden:NO];
-//	} else {
-//		[infectionLocationLabel setHidden:YES];
-//		[infectionSource setHidden:YES];
-//	}
+
 }
 
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {

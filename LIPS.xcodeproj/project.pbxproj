@@ -23,7 +23,6 @@
 		6351B9C4131E14BC003D8A6A /* DataEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6351B9C2131E14AE003D8A6A /* DataEntryController.m */; };
 		6351B9C5131E14BC003D8A6A /* DataEntryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6351B9C3131E14B4003D8A6A /* DataEntryController.xib */; };
 		6357BCA9131AADB400AD8190 /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6357BCA7131AADB400AD8190 /* SuggestionViewController.m */; };
-		6357BCAA131AADB400AD8190 /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */; };
 		636DBCB513405B7000AD6089 /* conditions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 636DBCB413405B7000AD6089 /* conditions.plist */; };
 		636DBCC013405E1000AD6089 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCB813405E0F00AD6089 /* NSObject+SBJSON.m */; };
 		636DBCC113405E1000AD6089 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCBA13405E1000AD6089 /* NSString+SBJSON.m */; };
@@ -36,6 +35,7 @@
 		636DBCD31340680200AD6089 /* PatientsDatabase.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 636DBCD21340680200AD6089 /* PatientsDatabase.sqlite */; };
 		636DBCD513406AFC00AD6089 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DBCD413406AFC00AD6089 /* libsqlite3.0.dylib */; };
 		6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6395CEAF13314CEC00617C76 /* Entitlements.plist */; };
+		639CF3CC1341B4E100E8D5AE /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */; };
 		63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */; };
 		63DF4FE0131EE2C700B285BD /* MultipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */; };
 		63F0E12E1318CAF000FB6ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12D1318CAF000FB6ADD /* UIKit.framework */; };
@@ -60,7 +60,6 @@
 		63F621371331434100ABAEB0 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621341331434100ABAEB0 /* icon.psd */; };
 		63F6213B1331444700ABAEB0 /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F621391331444700ABAEB0 /* bigicon.png */; };
 		63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F6213A1331444700ABAEB0 /* bigicon.psd */; };
-		A003CD67133A772D00425396 /* conditions.plist in Resources */ = {isa = PBXBuildFile; fileRef = A003CD66133A772D00425396 /* conditions.plist */; };
 		A008E3311337D20E00C828D1 /* PatientInfoScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */; };
 		A0E8995813391BB200B46495 /* PatientInfoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E8995713391BB200B46495 /* PatientInfoScreen.xib */; };
 		A0FFC53613341D4500A425EC /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFC53513341D4500A425EC /* Patient.m */; };
@@ -99,7 +98,6 @@
 		6351B9C3131E14B4003D8A6A /* DataEntryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataEntryController.xib; path = LIPS/DataEntryController.xib; sourceTree = "<group>"; };
 		6357BCA6131AADB400AD8190 /* SuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuggestionViewController.h; path = LIPS/SuggestionViewController.h; sourceTree = "<group>"; };
 		6357BCA7131AADB400AD8190 /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuggestionViewController.m; path = LIPS/SuggestionViewController.m; sourceTree = "<group>"; };
-		6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuggestionViewController.xib; path = LIPS/SuggestionViewController.xib; sourceTree = "<group>"; };
 		636C15BA1331718C00A8506B /* LIPSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIPSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		636DBCB413405B7000AD6089 /* conditions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conditions.plist; sourceTree = "<group>"; };
 		636DBCB713405E0F00AD6089 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "LIPS/NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -122,6 +120,7 @@
 		636DBCD21340680200AD6089 /* PatientsDatabase.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = PatientsDatabase.sqlite; path = LIPS/PatientsDatabase.sqlite; sourceTree = "<group>"; };
 		636DBCD413406AFC00AD6089 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6395CEAF13314CEC00617C76 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuggestionViewController.xib; path = LIPS/SuggestionViewController.xib; sourceTree = "<group>"; };
 		63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleChoiceViewController.h; path = LIPS/MultipleChoiceViewController.h; sourceTree = "<group>"; };
 		63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultipleChoiceViewController.m; path = LIPS/MultipleChoiceViewController.m; sourceTree = "<group>"; };
 		63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MultipleChoiceViewController.xib; path = LIPS/MultipleChoiceViewController.xib; sourceTree = "<group>"; };
@@ -213,13 +212,13 @@
 		6336E742131E628800CF9851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */,
 				A0E8995713391BB200B46495 /* PatientInfoScreen.xib */,
 				6351B9A3131DD57F003D8A6A /* views.plist */,
 				63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */,
 				6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */,
 				6351B9C3131E14B4003D8A6A /* DataEntryController.xib */,
 				63F0E13F1318CAF000FB6ADD /* MainWindow.xib */,
-				6357BCA8131AADB400AD8190 /* SuggestionViewController.xib */,
 				63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */,
 				63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */,
 				630CDF71131D5858006B2305 /* FluidManagementViewController.xib */,
@@ -432,7 +431,6 @@
 				63F0E1411318CAF000FB6ADD /* MainWindow.xib in Resources */,
 				63F0E1471318CAF000FB6ADD /* LIPSViewController.xib in Resources */,
 				63F0E17A1318CD4600FB6ADD /* ScoreViewController.xib in Resources */,
-				6357BCAA131AADB400AD8190 /* SuggestionViewController.xib in Resources */,
 				630CDF73131D585B006B2305 /* FluidManagementViewController.xib in Resources */,
 				6351B999131DD0F1003D8A6A /* treatments.plist in Resources */,
 				6351B9A4131DD57F003D8A6A /* views.plist in Resources */,
@@ -453,6 +451,7 @@
 				636DBCB513405B7000AD6089 /* conditions.plist in Resources */,
 				636DBCD31340680200AD6089 /* PatientsDatabase.sqlite in Resources */,
 				6323DECB13412BC3006BC1A6 /* InfectionViewController.xib in Resources */,
+				639CF3CC1341B4E100E8D5AE /* SuggestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
