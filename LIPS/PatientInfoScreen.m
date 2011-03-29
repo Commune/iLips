@@ -18,11 +18,6 @@
 	if (self) {
 		if (!infectionLocations) {
 			infectionLocations = [[NSMutableArray alloc] init];
-//			[infectionLocations addObject:@"Arm"];
-//			[infectionLocations addObject:@"Leg"];
-//			[infectionLocations addObject:@"Foot"];
-//			[infectionLocations addObject:@"Head"];
-//			[infectionLocations addObject:@"Chest"];
 			
 			[infectionLocations addObject:@"Lung"];
 			[infectionLocations addObject:@"Abdomen"];
