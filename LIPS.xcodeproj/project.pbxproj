@@ -60,10 +60,6 @@
 		63F621371331434100ABAEB0 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621341331434100ABAEB0 /* icon.psd */; };
 		63F6213B1331444700ABAEB0 /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F621391331444700ABAEB0 /* bigicon.png */; };
 		63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F6213A1331444700ABAEB0 /* bigicon.psd */; };
-		63F8B73D13419A1600AA1E6C /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F8B73813419A1600AA1E6C /* switchBlueBg.png */; };
-		63F8B73E13419A1600AA1E6C /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F8B73913419A1600AA1E6C /* switchOffPlain.png */; };
-		63F8B73F13419A1600AA1E6C /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F8B73A13419A1600AA1E6C /* switchThumb.png */; };
-		63F8B74013419A1600AA1E6C /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F8B73C13419A1600AA1E6C /* UICustomSwitch.m */; };
 		A008E3311337D20E00C828D1 /* PatientInfoScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */; };
 		A0E8995813391BB200B46495 /* PatientInfoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E8995713391BB200B46495 /* PatientInfoScreen.xib */; };
 		A0FFC53613341D4500A425EC /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFC53513341D4500A425EC /* Patient.m */; };
@@ -155,11 +151,6 @@
 		63F621341331434100ABAEB0 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
 		63F621391331444700ABAEB0 /* bigicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigicon.png; sourceTree = "<group>"; };
 		63F6213A1331444700ABAEB0 /* bigicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigicon.psd; sourceTree = "<group>"; };
-		63F8B73813419A1600AA1E6C /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switchBlueBg.png; path = ../../../Downloads/UICustomSwitch/switchBlueBg.png; sourceTree = "<group>"; };
-		63F8B73913419A1600AA1E6C /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switchOffPlain.png; path = ../../../Downloads/UICustomSwitch/switchOffPlain.png; sourceTree = "<group>"; };
-		63F8B73A13419A1600AA1E6C /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switchThumb.png; path = ../../../Downloads/UICustomSwitch/switchThumb.png; sourceTree = "<group>"; };
-		63F8B73B13419A1600AA1E6C /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICustomSwitch.h; path = ../../../Downloads/UICustomSwitch/UICustomSwitch.h; sourceTree = "<group>"; };
-		63F8B73C13419A1600AA1E6C /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICustomSwitch.m; path = ../../../Downloads/UICustomSwitch/UICustomSwitch.m; sourceTree = "<group>"; };
 		A008E32E1337D20E00C828D1 /* PatientInfoScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientInfoScreen.h; path = LIPS/PatientInfoScreen.h; sourceTree = "<group>"; };
 		A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientInfoScreen.m; path = LIPS/PatientInfoScreen.m; sourceTree = "<group>"; };
 		A0E8995713391BB200B46495 /* PatientInfoScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientInfoScreen.xib; path = LIPS/PatientInfoScreen.xib; sourceTree = "<group>"; };
@@ -283,7 +274,6 @@
 		63F0E11E1318CAF000FB6ADD = {
 			isa = PBXGroup;
 			children = (
-				63F8B73613419A0400AA1E6C /* UICustomSwitch */,
 				636DBCD413406AFC00AD6089 /* libsqlite3.0.dylib */,
 				636DBCC81340642300AD6089 /* SQLite */,
 				636DBCC413405E1900AD6089 /* JSON */,
@@ -367,18 +357,6 @@
 				63F0E1591318CAF000FB6ADD /* LIPSTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		63F8B73613419A0400AA1E6C /* UICustomSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				63F8B73813419A1600AA1E6C /* switchBlueBg.png */,
-				63F8B73913419A1600AA1E6C /* switchOffPlain.png */,
-				63F8B73A13419A1600AA1E6C /* switchThumb.png */,
-				63F8B73B13419A1600AA1E6C /* UICustomSwitch.h */,
-				63F8B73C13419A1600AA1E6C /* UICustomSwitch.m */,
-			);
-			name = UICustomSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,9 +451,6 @@
 				636DBCB513405B7000AD6089 /* conditions.plist in Resources */,
 				636DBCD31340680200AD6089 /* PatientsDatabase.sqlite in Resources */,
 				6323DECB13412BC3006BC1A6 /* InfectionViewController.xib in Resources */,
-				63F8B73D13419A1600AA1E6C /* switchBlueBg.png in Resources */,
-				63F8B73E13419A1600AA1E6C /* switchOffPlain.png in Resources */,
-				63F8B73F13419A1600AA1E6C /* switchThumb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,7 +507,6 @@
 				636DBCCE134064CD00AD6089 /* PatientEntry.m in Sources */,
 				636DBCD11340658900AD6089 /* NSString+DB.m in Sources */,
 				6323DECA13412BC3006BC1A6 /* InfectionViewController.m in Sources */,
-				63F8B74013419A1600AA1E6C /* UICustomSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
