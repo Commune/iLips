@@ -59,7 +59,9 @@
 {
     [super viewDidLoad];
 	suggestionWebView.userInteractionEnabled = NO;
-	[suggestionWebView loadHTMLString:text baseURL:nil];
+	NSString *style = @"body { color: white; background-color: black }";
+	NSString *htmlString = [NSString stringWithFormat:@"<html><head><style>%@</style></head><body>%@</body></html>",style,text];
+	[suggestionWebView loadHTMLString:htmlString baseURL:nil];
 	if(moreView) {
 		moreButton.hidden = NO;
 	}

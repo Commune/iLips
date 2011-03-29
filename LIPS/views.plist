@@ -50,17 +50,6 @@
 		<key>Title</key>
 		<string>Fluid Management</string>
 	</dict>
-	<key>Infection Location-RS</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Infection Location</string>
-		</array>
-		<key>Class</key>
-		<string>AliasDummyScreen</string>
-		<key>Title</key>
-		<string>N/A</string>
-	</dict>
 	<key>Infection-CNS</key>
 	<dict>
 		<key>Arguments</key>
