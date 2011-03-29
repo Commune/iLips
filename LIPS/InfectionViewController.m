@@ -23,12 +23,18 @@
 }
 
 - (void)initAdvice:(BOOL)hasRemovableSource {
+	
+	NSString *style = @"body { color: white; background-color: black }";
+
 	NSString* basicAdvice = @"<ul><font size=\"5\">Antibiotics</font> <li>Administer antibiotics within 6 hours of presentation.</ul>";
 	NSMutableString* adviceSource = [[NSMutableString alloc] initWithString:basicAdvice];
 	if(hasRemovableSource) {
 		[adviceSource appendString:@"<ul><font size=\"5\">Source Control</font><li> Early Imaging to confirm source if appropriate<li> Early Surgical/interventional evaluation if appropriate<li> Early Drainage of purulent collection or removal of infected device if relevant</ul>"];
 	}
-	[advice loadHTMLString:adviceSource baseURL:nil];
+	
+	NSString *htmlString = [NSString stringWithFormat:@"<html><head><style>%@</style></head><body>%@</body></html>",style,adviceSource];
+	
+	[advice loadHTMLString:htmlString baseURL:nil];
 	advice.userInteractionEnabled = NO;
 }
 
