@@ -24,7 +24,7 @@
 
 - (void)initAdvice:(BOOL)hasRemovableSource {
 	
-	NSString *style = @"body { color: white; background-color: black }";
+	NSString *style = @"body { color: white; background-color: black; font-family: sans-serif }";
 
 	NSString* basicAdvice = @"<ul><font size=\"5\">Antibiotics</font> <li>Administer antibiotics within 6 hours of presentation.</ul>";
 	NSMutableString* adviceSource = [[NSMutableString alloc] initWithString:basicAdvice];

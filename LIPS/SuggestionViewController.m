@@ -59,7 +59,7 @@
 {
     [super viewDidLoad];
 	suggestionWebView.userInteractionEnabled = NO;
-	NSString *style = @"body { color: white; background-color: black }";
+	NSString *style = @"body { color: white; background-color: black; font-family: sans-serif }";
 	NSString *htmlString = [NSString stringWithFormat:@"<html><head><style>%@</style></head><body>%@</body></html>",style,text];
 	[suggestionWebView loadHTMLString:htmlString baseURL:nil];
 	if(moreView) {

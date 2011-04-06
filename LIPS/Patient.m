@@ -98,8 +98,7 @@
 }
 
 -(float)getAdditionalRisks {
-	float mheight = height * 0.0254;
-	int bmi = weight / powf(mheight, 2);
+	int bmi = weight / powf(height, 2);
 	NSMutableDictionary *condition  = [symptoms objectForKey:@"Obesity"];
 	if (bmi > 30) {
 		[condition setObject:[NSNumber numberWithBool:YES] forKey:@"Present"];

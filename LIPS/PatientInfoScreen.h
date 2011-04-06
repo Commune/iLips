@@ -24,10 +24,16 @@
 	IBOutlet UILabel *infectionLocationLabel;
 	IBOutlet UIPickerView *infectionSource;
 	IBOutlet UISegmentedControl *patientLocation;
-	
+    IBOutlet UISegmentedControl *unitSelector;
+    
 	NSMutableArray *infectionLocations;
 	NSString *infecLoc;
-	
+    
+    NSString *heightUnit;
+    NSString *weightUnit;
+    IBOutlet UILabel *heightUnitLabel;
+    IBOutlet UILabel *weightUnitLabel;
+    
 	BOOL infection;
 	
 	NSDictionary *symptoms;
@@ -42,5 +48,6 @@
 -(IBAction) heightTextChanged:(UITextField *) sender;
 -(IBAction) weightTextChanged:(UITextField *) sender;
 -(IBAction) infectionChanged:(UISegmentedControl *) sender;
+-(IBAction) unitSwitched:(UISegmentedControl *)sender;
 
 @end
