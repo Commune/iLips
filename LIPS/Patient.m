@@ -21,12 +21,12 @@
 	sex = gender;
 	height = h;
 	weight = w;
-	infectionLocation = [[NSString alloc] initWithString:infectionLoc];
 	patientLocation = [self getPatientLocation:patientLoc];
 	[self initializeSymptoms];
 	[self getAdditionalRisks];	
 	sqliteAdapter = [[SQLiteAdapter alloc] init];
 	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
+	infectionLocation = [[NSString alloc] init];
 	[DecisionFetcher addPatientProperties:self];
 	return self;
 }
@@ -56,6 +56,10 @@
 -(void)initializeSymptoms {
 	NSString *finalPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"conditions.plist"];
 	symptoms = [[NSMutableDictionary alloc] initWithContentsOfFile:finalPath];
+}
+
+-(void)setInfectionLocation:(NSString *)infecLoc {
+	[infectionLocation initWithString:infecLoc];
 }
 
 -(void) printSelf {

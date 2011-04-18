@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">1056</int>
-		<string key="IBDocument.SystemVersion">10J567</string>
+		<string key="IBDocument.SystemVersion">10J869</string>
 		<string key="IBDocument.InterfaceBuilderVersion">1305</string>
 		<string key="IBDocument.AppKitVersion">1038.35</string>
-		<string key="IBDocument.HIToolboxVersion">462.00</string>
+		<string key="IBDocument.HIToolboxVersion">461.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">300</string>
@@ -17,7 +17,6 @@
 			<string>IBUILabel</string>
 			<string>IBUITextField</string>
 			<string>IBUISegmentedControl</string>
-			<string>IBUIPickerView</string>
 			<string>IBUISlider</string>
 			<string>IBUIButton</string>
 		</object>
@@ -186,29 +185,6 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">25</float>
 					</object>
-					<object class="IBUILabel" id="807585396">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{79, 381}, {196, 37}}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="395968780"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">Infection Present</string>
-						<reference key="IBUIFont" ref="948418736"/>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<reference key="NSCustomColorSpace" ref="790057679"/>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">25</float>
-					</object>
 					<object class="IBUILabel" id="771370503">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
@@ -222,29 +198,6 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Patient Location</string>
-						<reference key="IBUIFont" ref="948418736"/>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<reference key="NSCustomColorSpace" ref="790057679"/>
-						</object>
-						<nil key="IBUIHighlightedColor"/>
-						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">25</float>
-					</object>
-					<object class="IBUILabel" id="592765450">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">-2147483347</int>
-						<string key="NSFrame">{{187, 445}, {88, 37}}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="165965608"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClipsSubviews">YES</bool>
-						<int key="IBUIContentMode">7</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<string key="IBUIText">Where?</string>
 						<reference key="IBUIFont" ref="948418736"/>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
@@ -291,7 +244,6 @@
 						<string key="NSFrame">{{344, 761}, {207, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -350,7 +302,7 @@
 						<string key="NSFrame">{{374, 327}, {55, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="807585396"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -366,54 +318,6 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
-					</object>
-					<object class="IBUISegmentedControl" id="395968780">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{344, 381}, {207, 44}}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="592765450"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<int key="IBSegmentControlStyle">3</int>
-						<int key="IBNumberOfSegments">2</int>
-						<int key="IBSelectedSegmentIndex">1</int>
-						<object class="NSArray" key="IBSegmentTitles">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>Yes</string>
-							<string>No</string>
-						</object>
-						<object class="NSMutableArray" key="IBSegmentWidths">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<real value="0.0"/>
-							<real value="0.0"/>
-						</object>
-						<object class="NSMutableArray" key="IBSegmentEnabledStates">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<boolean value="YES"/>
-							<boolean value="YES"/>
-						</object>
-						<object class="NSMutableArray" key="IBSegmentContentOffsets">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>{0, 0}</string>
-							<string>{0, 0}</string>
-						</object>
-						<object class="NSMutableArray" key="IBSegmentImages">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="4"/>
-							<reference ref="4"/>
-						</object>
-					</object>
-					<object class="IBUIPickerView" id="165965608">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">-2147483347</int>
-						<string key="NSFrame">{{344, 443}, {207, 216}}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="771370503"/>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<bool key="IBUIShowsSelectionIndicator">YES</bool>
 					</object>
 					<object class="IBUISegmentedControl" id="518661756">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -729,55 +633,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">dataSource</string>
-						<reference key="source" ref="165965608"/>
-						<reference key="destination" ref="841351856"/>
-					</object>
-					<int key="connectionID">32</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">infectionLocationLabel</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="592765450"/>
-					</object>
-					<int key="connectionID">33</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">infectionPresent</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="395968780"/>
-					</object>
-					<int key="connectionID">34</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">infectionSource</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="165965608"/>
-					</object>
-					<int key="connectionID">35</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">infectionChanged:</string>
-						<reference key="source" ref="395968780"/>
-						<reference key="destination" ref="841351856"/>
-						<int key="IBEventType">13</int>
-					</object>
-					<int key="connectionID">36</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">delegate</string>
-						<reference key="source" ref="165965608"/>
-						<reference key="destination" ref="841351856"/>
-					</object>
-					<int key="connectionID">37</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">patientLocation</string>
 						<reference key="source" ref="841351856"/>
 						<reference key="destination" ref="518661756"/>
@@ -902,10 +757,6 @@
 							<reference ref="702590714"/>
 							<reference ref="406120018"/>
 							<reference ref="33806382"/>
-							<reference ref="807585396"/>
-							<reference ref="395968780"/>
-							<reference ref="592765450"/>
-							<reference ref="165965608"/>
 							<reference ref="771370503"/>
 							<reference ref="518661756"/>
 							<reference ref="40594527"/>
@@ -971,26 +822,6 @@
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">25</int>
-						<reference key="object" ref="807585396"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">26</int>
-						<reference key="object" ref="395968780"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="592765450"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">31</int>
-						<reference key="object" ref="165965608"/>
-						<reference key="parent" ref="766721923"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">38</int>
 						<reference key="object" ref="771370503"/>
 						<reference key="parent" ref="766721923"/>
@@ -1046,11 +877,6 @@
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
 					<string>20.IBPluginDependency</string>
-					<string>25.IBPluginDependency</string>
-					<string>26.IBPluginDependency</string>
-					<string>26.IUISegmentedControlInspectorSelectedSegmentMetadataKey</string>
-					<string>27.IBPluginDependency</string>
-					<string>31.IBPluginDependency</string>
 					<string>38.IBPluginDependency</string>
 					<string>39.IBPluginDependency</string>
 					<string>39.IUISegmentedControlInspectorSelectedSegmentMetadataKey</string>
@@ -1076,11 +902,6 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{353, 156}, {1024, 768}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<integer value="0"/>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -1194,9 +1015,6 @@
 							<string>heightText</string>
 							<string>heightUnitLabel</string>
 							<string>heightVal</string>
-							<string>infectionLocationLabel</string>
-							<string>infectionPresent</string>
-							<string>infectionSource</string>
 							<string>patientLocation</string>
 							<string>sex</string>
 							<string>submit</string>
@@ -1212,9 +1030,6 @@
 							<string>UITextField</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
-							<string>UILabel</string>
-							<string>UISegmentedControl</string>
-							<string>UIPickerView</string>
 							<string>UISegmentedControl</string>
 							<string>UISegmentedControl</string>
 							<string>UIButton</string>
@@ -1233,9 +1048,6 @@
 							<string>heightText</string>
 							<string>heightUnitLabel</string>
 							<string>heightVal</string>
-							<string>infectionLocationLabel</string>
-							<string>infectionPresent</string>
-							<string>infectionSource</string>
 							<string>patientLocation</string>
 							<string>sex</string>
 							<string>submit</string>
@@ -1262,18 +1074,6 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">heightVal</string>
 								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">infectionLocationLabel</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">infectionPresent</string>
-								<string key="candidateClassName">UISegmentedControl</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">infectionSource</string>
-								<string key="candidateClassName">UIPickerView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">patientLocation</string>

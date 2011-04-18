@@ -11,7 +11,7 @@
 #import "DataEntryController.h"
 
 
-@interface PatientInfoScreen : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+@interface PatientInfoScreen : UIViewController {
 	IBOutlet UISegmentedControl *sex;
 	IBOutlet UISlider *height;
 	IBOutlet UISlider *weight;
@@ -20,21 +20,13 @@
 	IBOutlet UILabel *weightVal;
 	IBOutlet UITextField *heightText;
 	IBOutlet UITextField *weightText;
-	IBOutlet UISegmentedControl *infectionPresent;
-	IBOutlet UILabel *infectionLocationLabel;
-	IBOutlet UIPickerView *infectionSource;
 	IBOutlet UISegmentedControl *patientLocation;
     IBOutlet UISegmentedControl *unitSelector;
-    
-	NSMutableArray *infectionLocations;
-	NSString *infecLoc;
     
     NSString *heightUnit;
     NSString *weightUnit;
     IBOutlet UILabel *heightUnitLabel;
     IBOutlet UILabel *weightUnitLabel;
-    
-	BOOL infection;
 	
 	NSDictionary *symptoms;
 	
@@ -47,7 +39,6 @@
 -(IBAction) weightSliderChanged:(UISlider *) sender;
 -(IBAction) heightTextChanged:(UITextField *) sender;
 -(IBAction) weightTextChanged:(UITextField *) sender;
--(IBAction) infectionChanged:(UISegmentedControl *) sender;
 -(IBAction) unitSwitched:(UISegmentedControl *)sender;
 
 @end

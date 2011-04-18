@@ -18,6 +18,24 @@
 	if (self == [super init]) {
 		thePatient = p;
 		self.navigationItem.hidesBackButton = NO;
+		
+		if (!infectionLocations) {
+		
+			infectionLocations = [[NSMutableArray alloc] init];
+		
+			[infectionLocations addObject:@"Lung"];
+			[infectionLocations addObject:@"Abdomen"];
+			[infectionLocations addObject:@"Urine"];
+			[infectionLocations addObject:@"CNS"];
+			[infectionLocations addObject:@"IV Catheter"];
+			[infectionLocations addObject:@"Skin/Tissue"];
+			[infectionLocations addObject:@"Unknown"];
+		}
+		
+		if (!infecLoc) {
+			infecLoc = [[NSString alloc] init];
+
+		}
 	}
 	return self;
 }
@@ -70,6 +88,18 @@
 	}
 }
 
+-(IBAction) infectionChanged:(UISegmentedControl *)sender {
+	NSLog(@"%@", infecLoc);
+	int infecPresent = [sender selectedSegmentIndex];
+	infectionSource.hidden = infecPresent;
+	sepsisLabel.hidden = infecPresent;
+	sepsisSwitch.hidden = infecPresent;
+	if ([infecLoc isEqualToString:@"Lung"] && infecPresent) {
+		pneumoniaLabel.hidden = infecPresent;
+		pneumoniaLabel.hidden = infecPresent;
+	}
+}
+
 
 - (IBAction)submit:(id)sender {
 	// Add patient to SQLite database
@@ -83,6 +113,22 @@
 	[thePatient printSelf];
 	
     [self.navigationController pushViewController:[[ScoreViewController alloc] initWithScore:total] animated:YES];
+}
+
+-(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+	return 1;
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+	return [infectionLocations count];
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+	return [infectionLocations objectAtIndex:row];
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+	infecLoc = [infectionLocations objectAtIndex:row];
 }
 
 - (void)dealloc

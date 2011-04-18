@@ -14,6 +14,7 @@
 #import "DecisionFetcher.h"
 #import "BinaryDecisionViewController.h"
 #import "PatientInfoScreen.h"
+#import "PasswordViewController.h"
 
 @implementation LIPSViewController
 
@@ -22,7 +23,7 @@
     navController = [[UINavigationController alloc] initWithRootViewController:self];
     [navController setDelegate:self];
     
-    [navController pushViewController:[[PatientInfoScreen alloc] init] animated:NO];
+    [navController pushViewController:[[PasswordViewController alloc] init] animated:NO];
     
     self.view = navController.view;
 }
