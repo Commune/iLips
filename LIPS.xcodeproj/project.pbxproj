@@ -145,7 +145,7 @@
 		63F0E1761318CD4600FB6ADD /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScoreViewController.h; path = LIPS/ScoreViewController.h; sourceTree = "<group>"; };
 		63F0E1771318CD4600FB6ADD /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreViewController.m; path = LIPS/ScoreViewController.m; sourceTree = "<group>"; };
 		63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScoreViewController.xib; path = LIPS/ScoreViewController.xib; sourceTree = "<group>"; };
-		63F293A01331700A00338589 /* iLIPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLIPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F293A01331700A00338589 /* eCLIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCLIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F621321331434100ABAEB0 /* Default-Landscape.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-Landscape.psd"; sourceTree = "<group>"; };
 		63F621331331434100ABAEB0 /* Default-Portrait.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-Portrait.psd"; sourceTree = "<group>"; };
 		63F621341331434100ABAEB0 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
@@ -301,7 +301,7 @@
 		63F0E12A1318CAF000FB6ADD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63F293A01331700A00338589 /* iLIPS.app */,
+				63F293A01331700A00338589 /* eCLIP.app */,
 				636C15BA1331718C00A8506B /* LIPSTests.octest */,
 			);
 			name = Products;
@@ -363,9 +363,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63F0E1281318CAF000FB6ADD /* iLIPS */ = {
+		63F0E1281318CAF000FB6ADD /* eCLIP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63F0E1601318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "iLIPS" */;
+			buildConfigurationList = 63F0E1601318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "eCLIP" */;
 			buildPhases = (
 				63F0E1251318CAF000FB6ADD /* Sources */,
 				63F0E1261318CAF000FB6ADD /* Frameworks */,
@@ -375,9 +375,9 @@
 			);
 			dependencies = (
 			);
-			name = iLIPS;
+			name = eCLIP;
 			productName = LIPS;
-			productReference = 63F293A01331700A00338589 /* iLIPS.app */;
+			productReference = 63F293A01331700A00338589 /* eCLIP.app */;
 			productType = "com.apple.product-type.application";
 		};
 		63F0E14C1318CAF000FB6ADD /* LIPSTests */ = {
@@ -416,7 +416,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63F0E1281318CAF000FB6ADD /* iLIPS */,
+				63F0E1281318CAF000FB6ADD /* eCLIP */,
 				63F0E14C1318CAF000FB6ADD /* LIPSTests */,
 			);
 		};
@@ -524,7 +524,7 @@
 /* Begin PBXTargetDependency section */
 		63F0E1521318CAF000FB6ADD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63F0E1281318CAF000FB6ADD /* iLIPS */;
+			target = 63F0E1281318CAF000FB6ADD /* eCLIP */;
 			targetProxy = 63F0E1511318CAF000FB6ADD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -751,7 +751,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63F0E1601318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "iLIPS" */ = {
+		63F0E1601318CAF000FB6ADD /* Build configuration list for PBXNativeTarget "eCLIP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63F0E1611318CAF000FB6ADD /* Debug */,

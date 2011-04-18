@@ -14,7 +14,9 @@
 
 @implementation Patient
 
-
+/*
+ Initializer method to create a patient using data from patient info screen
+ */
 -(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc {
 	sex = gender;
 	height = h;
@@ -29,6 +31,9 @@
 	return self;
 }
 
+/*
+ Returns internal name for patient location from the index of a segment of the segmented control on the patient info screen
+ */
 -(NSString *)getPatientLocation:(int)patientLoc {
 	if (patientLoc == 0) {
 		return @"ICU";
@@ -45,6 +50,9 @@
 	}
 }
 
+/*
+ Loads the patient symptoms with LIPS score weights and initial values from a plist
+ */
 -(void)initializeSymptoms {
 	NSString *finalPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"conditions.plist"];
 	symptoms = [[NSMutableDictionary alloc] initWithContentsOfFile:finalPath];
