@@ -10,7 +10,7 @@
 #import "Patient.h"
 
 
-@interface DataEntryController : UIViewController {
+@interface DataEntryController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     UIView *portraitView;
     UIView *landscapeView;
 	
@@ -37,7 +37,15 @@
 	IBOutlet UISwitch *diabetesSwitch;
 	IBOutlet UISwitch *emergencySwitch;
 	
+	IBOutlet UISegmentedControl *infectionPresent;
+	IBOutlet UIPickerView *infectionSource;
+	
 	Patient *thePatient;
+	
+	NSMutableArray *infectionLocations;
+	NSString *infecLoc;
+	BOOL infection;
+
 }
 
 -(IBAction) submit:(id)sender;

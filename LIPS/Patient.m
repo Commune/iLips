@@ -15,17 +15,19 @@
 @implementation Patient
 
 
--(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc {
+-(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc{
 	sex = gender;
 	height = h;
 	weight = w;
-	infectionLocation = [[NSString alloc] initWithString:infectionLoc];
 	patientLocation = [self getPatientLocation:patientLoc];
 	[self initializeSymptoms];
 	[self getAdditionalRisks];	
 	sqliteAdapter = [[SQLiteAdapter alloc] init];
 	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
 	[DecisionFetcher addPatientProperties:self];
+	if (!infectionLocation) {
+		infectionLocation = [[NSString alloc] init];
+	}
 	return self;
 }
 
@@ -48,6 +50,10 @@
 -(void)initializeSymptoms {
 	NSString *finalPath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"conditions.plist"];
 	symptoms = [[NSMutableDictionary alloc] initWithContentsOfFile:finalPath];
+}
+
+-(void)setInfectionLocation:(NSString *)infecLoc {
+	[infectionLocation initWithString:infecLoc];
 }
 
 -(void) printSelf {

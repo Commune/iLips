@@ -26,7 +26,7 @@
 	
 }
 
--(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc;
+-(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc;
 -(void)printSelf;
 -(float)getAdditionalRisks;
 -(void)initializeSymptoms;
@@ -37,6 +37,7 @@
 -(NSString *)toJSON;
 -(NSString *)getID;
 -(int)addToLocalDatabase;
+-(void)setInfectionLocation:(NSString *)infecLoc;
 
 @property (assign) int sex;
 @property (assign) float weight, height;
