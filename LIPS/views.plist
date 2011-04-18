@@ -50,32 +50,6 @@
 		<key>Title</key>
 		<string>Fluid Management</string>
 	</dict>
-	<key>Infection-CNS</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / ceftriaxone )*Consider treatment for viral*Consider ampicillin for Listeria</string>
-			<string>( Vancomycin / cefepime )*Consider treatment for viral*Consider ampicillin for Listeria</string>
-			<string>( Vancomycin / cefepime / acyclovir / ampicillin )*Consider treatment for fungals, Tb</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Central Nervous System</string>
-	</dict>
-	<key>Infection-Lung</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / macrolide / 3rd gen cephalosporin )OR( Vancomycin /  fluoroquinolone )*Consider treatment for influenza</string>
-			<string>( Vancomycin / anti-pseudomonal PCN)OR( Vancomycin /  fluoroquinolone / Aminoglycoside )*Consider treatment for influenza</string>
-			<string>( Vancomycin / anti-pseudomonal PCN / macrolide )*Consider treatment for PCP, fungals, Tb*Consider treatment for influenza</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Lung</string>
-	</dict>
 	<key>Infection-Abdomen</key>
 	<dict>
 		<key>Arguments</key>
@@ -89,6 +63,19 @@
 		<key>Title</key>
 		<string>Infection in Abdomen</string>
 	</dict>
+	<key>Infection-CNS</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / ceftriaxone )*Consider treatment for viral*Consider ampicillin for Listeria</string>
+			<string>( Vancomycin / cefepime )*Consider treatment for viral*Consider ampicillin for Listeria</string>
+			<string>( Vancomycin / cefepime / acyclovir / ampicillin )*Consider treatment for fungals, Tb</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Central Nervous System</string>
+	</dict>
 	<key>Infection-IV Catheter</key>
 	<dict>
 		<key>Arguments</key>
@@ -101,6 +88,19 @@
 		<string>InfectionViewController</string>
 		<key>Title</key>
 		<string>Infection in IV Catheter</string>
+	</dict>
+	<key>Infection-Lung</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>( Vancomycin / macrolide / 3rd gen cephalosporin )OR( Vancomycin /  fluoroquinolone )*Consider treatment for influenza</string>
+			<string>( Vancomycin / anti-pseudomonal PCN)OR( Vancomycin /  fluoroquinolone / Aminoglycoside )*Consider treatment for influenza</string>
+			<string>( Vancomycin / anti-pseudomonal PCN / macrolide )*Consider treatment for PCP, fungals, Tb*Consider treatment for influenza</string>
+		</array>
+		<key>Class</key>
+		<string>InfectionViewController</string>
+		<key>Title</key>
+		<string>Infection in Lung</string>
 	</dict>
 	<key>Infection-Skin/Tissue</key>
 	<dict>
@@ -168,7 +168,7 @@
 	<dict>
 		<key>Arguments</key>
 		<array>
-			<string>Resuscitate with Isotonic crystalloid or colloid and transfuse with blood to obtain euvolemia, adequate urine output</string>
+			<string>Resuscitate with crystalloid or colloid and transfuse as needed to obtain euvolemia, consider CVP monitoring to prevent fluid overload (goal CVP 8-12)</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
