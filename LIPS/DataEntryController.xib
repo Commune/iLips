@@ -120,7 +120,7 @@
 					</object>
 					<object class="IBUISwitch" id="873843033">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">301</int>
+						<int key="NSvFlags">-2147483347</int>
 						<string key="NSFrame">{{223, 389}, {94, 27}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
@@ -133,7 +133,7 @@
 					</object>
 					<object class="IBUISwitch" id="321108871">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">301</int>
+						<int key="NSvFlags">-2147483347</int>
 						<string key="NSFrame">{{223, 424}, {94, 27}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
@@ -146,7 +146,7 @@
 					</object>
 					<object class="IBUILabel" id="167867519">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">301</int>
+						<int key="NSvFlags">-2147483347</int>
 						<string key="NSFrame">{{56, 393}, {77, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
@@ -166,7 +166,7 @@
 					</object>
 					<object class="IBUILabel" id="556954819">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">301</int>
+						<int key="NSvFlags">-2147483347</int>
 						<string key="NSFrame">{{56, 428}, {88, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
@@ -822,7 +822,7 @@
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="1069950012">
+							<object class="NSColorSpace" key="NSCustomColorSpace" id="377897187">
 								<int key="NSID">1</int>
 							</object>
 						</object>
@@ -864,13 +864,13 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 					</object>
-					<object class="IBUILabel" id="316134096">
+					<object class="IBUILabel" id="175103511">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{56, 20}, {153, 33}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="681032406"/>
+						<reference key="NSNextKeyView" ref="639745907"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -881,19 +881,19 @@
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<reference key="NSCustomColorSpace" ref="1069950012"/>
+							<reference key="NSCustomColorSpace" ref="377897187"/>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">17</float>
 					</object>
-					<object class="IBUISegmentedControl" id="681032406">
+					<object class="IBUISegmentedControl" id="639745907">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
 						<string key="NSFrame">{{223, 20}, {94, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="834411742"/>
+						<reference key="NSNextKeyView" ref="1041715662"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBSegmentControlStyle">3</int>
@@ -901,8 +901,8 @@
 						<int key="IBSelectedSegmentIndex">1</int>
 						<object class="NSArray" key="IBSegmentTitles">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>No</string>
 							<string>Yes</string>
+							<string>No</string>
 						</object>
 						<object class="NSMutableArray" key="IBSegmentWidths">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -925,7 +925,7 @@
 							<reference ref="4"/>
 						</object>
 					</object>
-					<object class="IBUIPickerView" id="834411742">
+					<object class="IBUIPickerView" id="1041715662">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483347</int>
 						<string key="NSFrame">{{127, 82}, {190, 216}}</string>
@@ -939,7 +939,7 @@
 				<string key="NSFrameSize">{768, 1004}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="316134096"/>
+				<reference key="NSNextKeyView" ref="175103511"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
 					<bytes key="NSRGB">MCAwIDAAA</bytes>
@@ -1001,14 +1001,6 @@
 						<int key="IBEventType">13</int>
 					</object>
 					<int key="connectionID">161</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">sepsisSwitch</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="370248238"/>
-					</object>
-					<int key="connectionID">162</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -1346,14 +1338,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">infectionPresent</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="681032406"/>
+						<reference key="destination" ref="639745907"/>
 					</object>
 					<int key="connectionID">208</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">infectionChanged:</string>
-						<reference key="source" ref="681032406"/>
+						<reference key="source" ref="639745907"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">13</int>
 					</object>
@@ -1363,17 +1355,49 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">infectionSource</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="834411742"/>
+						<reference key="destination" ref="1041715662"/>
 					</object>
 					<int key="connectionID">210</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">infectionLocationLabel</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="316134096"/>
+						<string key="label">dataSource</string>
+						<reference key="source" ref="1041715662"/>
+						<reference key="destination" ref="841351856"/>
 					</object>
-					<int key="connectionID">211</int>
+					<int key="connectionID">212</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="1041715662"/>
+						<reference key="destination" ref="841351856"/>
+					</object>
+					<int key="connectionID">213</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">sepsisLabel</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="167867519"/>
+					</object>
+					<int key="connectionID">214</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">pneumoniaLabel</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="556954819"/>
+					</object>
+					<int key="connectionID">215</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">sepsisSwitch</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="873843033"/>
+					</object>
+					<int key="connectionID">216</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1405,7 +1429,6 @@
 							<reference ref="685719365"/>
 							<reference ref="312673619"/>
 							<reference ref="370248238"/>
-							<reference ref="873843033"/>
 							<reference ref="321108871"/>
 							<reference ref="167867519"/>
 							<reference ref="556954819"/>
@@ -1449,9 +1472,10 @@
 							<reference ref="542156649"/>
 							<reference ref="691990776"/>
 							<reference ref="526700716"/>
-							<reference ref="316134096"/>
-							<reference ref="681032406"/>
-							<reference ref="834411742"/>
+							<reference ref="175103511"/>
+							<reference ref="639745907"/>
+							<reference ref="1041715662"/>
+							<reference ref="873843033"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1700,17 +1724,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">205</int>
-						<reference key="object" ref="316134096"/>
+						<reference key="object" ref="175103511"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">206</int>
-						<reference key="object" ref="681032406"/>
+						<reference key="object" ref="639745907"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">207</int>
-						<reference key="object" ref="834411742"/>
+						<reference key="object" ref="1041715662"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</object>
@@ -1984,7 +2008,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">211</int>
+			<int key="maxID">216</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2042,10 +2066,11 @@
 							<string>fio2Switch</string>
 							<string>fracturesSwitch</string>
 							<string>hypoSwitch</string>
-							<string>infectionLocationLabel</string>
 							<string>infectionPresent</string>
 							<string>infectionSource</string>
+							<string>pneumoniaLabel</string>
 							<string>pneumoniaSwitch</string>
+							<string>sepsisLabel</string>
 							<string>sepsisSwitch</string>
 							<string>shockSwitch</string>
 							<string>smokeSwitch</string>
@@ -2070,10 +2095,11 @@
 							<string>UISwitch</string>
 							<string>UISwitch</string>
 							<string>UISwitch</string>
-							<string>UILabel</string>
 							<string>UISegmentedControl</string>
 							<string>UIPickerView</string>
+							<string>UILabel</string>
 							<string>UISwitch</string>
+							<string>UILabel</string>
 							<string>UISwitch</string>
 							<string>UISwitch</string>
 							<string>UISwitch</string>
@@ -2101,10 +2127,11 @@
 							<string>fio2Switch</string>
 							<string>fracturesSwitch</string>
 							<string>hypoSwitch</string>
-							<string>infectionLocationLabel</string>
 							<string>infectionPresent</string>
 							<string>infectionSource</string>
+							<string>pneumoniaLabel</string>
 							<string>pneumoniaSwitch</string>
+							<string>sepsisLabel</string>
 							<string>sepsisSwitch</string>
 							<string>shockSwitch</string>
 							<string>smokeSwitch</string>
@@ -2172,10 +2199,6 @@
 								<string key="candidateClassName">UISwitch</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">infectionLocationLabel</string>
-								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
 								<string key="name">infectionPresent</string>
 								<string key="candidateClassName">UISegmentedControl</string>
 							</object>
@@ -2184,8 +2207,16 @@
 								<string key="candidateClassName">UIPickerView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
+								<string key="name">pneumoniaLabel</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
 								<string key="name">pneumoniaSwitch</string>
 								<string key="candidateClassName">UISwitch</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">sepsisLabel</string>
+								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">sepsisSwitch</string>

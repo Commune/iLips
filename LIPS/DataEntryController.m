@@ -89,10 +89,15 @@
 }
 
 -(IBAction) infectionChanged:(UISegmentedControl *)sender {
-	infection = infectionPresent.selectedSegmentIndex;
-	infecLoc = [infectionLocations objectAtIndex:[infectionSource selectedRowInComponent:0]];
-	infectionSource.hidden = !infection;
-	
+	NSLog(@"%@", infecLoc);
+	int infecPresent = [sender selectedSegmentIndex];
+	infectionSource.hidden = infecPresent;
+	sepsisLabel.hidden = infecPresent;
+	sepsisSwitch.hidden = infecPresent;
+	if ([infecLoc isEqualToString:@"Lung"] && infecPresent) {
+		pneumoniaLabel.hidden = infecPresent;
+		pneumoniaLabel.hidden = infecPresent;
+	}
 }
 
 

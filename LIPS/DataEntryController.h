@@ -39,6 +39,8 @@
 	
 	IBOutlet UISegmentedControl *infectionPresent;
 	IBOutlet UIPickerView *infectionSource;
+	IBOutlet UILabel *sepsisLabel;
+	IBOutlet UILabel *pneumoniaLabel;
 	
 	Patient *thePatient;
 	

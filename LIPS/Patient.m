@@ -24,10 +24,8 @@
 	[self getAdditionalRisks];	
 	sqliteAdapter = [[SQLiteAdapter alloc] init];
 	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
+	infectionLocation = [[NSString alloc] init];
 	[DecisionFetcher addPatientProperties:self];
-	if (!infectionLocation) {
-		infectionLocation = [[NSString alloc] init];
-	}
 	return self;
 }
 
