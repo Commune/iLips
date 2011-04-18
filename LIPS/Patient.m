@@ -15,9 +15,9 @@
 @implementation Patient
 
 /*
- Initializer method to create a patient using data from patient info screen
+ Initializes a patient with information from basic data entry screen
  */
--(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc:(NSString *)infectionLoc {
+-(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc{
 	sex = gender;
 	height = h;
 	weight = w;
