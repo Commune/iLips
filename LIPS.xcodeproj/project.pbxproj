@@ -38,6 +38,9 @@
 		639CF3CC1341B4E100E8D5AE /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */; };
 		63CC7645135D07E6008A788D /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CC7643135D07E6008A788D /* PasswordViewController.m */; };
 		63CC7648135D07EC008A788D /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7647135D07EC008A788D /* PasswordViewController.xib */; };
+		63CC7655135D157A008A788D /* YesNoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CC7654135D157A008A788D /* YesNoButton.m */; };
+		63CC7658135D42F8008A788D /* NoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7656135D42F7008A788D /* NoButton.png */; };
+		63CC7659135D42F8008A788D /* YesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7657135D42F8008A788D /* YesButton.png */; };
 		63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */; };
 		63DF4FE0131EE2C700B285BD /* MultipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */; };
 		63F0E12E1318CAF000FB6ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12D1318CAF000FB6ADD /* UIKit.framework */; };
@@ -126,6 +129,10 @@
 		63CC7643135D07E6008A788D /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasswordViewController.m; path = LIPS/PasswordViewController.m; sourceTree = "<group>"; };
 		63CC7644135D07E6008A788D /* PasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasswordViewController.h; path = LIPS/PasswordViewController.h; sourceTree = "<group>"; };
 		63CC7647135D07EC008A788D /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PasswordViewController.xib; path = LIPS/PasswordViewController.xib; sourceTree = "<group>"; };
+		63CC7653135D157A008A788D /* YesNoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YesNoButton.h; sourceTree = "<group>"; };
+		63CC7654135D157A008A788D /* YesNoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YesNoButton.m; sourceTree = "<group>"; };
+		63CC7656135D42F7008A788D /* NoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NoButton.png; path = LIPS/NoButton.png; sourceTree = "<group>"; };
+		63CC7657135D42F8008A788D /* YesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YesButton.png; path = LIPS/YesButton.png; sourceTree = "<group>"; };
 		63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleChoiceViewController.h; path = LIPS/MultipleChoiceViewController.h; sourceTree = "<group>"; };
 		63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultipleChoiceViewController.m; path = LIPS/MultipleChoiceViewController.m; sourceTree = "<group>"; };
 		63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MultipleChoiceViewController.xib; path = LIPS/MultipleChoiceViewController.xib; sourceTree = "<group>"; };
@@ -219,6 +226,7 @@
 		6336E742131E628800CF9851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				63CC7651135D155E008A788D /* Custom */,
 				63CC7647135D07EC008A788D /* PasswordViewController.xib */,
 				639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */,
 				A0E8995713391BB200B46495 /* PatientInfoScreen.xib */,
@@ -278,6 +286,17 @@
 				636DBCCD134064CD00AD6089 /* PatientEntry.m */,
 			);
 			name = SQLite;
+			sourceTree = "<group>";
+		};
+		63CC7651135D155E008A788D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				63CC7656135D42F7008A788D /* NoButton.png */,
+				63CC7657135D42F8008A788D /* YesButton.png */,
+				63CC7653135D157A008A788D /* YesNoButton.h */,
+				63CC7654135D157A008A788D /* YesNoButton.m */,
+			);
+			name = Custom;
 			sourceTree = "<group>";
 		};
 		63F0E11E1318CAF000FB6ADD = {
@@ -461,6 +480,8 @@
 				6323DECB13412BC3006BC1A6 /* InfectionViewController.xib in Resources */,
 				639CF3CC1341B4E100E8D5AE /* SuggestionViewController.xib in Resources */,
 				63CC7648135D07EC008A788D /* PasswordViewController.xib in Resources */,
+				63CC7658135D42F8008A788D /* NoButton.png in Resources */,
+				63CC7659135D42F8008A788D /* YesButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +539,7 @@
 				636DBCD11340658900AD6089 /* NSString+DB.m in Sources */,
 				6323DECA13412BC3006BC1A6 /* InfectionViewController.m in Sources */,
 				63CC7645135D07E6008A788D /* PasswordViewController.m in Sources */,
+				63CC7655135D157A008A788D /* YesNoButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

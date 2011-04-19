@@ -9,15 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "Patient.h"
 
+@class YesNoButton;
 
 @interface DataEntryController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     UIView *portraitView;
     UIView *landscapeView;
 	
-	IBOutlet UISwitch *shockSwitch;
-	IBOutlet UISwitch *aspirationSwitch;
-	IBOutlet UISwitch *sepsisSwitch;
-	IBOutlet UISwitch *pneumoniaSwitch;
+	IBOutlet YesNoButton *shockSwitch;
+	IBOutlet YesNoButton *aspirationSwitch;
+	IBOutlet YesNoButton *sepsisSwitch;
+	IBOutlet YesNoButton *pneumoniaSwitch;
 	IBOutlet UISwitch *spineSwitch;
 	IBOutlet UISwitch *cardiacSwitch;
 	IBOutlet UISwitch *vascularSwitch;
@@ -53,5 +54,6 @@
 -(IBAction) submit:(id)sender;
 -(id)initWithPatient:(Patient *)p;
 -(IBAction) valueChanged:(id)sender;
+-(IBAction) infectionChanged:(UISegmentedControl *)sender;
 
 @end

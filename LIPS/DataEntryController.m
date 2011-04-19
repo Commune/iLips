@@ -10,6 +10,7 @@
 #import "ScoreViewController.h"
 #import "DecisionFetcher.h"
 #import "Patient.h"
+#import "YesNoButton.h"
 
 
 @implementation DataEntryController
@@ -107,7 +108,7 @@
 	
     float total = [thePatient calculateScore];
 		
-	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
+	NSString *shockResponse = [shockSwitch isOn]?@"Yes":@"No";
 	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
 	
 	[thePatient printSelf];
