@@ -50,8 +50,8 @@
 
 }
 
--(IBAction) submit:(id)sender;
+-(IBAction)submit:(id)sender;
 -(id)initWithPatient:(Patient *)p;
--(IBAction) valueChanged:(id)sender;
-
+-(IBAction)valueChanged:(id)sender;
+-(IBAction) infectionChanged:(UISegmentedControl *)sender;
 @end
