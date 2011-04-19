@@ -24,8 +24,8 @@
 		
 			infectionLocations = [[NSMutableArray alloc] init];
 		
-			[infectionLocations addObject:@"Lung"];
 			[infectionLocations addObject:@"Abdomen"];
+			[infectionLocations addObject:@"Lung"];
 			[infectionLocations addObject:@"Urine"];
 			[infectionLocations addObject:@"CNS"];
 			[infectionLocations addObject:@"IV Catheter"];
@@ -90,15 +90,10 @@
 }
 
 -(IBAction) infectionChanged:(UISegmentedControl *)sender {
-	NSLog(@"%@", infecLoc);
 	int infecPresent = [sender selectedSegmentIndex];
 	infectionSource.hidden = infecPresent;
 	sepsisLabel.hidden = infecPresent;
 	sepsisSwitch.hidden = infecPresent;
-	if ([infecLoc isEqualToString:@"Lung"] && infecPresent) {
-		pneumoniaLabel.hidden = infecPresent;
-		pneumoniaLabel.hidden = infecPresent;
-	}
 }
 
 
@@ -130,6 +125,11 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 	infecLoc = [infectionLocations objectAtIndex:row];
+	if ([infecLoc isEqualToString:@"Lung"]) {
+		NSLog(@"got here");
+		pneumoniaLabel.hidden = [infectionPresent selectedSegmentIndex];
+		pneumoniaSwitch.hidden = [infectionPresent selectedSegmentIndex];
+	}
 }
 
 - (void)dealloc
