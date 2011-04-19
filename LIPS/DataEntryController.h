@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Patient.h"
-
 @class YesNoButton;
 
 @interface DataEntryController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
