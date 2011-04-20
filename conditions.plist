@@ -163,5 +163,19 @@
 		<key>Risk Factor</key>
 		<real>3.5</real>
 	</dict>
+	<key>Vasoactive Medication</key>
+	<dict>
+		<key>Present</key>
+		<false/>
+		<key>Risk Factor</key>
+		<integer>0</integer>
+	</dict>
+	<key>Active Bleeding</key>
+	<dict>
+		<key>Present</key>
+		<false/>
+		<key>Risk Factor</key>
+		<integer>0</integer>
+	</dict>
 </dict>
 </plist>

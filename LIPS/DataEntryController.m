@@ -86,6 +86,10 @@
 		[thePatient tripCondition:@"At least one Arterial pH < 7.35":sender.on];
 	} else if (sender == diabetesSwitch) {
 		[thePatient tripCondition:@"Diabetes Mellitus and has sepsis":sender.on];
+	} else if (sender == vasoactiveSwitch) {
+		[thePatient tripCondition:@"Vasoactive Medication":sender.on];
+	} else if (sender == bleedingSwitch) {
+		[thePatient tripCondition:@"Active Bleeding" :sender.on];
 	}
 }
 
@@ -109,14 +113,18 @@
 	[thePatient addToLocalDatabase];
 	
     float total = [thePatient calculateScore];
+	
+	if ([thePatient conservativeFluids]) {
 		
-	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
-	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
-	
-//	[thePatient printSelf];
-	
-	ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];
-    [self.navigationController pushViewController:scoreView animated:YES];
+		[self.navigationController pushViewController:scoreView animated:YES];
+
+	} else {
+		NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
+		[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
+		
+		ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];
+		[self.navigationController pushViewController:scoreView animated:YES];
+	}
 }
 
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {

@@ -38,6 +38,7 @@
 -(NSString *)getID;
 -(int)addToLocalDatabase;
 -(void)setInfectionLocation:(NSString *)infecLoc;
+-(BOOL)conservativeFluids;
 
 @property (assign) int sex;
 @property (assign) float weight, height;

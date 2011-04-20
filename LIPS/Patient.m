@@ -154,6 +154,17 @@
 	return ret;
 }
 
+-(BOOL)conservativeFluids {
+	NSMutableDictionary *bleeding = [symptoms objectForKey:@"Active Bleeding"];
+	NSMutableDictionary *vasoactive = [symptoms objectForKey:@"Vasoactive Medication"];
+	if ([bleeding objectForKey:@"Present"] && [vasoactive objectForKey:@"Present"]) {
+		return YES;
+	} else {
+		return NO;
+	}
+	
+}
+
 @dynamic infectionLocation;
 @synthesize height, weight, sex, patientLocation;
 
