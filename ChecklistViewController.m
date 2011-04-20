@@ -7,9 +7,22 @@
 //
 
 #import "ChecklistViewController.h"
+#import "CheckBox.h";
 
+static ChecklistViewController *checkList;
 
 @implementation ChecklistViewController
+
+- (id)init {
+	if(!checkList) checkList = [super init];
+	return checkList;
+}
+
+- (void)clear {
+	for(CheckBox *c in checkBoxes) {
+        c.on = NO;
+    }
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +35,7 @@
 
 - (void)dealloc
 {
+    [checkBoxes release];
     [super dealloc];
 }
 
@@ -43,6 +57,8 @@
 
 - (void)viewDidUnload
 {
+    [checkBoxes release];
+    checkBoxes = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

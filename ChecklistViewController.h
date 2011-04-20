@@ -11,6 +11,10 @@
 
 @interface ChecklistViewController : UIViewController {
     
+    IBOutletCollection(CheckBox) NSArray *checkBoxes;
+    
+    
 }
+- (void)clear;
 
 @end

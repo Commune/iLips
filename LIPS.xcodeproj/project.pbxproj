@@ -58,6 +58,10 @@
 		63F0E15D1318CAF000FB6ADD /* LIPSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E15C1318CAF000FB6ADD /* LIPSTests.m */; };
 		63F0E1791318CD4600FB6ADD /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E1771318CD4600FB6ADD /* ScoreViewController.m */; };
 		63F0E17A1318CD4600FB6ADD /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */; };
+		63F2CB9E135F808500D01172 /* ToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2CB9D135F808500D01172 /* ToggleButton.m */; };
+		63F2CBA1135F87EE00D01172 /* CheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F2CBA0135F87EE00D01172 /* CheckBox.m */; };
+		63F2CBB8135F916900D01172 /* CheckBoxUnchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F2CBB6135F916900D01172 /* CheckBoxUnchecked.png */; };
+		63F2CBB9135F916900D01172 /* CheckBoxChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F2CBB7135F916900D01172 /* CheckBoxChecked.png */; };
 		63F621351331434100ABAEB0 /* Default-Landscape.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621321331434100ABAEB0 /* Default-Landscape.psd */; };
 		63F621361331434100ABAEB0 /* Default-Portrait.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621331331434100ABAEB0 /* Default-Portrait.psd */; };
 		63F621371331434100ABAEB0 /* icon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F621341331434100ABAEB0 /* icon.psd */; };
@@ -164,6 +168,12 @@
 		63F0E1771318CD4600FB6ADD /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScoreViewController.m; path = LIPS/ScoreViewController.m; sourceTree = "<group>"; };
 		63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScoreViewController.xib; path = LIPS/ScoreViewController.xib; sourceTree = "<group>"; };
 		63F293A01331700A00338589 /* iLIPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLIPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F2CB9C135F808500D01172 /* ToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleButton.h; sourceTree = "<group>"; };
+		63F2CB9D135F808500D01172 /* ToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleButton.m; sourceTree = "<group>"; };
+		63F2CB9F135F87EE00D01172 /* CheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBox.h; sourceTree = "<group>"; };
+		63F2CBA0135F87EE00D01172 /* CheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBox.m; sourceTree = "<group>"; };
+		63F2CBB6135F916900D01172 /* CheckBoxUnchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxUnchecked.png; sourceTree = "<group>"; };
+		63F2CBB7135F916900D01172 /* CheckBoxChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckBoxChecked.png; sourceTree = "<group>"; };
 		63F621321331434100ABAEB0 /* Default-Landscape.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-Landscape.psd"; sourceTree = "<group>"; };
 		63F621331331434100ABAEB0 /* Default-Portrait.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Default-Portrait.psd"; sourceTree = "<group>"; };
 		63F621341331434100ABAEB0 /* icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.psd; sourceTree = "<group>"; };
@@ -315,12 +325,18 @@
 		63CC7651135D155E008A788D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				63F2CBB6135F916900D01172 /* CheckBoxUnchecked.png */,
+				63F2CBB7135F916900D01172 /* CheckBoxChecked.png */,
 				A0249C80135F528E00FFEC2C /* GreyButton.png */,
 				A0249C83135F528E00FFEC2C /* tidalvolume.png */,
 				A0249C82135F528E00FFEC2C /* RedButton.png */,
 				A0249C7F135F528E00FFEC2C /* GreenButton.png */,
 				63CC7653135D157A008A788D /* YesNoButton.h */,
 				63CC7654135D157A008A788D /* YesNoButton.m */,
+				63F2CB9C135F808500D01172 /* ToggleButton.h */,
+				63F2CB9D135F808500D01172 /* ToggleButton.m */,
+				63F2CB9F135F87EE00D01172 /* CheckBox.h */,
+				63F2CBA0135F87EE00D01172 /* CheckBox.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -514,6 +530,8 @@
 				A0249C88135F528E00FFEC2C /* README in Resources */,
 				A0249C89135F528E00FFEC2C /* RedButton.png in Resources */,
 				A0249C8A135F528E00FFEC2C /* tidalvolume.png in Resources */,
+				63F2CBB8135F916900D01172 /* CheckBoxUnchecked.png in Resources */,
+				63F2CBB9135F916900D01172 /* CheckBoxChecked.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +592,8 @@
 				63A8E4A0135EBF4F00375BED /* TidalVolumeViewController.m in Sources */,
 				A0249C79135F4FF700FFEC2C /* ConservativeFluidViewController.m in Sources */,
 				A0249C84135F528E00FFEC2C /* ChecklistViewController.m in Sources */,
+				63F2CB9E135F808500D01172 /* ToggleButton.m in Sources */,
+				63F2CBA1135F87EE00D01172 /* CheckBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
