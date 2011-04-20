@@ -159,14 +159,8 @@
 	NSMutableDictionary *vasoactive = [symptoms objectForKey:@"Vasoactive Medication"];
 	NSMutableDictionary *shock = [symptoms objectForKey:@"Shock"];
 	if ([bleeding objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && [vasoactive objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && [shock objectForKey:@"Present"] == [NSNumber numberWithBool:YES]) {
-		[bleeding release];
-		[vasoactive release];
-		[shock release];
 		return YES;
 	} else {
-		[bleeding release];
-		[vasoactive release];
-		[shock release];
 		return NO;
 	}
 	

@@ -74,17 +74,23 @@
     [super viewDidLoad];
 
     scoreLabel.text = [NSString stringWithFormat:@"%.2f",score];
-    if(score>=4) {
-		if([[DecisionFetcher responseForQuestion:@"Infection"] isEqualToString:@"Yes"]) {
-            infectionButton.hidden = NO;
-		}
-        if([[DecisionFetcher responseForQuestion:@"Shock"] isEqualToString:@"Yes"]) {
-            shockButton.hidden = NO;
-		}
+	
+	// checking if score is in the danger zone!
+    if(score >= 4) {
 		alertLabel.hidden = NO;
 		lowScoreLabel.hidden = YES;
 		[self.view setBackgroundColor:[UIColor redColor]];
     }
+	
+	// checking for shock
+	if([[DecisionFetcher responseForQuestion:@"Shock"] isEqualToString:@"Yes"]) {
+		shockButton.hidden = NO;
+	}
+	
+	// checking for infection
+	if([[DecisionFetcher responseForQuestion:@"Infection"] isEqualToString:@"Yes"]) {
+		infectionButton.hidden = NO;
+	}
     
     [self.navigationItem setTitle:@"LIPS Score"];
 	[self.navigationController setNavigationBarHidden:NO];

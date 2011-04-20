@@ -121,7 +121,9 @@
 
 	} else {
 		NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
+		NSString *infectionResponse = infectionPresent.on?@"Yes":@"No";
 		[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
+		[DecisionFetcher assignResponse:@"Infection" withValue:infectionResponse];
 		
 		ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];
 		[self.navigationController pushViewController:scoreView animated:YES];
