@@ -16,8 +16,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
-    }
+		self.navigationItem.title = @"Authentication";
+		self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Log Out" style:UIBarButtonItemStylePlain target:nil action:nil] autorelease];
+	}
     return self;
 }
 
@@ -29,6 +30,7 @@
 -(IBAction)submit:(id)sender {
 	if ([[password text] isEqualToString:@"password"]) {
 		[self.navigationController pushViewController:[[PatientInfoScreen alloc] init] animated:YES];
+		password.text = @"";
 	}
 }
 
@@ -45,7 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+	[password addTarget:self action:@selector(submit:) forControlEvents:UIControlEventEditingDidEndOnExit];
 }
 
 - (void)viewDidUnload

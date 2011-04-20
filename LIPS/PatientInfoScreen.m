@@ -24,7 +24,6 @@
 		heightUnit = @"cm";
 		weightUnit = @"kg";
 		
-		self.navigationItem.hidesBackButton = YES;
 		self.navigationItem.title = @"Initial Patient Information";
 	}
 	return self;
