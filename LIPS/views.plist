@@ -173,7 +173,7 @@
 		<array>
 			<string>What is the patient&apos;s respiratory status?</string>
 			<string>Non-Invasive Ventilation</string>
-			<string>Intubation or Mechanical Ventilation Required</string>
+			<string>Intubation/Mechanical Ventilation Required</string>
 			<string>Not Vented</string>
 		</array>
 	</dict>
@@ -259,8 +259,36 @@
 &lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
 &lt;li&gt;PEEP&gt; =5
 &lt;/ul&gt;</string>
-			<string>TidalVolumeViewController</string>
+			<string>Tidal</string>
 		</array>
+	</dict>
+	<key>Tidal</key>
+	<dict>
+		<key>Class</key>
+		<string>TidalVolumeViewController</string>
+		<key>Title</key>
+		<string>Tidal Volumes</string>
+		<key>Arguments</key>
+		<array/>
+	</dict>
+	<key>Not Vented</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
+&lt;/ul&gt;
+&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
+&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
+&lt;li&gt;6-8 ml/kg/ IBW (Table 3) 
+&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
+&lt;li&gt;PEEP&gt; =5
+&lt;/ul&gt;</string>
+			<string>Tidal</string>
+		</array>
+		<key>Title</key>
+		<string>Not Vented</string>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
 	</dict>
 </dict>
 </plist>

@@ -25,10 +25,10 @@
 -(void)setOn:(BOOL)o {
 	on = o;
 	if(on) {
-		[self setBackgroundImage:[UIImage imageNamed:@"YesButton.png"] forState:UIControlStateNormal];
+		[self setBackgroundImage:[UIImage imageNamed:@"GreenButton.png"] forState:UIControlStateNormal];
 		[self setTitle:@"YES" forState:UIControlStateNormal];
 	} else {
-		[self setBackgroundImage:[UIImage imageNamed:@"NoButton.png"] forState:UIControlStateNormal];
+		[self setBackgroundImage:[UIImage imageNamed:@"RedButton.png"] forState:UIControlStateNormal];
 		[self setTitle:@"NO" forState:UIControlStateNormal];
 	}
 }

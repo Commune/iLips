@@ -87,7 +87,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<object class="NSFont" key="IBUIFont" id="683520757">
+						<object class="NSFont" key="IBUIFont" id="944349247">
 							<string key="NSName">Helvetica-Bold</string>
 							<double key="NSSize">36</double>
 							<int key="NSfFlags">16</int>
@@ -97,7 +97,7 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
-						<object class="NSColor" key="IBUINormalTitleColor" id="109168146">
+						<object class="NSColor" key="IBUINormalTitleColor" id="417053953">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MCAwIDAAA</bytes>
 						</object>
@@ -107,7 +107,7 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">YesButton.png</string>
+							<string key="NSResourceName">GreenButton.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="531458367">
@@ -121,14 +121,14 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
-						<reference key="IBUIFont" ref="683520757"/>
+						<reference key="IBUIFont" ref="944349247"/>
 						<string key="IBUINormalTitle">NO</string>
 						<reference key="IBUIHighlightedTitleColor" ref="178456025"/>
-						<reference key="IBUINormalTitleColor" ref="109168146"/>
+						<reference key="IBUINormalTitleColor" ref="417053953"/>
 						<reference key="IBUINormalTitleShadowColor" ref="217354145"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">NoButton.png</string>
+							<string key="NSResourceName">RedButton.png</string>
 						</object>
 					</object>
 				</object>
@@ -136,7 +136,7 @@
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="479567345"/>
-				<reference key="IBUIBackgroundColor" ref="109168146"/>
+				<reference key="IBUIBackgroundColor" ref="417053953"/>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>
@@ -313,8 +313,8 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>NoButton.png</string>
-				<string>YesButton.png</string>
+				<string>GreenButton.png</string>
+				<string>RedButton.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
