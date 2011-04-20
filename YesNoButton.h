@@ -12,6 +12,5 @@
     BOOL on;
 }
 
--(void)setOn:(BOOL)o;
--(BOOL)isOn;
+@property (readwrite) BOOL on;
 @end

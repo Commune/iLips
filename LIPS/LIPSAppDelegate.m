@@ -7,7 +7,7 @@
 //
 
 #import "LIPSAppDelegate.h"
-
+#import "PasswordViewController.h"
 #import "LIPSViewController.h"
 
 @implementation LIPSAppDelegate
@@ -20,7 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
+	[navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+	[navigationController.navigationBar setContentStretch:CGRectMake(0, 20, 768, 1004)];
+	[self.window addSubview:navigationController.view];
+	[navigationController pushViewController:[[PasswordViewController alloc] init] animated:NO];
+	
+	
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

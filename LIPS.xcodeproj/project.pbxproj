@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		630CDF72131D585B006B2305 /* FluidManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 630CDF70131D5856006B2305 /* FluidManagementViewController.m */; };
 		630CDF73131D585B006B2305 /* FluidManagementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 630CDF71131D5858006B2305 /* FluidManagementViewController.xib */; };
+		6311B45B135E5BFB00B7E2E0 /* NoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6311B459135E5BFB00B7E2E0 /* NoButton.png */; };
+		6311B45C135E5BFB00B7E2E0 /* YesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6311B45A135E5BFB00B7E2E0 /* YesButton.png */; };
 		6322B18B13214B6900F6B81C /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6322B18A13214B6900F6B81C /* Default-Portrait~ipad.png */; };
 		6322B18E13214B6E00F6B81C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6322B18D13214B6E00F6B81C /* Default-Landscape~ipad.png */; };
 		63238895132036C300B189F7 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 63238894132036C300B189F7 /* icon-72.png */; };
@@ -39,8 +41,6 @@
 		63CC7645135D07E6008A788D /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CC7643135D07E6008A788D /* PasswordViewController.m */; };
 		63CC7648135D07EC008A788D /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7647135D07EC008A788D /* PasswordViewController.xib */; };
 		63CC7655135D157A008A788D /* YesNoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CC7654135D157A008A788D /* YesNoButton.m */; };
-		63CC7658135D42F8008A788D /* NoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7656135D42F7008A788D /* NoButton.png */; };
-		63CC7659135D42F8008A788D /* YesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7657135D42F8008A788D /* YesButton.png */; };
 		63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */; };
 		63DF4FE0131EE2C700B285BD /* MultipleChoiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */; };
 		63F0E12E1318CAF000FB6ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12D1318CAF000FB6ADD /* UIKit.framework */; };
@@ -50,8 +50,6 @@
 		63F0E13B1318CAF000FB6ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E13A1318CAF000FB6ADD /* main.m */; };
 		63F0E13E1318CAF000FB6ADD /* LIPSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E13D1318CAF000FB6ADD /* LIPSAppDelegate.m */; };
 		63F0E1411318CAF000FB6ADD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E13F1318CAF000FB6ADD /* MainWindow.xib */; };
-		63F0E1441318CAF000FB6ADD /* LIPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F0E1431318CAF000FB6ADD /* LIPSViewController.m */; };
-		63F0E1471318CAF000FB6ADD /* LIPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */; };
 		63F0E14E1318CAF000FB6ADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12D1318CAF000FB6ADD /* UIKit.framework */; };
 		63F0E14F1318CAF000FB6ADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E12F1318CAF000FB6ADD /* Foundation.framework */; };
 		63F0E1501318CAF000FB6ADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F0E1311318CAF000FB6ADD /* CoreGraphics.framework */; };
@@ -84,6 +82,8 @@
 		630CDF6F131D5855006B2305 /* FluidManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FluidManagementViewController.h; path = LIPS/FluidManagementViewController.h; sourceTree = "<group>"; };
 		630CDF70131D5856006B2305 /* FluidManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FluidManagementViewController.m; path = LIPS/FluidManagementViewController.m; sourceTree = "<group>"; };
 		630CDF71131D5858006B2305 /* FluidManagementViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FluidManagementViewController.xib; path = LIPS/FluidManagementViewController.xib; sourceTree = "<group>"; };
+		6311B459135E5BFB00B7E2E0 /* NoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoButton.png; sourceTree = "<group>"; };
+		6311B45A135E5BFB00B7E2E0 /* YesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YesButton.png; sourceTree = "<group>"; };
 		6322B18A13214B6900F6B81C /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		6322B18D13214B6E00F6B81C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		63238894132036C300B189F7 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 		63CC7647135D07EC008A788D /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PasswordViewController.xib; path = LIPS/PasswordViewController.xib; sourceTree = "<group>"; };
 		63CC7653135D157A008A788D /* YesNoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YesNoButton.h; sourceTree = "<group>"; };
 		63CC7654135D157A008A788D /* YesNoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YesNoButton.m; sourceTree = "<group>"; };
-		63CC7656135D42F7008A788D /* NoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NoButton.png; path = LIPS/NoButton.png; sourceTree = "<group>"; };
-		63CC7657135D42F8008A788D /* YesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YesButton.png; path = LIPS/YesButton.png; sourceTree = "<group>"; };
 		63DF4FDC131EE2C700B285BD /* MultipleChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultipleChoiceViewController.h; path = LIPS/MultipleChoiceViewController.h; sourceTree = "<group>"; };
 		63DF4FDD131EE2C700B285BD /* MultipleChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultipleChoiceViewController.m; path = LIPS/MultipleChoiceViewController.m; sourceTree = "<group>"; };
 		63DF4FDE131EE2C700B285BD /* MultipleChoiceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MultipleChoiceViewController.xib; path = LIPS/MultipleChoiceViewController.xib; sourceTree = "<group>"; };
@@ -146,9 +144,6 @@
 		63F0E13C1318CAF000FB6ADD /* LIPSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIPSAppDelegate.h; sourceTree = "<group>"; };
 		63F0E13D1318CAF000FB6ADD /* LIPSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIPSAppDelegate.m; sourceTree = "<group>"; };
 		63F0E1401318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		63F0E1421318CAF000FB6ADD /* LIPSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LIPSViewController.h; path = LIPS/LIPSViewController.h; sourceTree = "<group>"; };
-		63F0E1431318CAF000FB6ADD /* LIPSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LIPSViewController.m; path = LIPS/LIPSViewController.m; sourceTree = "<group>"; };
-		63F0E1461318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LIPSViewController.xib; sourceTree = "<group>"; };
 		63F0E1551318CAF000FB6ADD /* LIPSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LIPSTests-Info.plist"; sourceTree = "<group>"; };
 		63F0E1571318CAF000FB6ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63F0E1591318CAF000FB6ADD /* LIPSTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LIPSTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -211,8 +206,6 @@
 				6336E752131EA35100CF9851 /* BinaryDecisionViewController.m */,
 				6357BCA6131AADB400AD8190 /* SuggestionViewController.h */,
 				6357BCA7131AADB400AD8190 /* SuggestionViewController.m */,
-				63F0E1421318CAF000FB6ADD /* LIPSViewController.h */,
-				63F0E1431318CAF000FB6ADD /* LIPSViewController.m */,
 				63F0E1761318CD4600FB6ADD /* ScoreViewController.h */,
 				63F0E1771318CD4600FB6ADD /* ScoreViewController.m */,
 				630CDF6F131D5855006B2305 /* FluidManagementViewController.h */,
@@ -235,7 +228,6 @@
 				6336E74F131EA34300CF9851 /* BinaryDecisionViewController.xib */,
 				6351B9C3131E14B4003D8A6A /* DataEntryController.xib */,
 				63F0E13F1318CAF000FB6ADD /* MainWindow.xib */,
-				63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */,
 				63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */,
 				630CDF71131D5858006B2305 /* FluidManagementViewController.xib */,
 				6323DEC913412BC3006BC1A6 /* InfectionViewController.xib */,
@@ -291,8 +283,8 @@
 		63CC7651135D155E008A788D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				63CC7656135D42F7008A788D /* NoButton.png */,
-				63CC7657135D42F8008A788D /* YesButton.png */,
+				6311B459135E5BFB00B7E2E0 /* NoButton.png */,
+				6311B45A135E5BFB00B7E2E0 /* YesButton.png */,
 				63CC7653135D157A008A788D /* YesNoButton.h */,
 				63CC7654135D157A008A788D /* YesNoButton.m */,
 			);
@@ -456,7 +448,6 @@
 			files = (
 				63F0E1381318CAF000FB6ADD /* InfoPlist.strings in Resources */,
 				63F0E1411318CAF000FB6ADD /* MainWindow.xib in Resources */,
-				63F0E1471318CAF000FB6ADD /* LIPSViewController.xib in Resources */,
 				63F0E17A1318CD4600FB6ADD /* ScoreViewController.xib in Resources */,
 				630CDF73131D585B006B2305 /* FluidManagementViewController.xib in Resources */,
 				6351B999131DD0F1003D8A6A /* treatments.plist in Resources */,
@@ -480,8 +471,8 @@
 				6323DECB13412BC3006BC1A6 /* InfectionViewController.xib in Resources */,
 				639CF3CC1341B4E100E8D5AE /* SuggestionViewController.xib in Resources */,
 				63CC7648135D07EC008A788D /* PasswordViewController.xib in Resources */,
-				63CC7658135D42F8008A788D /* NoButton.png in Resources */,
-				63CC7659135D42F8008A788D /* YesButton.png in Resources */,
+				6311B45B135E5BFB00B7E2E0 /* NoButton.png in Resources */,
+				6311B45C135E5BFB00B7E2E0 /* YesButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +510,6 @@
 			files = (
 				63F0E13B1318CAF000FB6ADD /* main.m in Sources */,
 				63F0E13E1318CAF000FB6ADD /* LIPSAppDelegate.m in Sources */,
-				63F0E1441318CAF000FB6ADD /* LIPSViewController.m in Sources */,
 				63F0E1791318CD4600FB6ADD /* ScoreViewController.m in Sources */,
 				6357BCA9131AADB400AD8190 /* SuggestionViewController.m in Sources */,
 				630CDF72131D585B006B2305 /* FluidManagementViewController.m in Sources */,
@@ -576,15 +566,6 @@
 				63F0E1401318CAF000FB6ADD /* en */,
 			);
 			name = MainWindow.xib;
-			path = LIPS;
-			sourceTree = "<group>";
-		};
-		63F0E1451318CAF000FB6ADD /* LIPSViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				63F0E1461318CAF000FB6ADD /* en */,
-			);
-			name = LIPSViewController.xib;
 			path = LIPS;
 			sourceTree = "<group>";
 		};

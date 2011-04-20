@@ -10,6 +10,8 @@
 
 @implementation YesNoButton
 
+@dynamic on;
+
 -(id)initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
 	if(self) {
@@ -31,12 +33,12 @@
 	}
 }
 
--(BOOL)isOn {
+-(BOOL)on {
 	return on;
 }
 
 -(void)toggle {
-	[self setOn:!on];
+	self.on = !self.on;
 }
 
 @end

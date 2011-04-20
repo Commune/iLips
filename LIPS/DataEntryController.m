@@ -41,7 +41,7 @@
 	return self;
 }
 
--(IBAction)valueChanged:(UISwitch *)sender {
+-(IBAction)valueChanged:(YesNoButton *)sender {
 	if (sender ==  shockSwitch) {
 		NSLog(@"Shock.");
 		NSLog(@"%d", sender.on);
@@ -89,11 +89,18 @@
 	}
 }
 
--(IBAction) infectionChanged:(UISegmentedControl *)sender {
-	int infecPresent = [sender selectedSegmentIndex];
-	infectionSource.hidden = infecPresent;
-	sepsisLabel.hidden = infecPresent;
-	sepsisSwitch.hidden = infecPresent;
+-(IBAction) infectionChanged:(YesNoButton *)sender {
+	int infecPresent = sender.on;
+	infectionSource.hidden = !infecPresent;
+	sepsisLabel.hidden = !infecPresent;
+	sepsisSwitch.hidden = !infecPresent;
+	if(!infecPresent) {
+		sepsisSwitch.on = NO;
+		pneumoniaSwitch.on = NO;
+		pneumoniaSwitch.hidden = YES;
+		pneumoniaLabel.hidden = YES;
+	}
+	[infectionSource selectRow:0 inComponent:0 animated:NO];
 }
 
 
@@ -103,7 +110,7 @@
 	
     float total = [thePatient calculateScore];
 		
-	NSString *shockResponse = [shockSwitch isOn]?@"Yes":@"No";
+	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
 	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
 	
 	[thePatient printSelf];
@@ -126,14 +133,19 @@
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
 	infecLoc = [infectionLocations objectAtIndex:row];
 	if ([infecLoc isEqualToString:@"Lung"]) {
-		NSLog(@"got here");
-		pneumoniaLabel.hidden = [infectionPresent selectedSegmentIndex];
-		pneumoniaSwitch.hidden = [infectionPresent selectedSegmentIndex];
+		pneumoniaLabel.hidden = NO;
+		pneumoniaSwitch.hidden = NO;
+	} else {
+		pneumoniaSwitch.on = NO;
+		pneumoniaLabel.hidden = YES;
+		pneumoniaSwitch.hidden = YES;
 	}
 }
 
 - (void)dealloc
 {
+	[contusionSwitch release];
+	[spo2Switch release];
     [super dealloc];
 }
 
@@ -156,6 +168,10 @@
 
 - (void)viewDidUnload
 {
+	[contusionSwitch release];
+	contusionSwitch = nil;
+	[spo2Switch release];
+	spo2Switch = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -164,7 +180,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-	return YES;
+	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 

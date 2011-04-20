@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Patient.h"
-@class YesNoButton;
+@class YesNoButton;	
 
 @interface DataEntryController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     UIView *portraitView;
@@ -18,26 +18,27 @@
 	IBOutlet YesNoButton *aspirationSwitch;
 	IBOutlet YesNoButton *sepsisSwitch;
 	IBOutlet YesNoButton *pneumoniaSwitch;
-	IBOutlet UISwitch *spineSwitch;
-	IBOutlet UISwitch *cardiacSwitch;
-	IBOutlet UISwitch *vascularSwitch;
-	IBOutlet UISwitch *abdomenSwitch;
-	IBOutlet UISwitch *brainSwitch;
-	IBOutlet UISwitch *smokeSwitch;
-	IBOutlet UISwitch *drowningSwitch;
-	IBOutlet UISwitch *contusionSwitch;
-	IBOutlet UISwitch *fracturesSwitch;
-	IBOutlet UISwitch *alchySwitch;
-	IBOutlet UISwitch *hypoSwitch;
-	IBOutlet UISwitch *chemoSwitch;
-	IBOutlet UISwitch *fio2Switch;
-	IBOutlet UISwitch *tachSwitch;
-	IBOutlet UISwitch *spo2Switch;
-	IBOutlet UISwitch *acidosisSwitch;
-	IBOutlet UISwitch *diabetesSwitch;
-	IBOutlet UISwitch *emergencySwitch;
+	IBOutlet YesNoButton *spineSwitch;
+	IBOutlet YesNoButton *abdomenSwitch;
+	IBOutlet YesNoButton *cardiacSwitch;
+	IBOutlet YesNoButton *vascularSwitch;
+	IBOutlet YesNoButton *emergencySwitch;
+	IBOutlet YesNoButton *brainSwitch;
+	IBOutlet YesNoButton *smokeSwitch;
+	IBOutlet YesNoButton *drowningSwitch;
+    IBOutlet YesNoButton *contusionSwitch;
+	IBOutlet YesNoButton *fracturesSwitch;
+	IBOutlet YesNoButton *alchySwitch;
+	IBOutlet YesNoButton *hypoSwitch;
+	IBOutlet YesNoButton *chemoSwitch;
+	IBOutlet YesNoButton *fio2Switch;
+	IBOutlet YesNoButton *tachSwitch;
+    IBOutlet YesNoButton *spo2Switch;
+	IBOutlet YesNoButton *acidosisSwitch;
+	IBOutlet YesNoButton *diabetesSwitch;
 	
-	IBOutlet UISegmentedControl *infectionPresent;
+	
+	IBOutlet YesNoButton *infectionPresent;
 	IBOutlet UIPickerView *infectionSource;
 	IBOutlet UILabel *sepsisLabel;
 	IBOutlet UILabel *pneumoniaLabel;
@@ -53,6 +54,6 @@
 -(IBAction)submit:(id)sender;
 -(id)initWithPatient:(Patient *)p;
 -(IBAction) valueChanged:(id)sender;
--(IBAction) infectionChanged:(UISegmentedControl *)sender;
+-(IBAction) infectionChanged:(YesNoButton *)sender;
 
 @end
