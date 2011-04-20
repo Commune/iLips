@@ -9,6 +9,7 @@
 #import "ScoreViewController.h"
 #import "SuggestionViewController.h"
 #import "DecisionFetcher.h"
+#import "ChecklistViewController.h"
 
 @implementation ScoreViewController
 
@@ -35,6 +36,11 @@
 - (IBAction)shockTreatment:(id)sender {
 //	[self findSuggestion:@"Shock"];
 	[self findSuggestion:@"Respiratory Status"];
+}
+
+- (IBAction)checklistTreatment:(id)sender {
+	ChecklistViewController *checklist = [[ChecklistViewController alloc] init];
+	[self.navigationController pushViewController:checklist animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

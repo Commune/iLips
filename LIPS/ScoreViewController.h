@@ -19,6 +19,7 @@
 }
 - (IBAction)infectionTreatment:(id)sender;
 - (IBAction)shockTreatment:(id)sender;
+- (IBAction)checklistTreatment:(id)sender;
 
 - (id)initWithScore:(float)lipsScore;
 

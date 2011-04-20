@@ -262,7 +262,7 @@
 						<string key="NSFrame">{{56, 725}, {156, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="596334096"/>
+						<reference key="NSNextKeyView" ref="168277885"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -525,7 +525,7 @@
 					<object class="IBUILabel" id="113309931">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{471, 603}, {159, 21}}</string>
+						<string key="NSFrame">{{471, 650}, {159, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="627414253"/>
@@ -771,7 +771,7 @@
 						<string key="NSFrame">{{293, 597}, {107, 33}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="113309931"/>
+						<reference key="NSNextKeyView" ref="527983219"/>
 						<reference key="IBUIBackgroundColor" ref="187202637"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -788,7 +788,7 @@
 						<string key="NSFrame">{{293, 632}, {107, 33}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="445909172"/>
+						<reference key="NSNextKeyView" ref="113309931"/>
 						<reference key="IBUIBackgroundColor" ref="187202637"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -989,10 +989,10 @@
 					<object class="IBUIButton" id="627414253">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{648, 597}, {107, 33}}</string>
+						<string key="NSFrame">{{648, 644}, {107, 33}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="691990776"/>
+						<reference key="NSNextKeyView" ref="445909172"/>
 						<reference key="IBUIBackgroundColor" ref="187202637"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1006,10 +1006,10 @@
 					<object class="IBUILabel" id="445909172">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{471, 644}, {159, 21}}</string>
+						<string key="NSFrame">{{471, 691}, {159, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="168277885"/>
+						<reference key="NSNextKeyView" ref="656872114"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -1025,10 +1025,46 @@
 					<object class="IBUIButton" id="168277885">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{648, 638}, {107, 33}}</string>
+						<string key="NSFrame">{{648, 685}, {107, 33}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="656872114"/>
+						<reference key="NSNextKeyView" ref="596334096"/>
+						<reference key="IBUIBackgroundColor" ref="187202637"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="160358288"/>
+						<reference key="IBUIHighlightedTitleColor" ref="992855901"/>
+						<reference key="IBUINormalTitleColor" ref="434932021"/>
+						<reference key="IBUINormalTitleShadowColor" ref="442801980"/>
+					</object>
+					<object class="IBUILabel" id="527983219">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">301</int>
+						<string key="NSFrame">{{471, 609}, {159, 21}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="348871107"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText">Diabetes Mellitus</string>
+						<reference key="IBUITextColor" ref="187202637"/>
+						<reference key="IBUIHighlightedColor" ref="992855901"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<float key="IBUIMinimumFontSize">10</float>
+					</object>
+					<object class="IBUIButton" id="348871107">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">301</int>
+						<string key="NSFrame">{{648, 603}, {107, 33}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="691990776"/>
 						<reference key="IBUIBackgroundColor" ref="187202637"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -1488,14 +1524,6 @@
 					<int key="connectionID">292</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">diabetesSwitch</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="627414253"/>
-					</object>
-					<int key="connectionID">293</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">valueChanged:</string>
 						<reference key="source" ref="168277885"/>
@@ -1503,6 +1531,47 @@
 						<int key="IBEventType">7</int>
 					</object>
 					<int key="connectionID">296</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">bleedingSwitch</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="168277885"/>
+					</object>
+					<int key="connectionID">297</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">aspirationSwitch</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="1028993232"/>
+					</object>
+					<int key="connectionID">298</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">vasoactiveSwitch</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="627414253"/>
+					</object>
+					<int key="connectionID">299</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">valueChanged:</string>
+						<reference key="source" ref="348871107"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">302</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">diabetesSwitch</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="348871107"/>
+					</object>
+					<int key="connectionID">303</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -1583,6 +1652,8 @@
 							<reference ref="445909172"/>
 							<reference ref="168277885"/>
 							<reference ref="113309931"/>
+							<reference ref="527983219"/>
+							<reference ref="348871107"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1875,6 +1946,17 @@
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">4</string>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">300</int>
+						<reference key="object" ref="527983219"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">301</int>
+						<reference key="object" ref="348871107"/>
+						<reference key="parent" ref="766721923"/>
+						<string key="objectName">4</string>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -2001,6 +2083,10 @@
 					<string>295.CustomClassName</string>
 					<string>295.IBPluginDependency</string>
 					<string>295.showNotes</string>
+					<string>300.IBPluginDependency</string>
+					<string>301.CustomClassName</string>
+					<string>301.IBPluginDependency</string>
+					<string>301.showNotes</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2154,6 +2240,10 @@
 					<string>YesNoButton</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<boolean value="NO"/>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>YesNoButton</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<boolean value="NO"/>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -2168,7 +2258,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">296</int>
+			<int key="maxID">303</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2223,6 +2313,7 @@
 							<string>acidosisSwitch</string>
 							<string>alchySwitch</string>
 							<string>aspirationSwitch</string>
+							<string>bleedingSwitch</string>
 							<string>brainSwitch</string>
 							<string>cardiacSwitch</string>
 							<string>chemoSwitch</string>
@@ -2245,9 +2336,11 @@
 							<string>spo2Switch</string>
 							<string>tachSwitch</string>
 							<string>vascularSwitch</string>
+							<string>vasoactiveSwitch</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>YesNoButton</string>
 							<string>YesNoButton</string>
 							<string>YesNoButton</string>
 							<string>YesNoButton</string>
@@ -2274,6 +2367,7 @@
 							<string>YesNoButton</string>
 							<string>YesNoButton</string>
 							<string>YesNoButton</string>
+							<string>YesNoButton</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -2284,6 +2378,7 @@
 							<string>acidosisSwitch</string>
 							<string>alchySwitch</string>
 							<string>aspirationSwitch</string>
+							<string>bleedingSwitch</string>
 							<string>brainSwitch</string>
 							<string>cardiacSwitch</string>
 							<string>chemoSwitch</string>
@@ -2306,6 +2401,7 @@
 							<string>spo2Switch</string>
 							<string>tachSwitch</string>
 							<string>vascularSwitch</string>
+							<string>vasoactiveSwitch</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2323,6 +2419,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">aspirationSwitch</string>
+								<string key="candidateClassName">YesNoButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">bleedingSwitch</string>
 								<string key="candidateClassName">YesNoButton</string>
 							</object>
 							<object class="IBToOneOutletInfo">
@@ -2411,6 +2511,10 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">vascularSwitch</string>
+								<string key="candidateClassName">YesNoButton</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">vasoactiveSwitch</string>
 								<string key="candidateClassName">YesNoButton</string>
 							</object>
 						</object>
