@@ -51,8 +51,8 @@
 {
     [super viewDidLoad];
 	
-	float height = [[DecisionFetcher patient] height];
-	float weight = [[DecisionFetcher patient] weight];
+	//float height = [[DecisionFetcher patient] height];
+	//float weight = [[DecisionFetcher patient] weight];
 	
 
 	

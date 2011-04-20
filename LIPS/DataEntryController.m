@@ -11,6 +11,7 @@
 #import "DecisionFetcher.h"
 #import "Patient.h"
 #import "YesNoButton.h"
+#import "ConservativeFluidViewController.h"
 
 
 @implementation DataEntryController
@@ -115,8 +116,8 @@
     float total = [thePatient calculateScore];
 	
 	if ([thePatient conservativeFluids]) {
-		
-		[self.navigationController pushViewController:scoreView animated:YES];
+		ConservativeFluidViewController *fluid = [[ConservativeFluidViewController alloc] init];
+		[self.navigationController pushViewController:fluid animated:YES];
 
 	} else {
 		NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
