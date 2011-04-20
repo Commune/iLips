@@ -113,9 +113,10 @@
 	NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
 	[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
 	
-	[thePatient printSelf];
+//	[thePatient printSelf];
 	
-    [self.navigationController pushViewController:[[ScoreViewController alloc] initWithScore:total] animated:YES];
+	ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];
+    [self.navigationController pushViewController:scoreView animated:YES];
 }
 
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {

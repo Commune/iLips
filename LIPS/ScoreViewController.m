@@ -23,7 +23,7 @@
 - (void)findSuggestion:(NSString*)response
 {
     [DecisionFetcher resetDecisions];
-	[DecisionFetcher assignResponse:response withValue:@"Yes"];
+//	[DecisionFetcher assignResponse:response withValue:@"Yes"];
     [self.navigationController pushViewController:[DecisionFetcher fetchNextViewAfter:response] animated:YES];
 
 }
@@ -33,7 +33,8 @@
 }
 
 - (IBAction)shockTreatment:(id)sender {
-	[self findSuggestion:@"Shock"];
+//	[self findSuggestion:@"Shock"];
+	[self findSuggestion:@"Respiratory Status"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

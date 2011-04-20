@@ -62,7 +62,12 @@
     CGFloat spacing = (self.view.frame.size.width - 2 * LR_PADDING - width) / ([choices count] - 1);
     choiceButtons = [[NSMutableArray alloc] init];
     for(int i = 0; i < [choices count]; i++) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+		UIButton *button = [[UIButton alloc] init];
+		[button setBackgroundImage:[UIImage imageNamed:@"MultipleChoiceButton.png"] forState:UIControlStateNormal];
+		button.backgroundColor = [UIColor clearColor];
+		button.titleLabel.numberOfLines = 3;
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         button.tag = i;
         [button setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth];
         [button setTitle:[choices objectAtIndex:i] forState:UIControlStateNormal];

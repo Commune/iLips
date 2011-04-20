@@ -18,4 +18,5 @@
 +(NSString*)responseForQuestion:(NSString*)question;
 +(void)resetDecisions;
 +(void)addPatientProperties:(Patient*)aPatient;
++(Patient *)patient;
 @end

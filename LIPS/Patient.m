@@ -62,6 +62,10 @@
 	[infectionLocation initWithString:infecLoc];
 }
 
+-(NSString *)infectionLocation {
+	return infectionLocation;
+}
+
 -(void) printSelf {
 	NSString *gender;
 	if (sex == 0) {
@@ -78,12 +82,12 @@
 	NSString *result = [NSString stringWithFormat:@"%@%@%@%@%@%@", gender, mesurements, pLoc, iLoc, conditionTitle, conditions];
 	NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
 	[result writeToFile:[path stringByAppendingPathComponent:@"output.txt"] atomically:NO encoding:NSUTF8StringEncoding error:nil];
-	NSString *file = [[NSString alloc] initWithContentsOfFile:[path stringByAppendingPathComponent:@"output.txt"] encoding:NSUTF8StringEncoding error:nil];
+	NSString *file = [[[NSString alloc] initWithContentsOfFile:[path stringByAppendingPathComponent:@"output.txt"] encoding:NSUTF8StringEncoding error:nil] autorelease];
 	NSLog(@"%@", file);
 }
 
 -(NSString *)getConditions {
-	NSString *result = [[NSString alloc] init];
+	NSString *result = [[[NSString alloc] init] autorelease];
 	NSEnumerator *enumerator = [symptoms keyEnumerator];
 	NSString *key;
 	while ((key = [enumerator nextObject])) {
@@ -129,7 +133,7 @@
 
 
 -(NSString *)toJSON {
-	NSMutableDictionary *allPatientData = [[NSMutableDictionary alloc] init];
+	NSMutableDictionary *allPatientData = [[[NSMutableDictionary alloc] init] autorelease];
 	[allPatientData setObject:[NSNumber numberWithFloat:height] forKey:@"Height"];
 	[allPatientData setObject:[NSNumber numberWithFloat:weight] forKey:@"Weight"];
 	[allPatientData setObject:[NSNumber numberWithInt:sex] forKey:@"Sex"];
@@ -144,12 +148,13 @@
 }
 
 -(int)addToLocalDatabase {
-	PatientEntry *patient = [[PatientEntry alloc] initWithId:[self getID] data:[self toJSON]];
+	PatientEntry *patient = [[[PatientEntry alloc] initWithId:[self getID] data:[self toJSON]] autorelease];
 	[sqliteAdapter deletePatient:patient];
 	int ret = [sqliteAdapter addPatient:patient];
 	return ret;
 }
 
-@synthesize height, weight, sex, patientLocation, infectionLocation;
+@dynamic infectionLocation;
+@synthesize height, weight, sex, patientLocation;
 
 @end

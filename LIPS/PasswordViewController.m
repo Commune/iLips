@@ -12,6 +12,8 @@
 
 @implementation PasswordViewController
 
+#define PASSWORD @"password"
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,10 +30,15 @@
 }
 
 -(IBAction)submit:(id)sender {
-	if ([[password text] isEqualToString:@"password"]) {
-		[self.navigationController pushViewController:[[PatientInfoScreen alloc] init] animated:YES];
-		password.text = @"";
+	if ([[password text] isEqualToString:PASSWORD]) {
+		PatientInfoScreen *patientInfoView = [[PatientInfoScreen alloc] init];
+		[self.navigationController pushViewController:patientInfoView animated:YES];
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Incorrect Password" message:@"The password you entered is incorrect.  Please try again." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
 	}
+	password.text = @"";
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,7 +66,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
 	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 

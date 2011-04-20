@@ -8,6 +8,8 @@
 
 #import "FluidManagementViewController.h"
 #import "DecisionFetcher.h"
+#import "Patient.h"
+#import "YesNoButton.h"
 
 @implementation FluidManagementViewController
 
@@ -16,6 +18,7 @@
     self = [self init];
     if(self) {
         self.navigationItem.title = title;
+		weight = [[DecisionFetcher patient] weight];
     }
 	CVPKnown = NO;
     return self;
@@ -48,6 +51,7 @@
 - (void)dealloc
 {
 	[CVPKnownOutlets release];
+	[vasopressorSwitch release];
     [super dealloc];
 }
 
@@ -61,11 +65,11 @@
 
 
 
-- (void) updateTreatment
+- (IBAction) updateTreatment
 {
     NSString * newTreatment;
     if(MAPSlider.value >= 60 && vasopressorSwitch.on) {
-        if(urineSlider.value < .5) {
+        if(urineSlider.value/weight < .5) {
 			if(!CVPKnown) {
 				newTreatment = @"Determine volume status.";
 			}
@@ -99,7 +103,7 @@
     updateLabel.text = [NSString stringWithFormat:@"Suggestion last updated on %@ at %@",dateString,timeString];
 }
 
-- (void) updateSliderLabels 
+- (IBAction) updateSliderLabels 
 {
     NSString * newCVPLabel;
     if(CVPSlider.value > 8) {
@@ -131,10 +135,9 @@
     [super viewDidLoad];
     [self updateTreatment];
     [self.navigationItem setTitle:@"Fluid Management"];
-    [MAPSlider addTarget:self action:@selector(updateSliderLabels) forControlEvents:UIControlEventAllEvents];
-    [CVPSlider addTarget:self action:@selector(updateSliderLabels) forControlEvents:UIControlEventAllEvents];
-    [urineSlider addTarget:self action:@selector(updateSliderLabels) forControlEvents:UIControlEventAllEvents];
-    [vasopressorSwitch addTarget:self action:@selector(updateTreatment) forControlEvents:UIControlEventAllEvents];
+	urineSlider.maximumValue = 2*weight;
+	urineSlider.value = weight;
+	[self updateSliderLabels];
 }
 
 -(void) setCVPKnown:(BOOL)isKnown {
@@ -162,6 +165,8 @@
     [MAPLabel release];
 	[CVPKnownOutlets release];
 	CVPKnownOutlets = nil;
+	[vasopressorSwitch release];
+	vasopressorSwitch = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

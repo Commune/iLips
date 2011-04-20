@@ -36,7 +36,6 @@
     if(success) return;
 	NSString *databasePathFromApp = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:databaseName];
     [fileManager copyItemAtPath:databasePathFromApp toPath:databasePath error:nil];
-	[fileManager release];
 }
 
 -(void) readPatientsFromDatabase {
@@ -61,7 +60,7 @@
 
 -(int) runQuery:(NSString*)query {
     sqlite3 *database;
-    int errorcode;
+    int errorcode = 0;
 	if(sqlite3_open([databasePath UTF8String], &database) == SQLITE_OK) {
 		const char *sqlStatement = [query UTF8String];
 		sqlite3_stmt *compiledStatement;

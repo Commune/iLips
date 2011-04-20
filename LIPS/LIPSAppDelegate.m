@@ -8,7 +8,6 @@
 
 #import "LIPSAppDelegate.h"
 #import "PasswordViewController.h"
-#import "LIPSViewController.h"
 
 @implementation LIPSAppDelegate
 
@@ -24,8 +23,8 @@
 	[navigationController.navigationBar setBarStyle:UIBarStyleBlack];
 	[navigationController.navigationBar setContentStretch:CGRectMake(0, 20, 768, 1004)];
 	[self.window addSubview:navigationController.view];
-	[navigationController pushViewController:[[PasswordViewController alloc] init] animated:NO];
-	
+	PasswordViewController *passwordView = [[PasswordViewController alloc] init];
+	[navigationController pushViewController:passwordView animated:NO];
 	
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];

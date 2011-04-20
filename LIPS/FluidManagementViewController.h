@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class YesNoButton;
+
 
 @interface FluidManagementViewController : UIViewController {
     
@@ -19,7 +21,7 @@
     IBOutlet UILabel *urineLabel;
     IBOutlet UILabel *MAPLabel;
     
-    IBOutlet UISwitch *vasopressorSwitch;
+    IBOutlet YesNoButton *vasopressorSwitch;
 
     IBOutlet UILabel *treatmentLabel;
     
@@ -27,11 +29,15 @@
 	
 	IBOutletCollection(id) NSArray *CVPKnownOutlets;	
 	BOOL CVPKnown;
+	
+	float weight;
 }
 
 @property (readwrite) BOOL CVPKnown;
 
 -(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)ignore;
 -(IBAction)cvpKnownSwitched:(UIButton*)sender;
+-(IBAction)updateSliderLabels;
+-(IBAction)updateTreatment;
 
 @end

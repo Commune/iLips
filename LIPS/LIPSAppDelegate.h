@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class LIPSViewController;
-
 @interface LIPSAppDelegate : NSObject <UIApplicationDelegate> {
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet LIPSViewController *viewController;
+@property (nonatomic, retain) IBOutlet UIViewController *viewController;
 
 @end

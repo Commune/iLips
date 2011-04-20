@@ -38,6 +38,9 @@
 		636DBCD513406AFC00AD6089 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 636DBCD413406AFC00AD6089 /* libsqlite3.0.dylib */; };
 		6395CEB013314CEC00617C76 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6395CEAF13314CEC00617C76 /* Entitlements.plist */; };
 		639CF3CC1341B4E100E8D5AE /* SuggestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */; };
+		63A8E4A0135EBF4F00375BED /* TidalVolumeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63A8E49E135EBF4B00375BED /* TidalVolumeViewController.m */; };
+		63A8E4A1135EBF4F00375BED /* TidalVolumeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63A8E49F135EBF4D00375BED /* TidalVolumeViewController.xib */; };
+		63A8E4AB135EC06700375BED /* MultipleChoiceButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 63A8E4AA135EC06600375BED /* MultipleChoiceButton.png */; };
 		63CC7645135D07E6008A788D /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CC7643135D07E6008A788D /* PasswordViewController.m */; };
 		63CC7648135D07EC008A788D /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63CC7647135D07EC008A788D /* PasswordViewController.xib */; };
 		63CC7655135D157A008A788D /* YesNoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CC7654135D157A008A788D /* YesNoButton.m */; };
@@ -126,6 +129,11 @@
 		636DBCD413406AFC00AD6089 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		6395CEAF13314CEC00617C76 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuggestionViewController.xib; path = LIPS/SuggestionViewController.xib; sourceTree = "<group>"; };
+		63A8E49D135EBF4A00375BED /* TidalVolumeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TidalVolumeViewController.h; sourceTree = "<group>"; };
+		63A8E49E135EBF4B00375BED /* TidalVolumeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TidalVolumeViewController.m; sourceTree = "<group>"; };
+		63A8E49F135EBF4D00375BED /* TidalVolumeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TidalVolumeViewController.xib; sourceTree = "<group>"; };
+		63A8E4AA135EC06600375BED /* MultipleChoiceButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MultipleChoiceButton.png; sourceTree = "<group>"; };
+		63A8E4AC135F2AA700375BED /* DecisionTreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecisionTreeView.h; sourceTree = "<group>"; };
 		63CC7643135D07E6008A788D /* PasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PasswordViewController.m; path = LIPS/PasswordViewController.m; sourceTree = "<group>"; };
 		63CC7644135D07E6008A788D /* PasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PasswordViewController.h; path = LIPS/PasswordViewController.h; sourceTree = "<group>"; };
 		63CC7647135D07EC008A788D /* PasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PasswordViewController.xib; path = LIPS/PasswordViewController.xib; sourceTree = "<group>"; };
@@ -212,6 +220,9 @@
 				630CDF70131D5856006B2305 /* FluidManagementViewController.m */,
 				6351B9C1131E14AC003D8A6A /* DataEntryController.h */,
 				6351B9C2131E14AE003D8A6A /* DataEntryController.m */,
+				63A8E49D135EBF4A00375BED /* TidalVolumeViewController.h */,
+				63A8E49E135EBF4B00375BED /* TidalVolumeViewController.m */,
+				63A8E4AC135F2AA700375BED /* DecisionTreeView.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -231,6 +242,7 @@
 				63F0E1781318CD4600FB6ADD /* ScoreViewController.xib */,
 				630CDF71131D5858006B2305 /* FluidManagementViewController.xib */,
 				6323DEC913412BC3006BC1A6 /* InfectionViewController.xib */,
+				63A8E49F135EBF4D00375BED /* TidalVolumeViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -283,6 +295,7 @@
 		63CC7651135D155E008A788D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				63A8E4AA135EC06600375BED /* MultipleChoiceButton.png */,
 				6311B459135E5BFB00B7E2E0 /* NoButton.png */,
 				6311B45A135E5BFB00B7E2E0 /* YesButton.png */,
 				63CC7653135D157A008A788D /* YesNoButton.h */,
@@ -473,6 +486,8 @@
 				63CC7648135D07EC008A788D /* PasswordViewController.xib in Resources */,
 				6311B45B135E5BFB00B7E2E0 /* NoButton.png in Resources */,
 				6311B45C135E5BFB00B7E2E0 /* YesButton.png in Resources */,
+				63A8E4A1135EBF4F00375BED /* TidalVolumeViewController.xib in Resources */,
+				63A8E4AB135EC06700375BED /* MultipleChoiceButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +545,7 @@
 				6323DECA13412BC3006BC1A6 /* InfectionViewController.m in Sources */,
 				63CC7645135D07E6008A788D /* PasswordViewController.m in Sources */,
 				63CC7655135D157A008A788D /* YesNoButton.m in Sources */,
+				63A8E4A0135EBF4F00375BED /* TidalVolumeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,7 +605,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -650,7 +666,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -665,7 +681,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;

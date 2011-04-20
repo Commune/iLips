@@ -79,4 +79,8 @@ static Patient *patient;
 	return [responses objectForKey:question];
 }
 
++(Patient *)patient {
+	return patient;
+}
+
 @end

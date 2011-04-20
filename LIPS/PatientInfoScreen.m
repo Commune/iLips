@@ -55,7 +55,8 @@
 	float w = [weightUnit isEqualToString:@"kg"]?weight.value:[self lbToKg:weight.value];
 	int patientLoc = patientLocation.selectedSegmentIndex;
 	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc];
-	[self.navigationController pushViewController:[[DataEntryController alloc] initWithPatient:patient] animated:YES];
+	DataEntryController *dataEntryView = [[DataEntryController alloc] initWithPatient:patient];
+	[self.navigationController pushViewController:dataEntryView animated:YES];
 }
 
 

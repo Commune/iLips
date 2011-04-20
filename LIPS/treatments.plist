@@ -36,11 +36,11 @@
 	<key>Respiratory Status</key>
 	<dict>
 		<key>Intubation/Mechanical Ventilation Required</key>
-		<string></string>
+		<string>Intubation/Mechanical Ventilation Required</string>
 		<key>Non-Invasive Ventilation</key>
-		<string></string>
+		<string>Non-Invasive Ventilation</string>
 		<key>Not Vented</key>
-		<string></string>
+		<string>Not Vented</string>
 	</dict>
 	<key>Score</key>
 	<dict>
@@ -53,6 +53,13 @@
 		<string>Stop</string>
 		<key>Yes</key>
 		<string>Bleeding or Ischemia</string>
+	</dict>
+	<key>Non-Invasive Ventilation</key>
+	<dict>
+		<key>Yes</key>
+		<string>RSI</string>
+		<key>No</key>
+		<string>Respiratory Support 1</string>
 	</dict>
 </dict>
 </plist>
