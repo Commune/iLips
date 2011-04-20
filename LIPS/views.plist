@@ -290,5 +290,29 @@
 		<key>Class</key>
 		<string>SuggestionViewController</string>
 	</dict>
+	<key>Intubation/Mechanical Ventilation Required</key>
+	<dict>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Intubation or Mechanical Ventilation Required</string>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;ul&gt;
+&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
+&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
+&lt;li&gt;6-8 ml/kg/ IBW (Table 3) 
+&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
+&lt;li&gt;PEEP&gt; =5
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;font size=&quot;7&quot;&gt;Aspiration Precautions&lt;/font&gt;
+&lt;li&gt;Elevate Head of the Bed &gt;30-45 degrees 
+&lt;li&gt;Oral Care with Chlorhexidine 
+&lt;li&gt;Gastric Acid Neutralization with IVH2 Blockers
+&lt;/ul&gt;</string>
+			<string>Tidal</string>
+		</array>
+	</dict>
 </dict>
 </plist>
