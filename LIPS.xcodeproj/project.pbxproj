@@ -67,6 +67,7 @@
 		63F6213B1331444700ABAEB0 /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63F621391331444700ABAEB0 /* bigicon.png */; };
 		63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F6213A1331444700ABAEB0 /* bigicon.psd */; };
 		A008E3311337D20E00C828D1 /* PatientInfoScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */; };
+		A09D7EBA135F4AA30040A082 /* ConservativeFluidView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A09D7EB9135F4AA30040A082 /* ConservativeFluidView.xib */; };
 		A0E8995813391BB200B46495 /* PatientInfoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E8995713391BB200B46495 /* PatientInfoScreen.xib */; };
 		A0FFC53613341D4500A425EC /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFC53513341D4500A425EC /* Patient.m */; };
 /* End PBXBuildFile section */
@@ -169,6 +170,7 @@
 		A003CD66133A772D00425396 /* conditions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conditions.plist; sourceTree = "<group>"; };
 		A008E32E1337D20E00C828D1 /* PatientInfoScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatientInfoScreen.h; path = LIPS/PatientInfoScreen.h; sourceTree = "<group>"; };
 		A008E32F1337D20E00C828D1 /* PatientInfoScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatientInfoScreen.m; path = LIPS/PatientInfoScreen.m; sourceTree = "<group>"; };
+		A09D7EB9135F4AA30040A082 /* ConservativeFluidView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConservativeFluidView.xib; sourceTree = "<group>"; };
 		A0E8995713391BB200B46495 /* PatientInfoScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientInfoScreen.xib; path = LIPS/PatientInfoScreen.xib; sourceTree = "<group>"; };
 		A0FFC53413341D4500A425EC /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Patient.h; path = LIPS/Patient.h; sourceTree = "<group>"; };
 		A0FFC53513341D4500A425EC /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patient.m; path = LIPS/Patient.m; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		6336E742131E628800CF9851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A09D7EB9135F4AA30040A082 /* ConservativeFluidView.xib */,
 				63CC7651135D155E008A788D /* Custom */,
 				63CC7647135D07EC008A788D /* PasswordViewController.xib */,
 				639CF3CB1341B4E100E8D5AE /* SuggestionViewController.xib */,
@@ -488,6 +491,7 @@
 				6311B45C135E5BFB00B7E2E0 /* YesButton.png in Resources */,
 				63A8E4A1135EBF4F00375BED /* TidalVolumeViewController.xib in Resources */,
 				63A8E4AB135EC06700375BED /* MultipleChoiceButton.png in Resources */,
+				A09D7EBA135F4AA30040A082 /* ConservativeFluidView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
