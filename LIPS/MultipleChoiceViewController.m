@@ -53,6 +53,8 @@
 
 #define LR_PADDING 50
 #define BUTTON_PADDING 20
+#define TEXT_PADDING_X 10
+#define TEXT_PADDING_Y 10
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -62,16 +64,24 @@
     CGFloat spacing = (self.view.frame.size.width - 2 * LR_PADDING - width) / ([choices count] - 1);
     choiceButtons = [[NSMutableArray alloc] init];
     for(int i = 0; i < [choices count]; i++) {
-//        UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 		UIButton *button = [[UIButton alloc] init];
-		[button setBackgroundImage:[UIImage imageNamed:@"MultipleChoiceButton.png"] forState:UIControlStateNormal];
+		[button setBackgroundImage:[UIImage imageNamed:@"GreyButton.png"] forState:UIControlStateNormal];
 		button.backgroundColor = [UIColor clearColor];
-		button.titleLabel.numberOfLines = 3;
-		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         button.tag = i;
         [button setAutoresizingMask:UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth];
-        [button setTitle:[choices objectAtIndex:i] forState:UIControlStateNormal];
-        [button setFrame:CGRectMake(LR_PADDING+spacing*i, 545.0, width, 110.0)];
+		CGRect buttonFrame = CGRectMake(LR_PADDING+spacing*i, 545.0, width, 110.0);
+        [button setFrame:buttonFrame];
+		
+		[button setTitle:[choices objectAtIndex:i] forState:UIControlStateNormal];
+		[button.titleLabel setFrame:CGRectMake(buttonFrame.origin.x+TEXT_PADDING_X, buttonFrame.origin.y+TEXT_PADDING_Y, buttonFrame.size.width-2*TEXT_PADDING_X, buttonFrame.size.height-2*TEXT_PADDING_Y)];
+		[button.titleLabel setFont:[UIFont fontWithName:@"Helvetica" size:16]];
+		[button.titleLabel setMinimumFontSize:8.0];
+		[button.titleLabel setAdjustsFontSizeToFitWidth:YES];
+		[button.titleLabel setTextAlignment:UITextAlignmentCenter];
+		[button.titleLabel setLineBreakMode:UILineBreakModeWordWrap];
+		[button.titleLabel setNumberOfLines:3];
+		[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+		
         [button addTarget:self action:@selector(submitAnswer:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
         [choiceButtons addObject:button];
