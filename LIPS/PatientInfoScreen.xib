@@ -78,7 +78,7 @@
 					<object class="IBUISegmentedControl" id="919338814">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{236, 166}, {207, 44}}</string>
+						<string key="NSFrame">{{236, 192}, {207, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="158513207"/>
@@ -115,7 +115,7 @@
 					<object class="IBUILabel" id="397432633">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{79, 169}, {88, 37}}</string>
+						<string key="NSFrame">{{79, 195}, {88, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="919338814"/>
@@ -142,7 +142,7 @@
 					<object class="IBUILabel" id="158513207">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{79, 224}, {73, 37}}</string>
+						<string key="NSFrame">{{79, 250}, {73, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="301371116"/>
@@ -165,7 +165,7 @@
 					<object class="IBUILabel" id="406120018">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{79, 289}, {82, 37}}</string>
+						<string key="NSFrame">{{79, 315}, {82, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="30108571"/>
@@ -188,7 +188,7 @@
 					<object class="IBUILabel" id="771370503">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{79, 675}, {196, 37}}</string>
+						<string key="NSFrame">{{79, 393}, {196, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="518661756"/>
@@ -211,7 +211,7 @@
 					<object class="IBUISlider" id="702590714">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{234, 232}, {313, 23}}</string>
+						<string key="NSFrame">{{234, 258}, {313, 23}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="724524863"/>
@@ -226,7 +226,7 @@
 					<object class="IBUISlider" id="33806382">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{234, 297}, {313, 23}}</string>
+						<string key="NSFrame">{{234, 323}, {313, 23}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="798659507"/>
@@ -241,9 +241,10 @@
 					<object class="IBUIButton" id="40594527">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{344, 761}, {207, 37}}</string>
+						<string key="NSFrame">{{344, 621}, {207, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -271,7 +272,7 @@
 					<object class="IBUILabel" id="125701612">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{374, 262}, {55, 21}}</string>
+						<string key="NSFrame">{{374, 288}, {55, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="406120018"/>
@@ -299,10 +300,10 @@
 					<object class="IBUILabel" id="130494071">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{374, 327}, {55, 21}}</string>
+						<string key="NSFrame">{{374, 353}, {55, 21}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="771370503"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -322,10 +323,10 @@
 					<object class="IBUISegmentedControl" id="518661756">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{344, 675}, {207, 44}}</string>
+						<string key="NSFrame">{{344, 393}, {207, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="40594527"/>
+						<reference key="NSNextKeyView" ref="356644642"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBSegmentControlStyle">3</int>
@@ -375,7 +376,7 @@
 					<object class="IBUITextField" id="724524863">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{553, 227}, {102, 31}}</string>
+						<string key="NSFrame">{{553, 253}, {102, 31}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="125701612"/>
@@ -413,7 +414,7 @@
 					<object class="IBUITextField" id="798659507">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{553, 292}, {102, 31}}</string>
+						<string key="NSFrame">{{553, 318}, {102, 31}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="130494071"/>
@@ -506,7 +507,7 @@
 					<object class="IBUILabel" id="301371116">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{155, 224}, {73, 37}}</string>
+						<string key="NSFrame">{{155, 250}, {73, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="702590714"/>
@@ -529,7 +530,7 @@
 					<object class="IBUILabel" id="30108571">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
-						<string key="NSFrame">{{161, 289}, {73, 37}}</string>
+						<string key="NSFrame">{{161, 315}, {73, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="33806382"/>
@@ -548,6 +549,93 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">25</float>
+					</object>
+					<object class="IBUILabel" id="356644642">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">301</int>
+						<string key="NSFrame">{{79, 470}, {512, 66}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="68713922"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText">Patient Terminally Ill or Prefers Paliative Care</string>
+						<reference key="IBUIFont" ref="948418736"/>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
+							<reference key="NSCustomColorSpace" ref="790057679"/>
+						</object>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">25</float>
+					</object>
+					<object class="IBUISegmentedControl" id="68713922">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">301</int>
+						<string key="NSFrame">{{384, 535}, {207, 44}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="40594527"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBSegmentControlStyle">3</int>
+						<int key="IBNumberOfSegments">2</int>
+						<int key="IBSelectedSegmentIndex">1</int>
+						<object class="NSArray" key="IBSegmentTitles">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>Yes</string>
+							<string>No</string>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentWidths">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<real value="0.0"/>
+							<real value="0.0"/>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentEnabledStates">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<boolean value="YES"/>
+							<boolean value="YES"/>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentContentOffsets">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>{0, 0}</string>
+							<string>{0, 0}</string>
+						</object>
+						<object class="NSMutableArray" key="IBSegmentImages">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="4"/>
+							<reference ref="4"/>
+						</object>
+					</object>
+					<object class="IBUILabel" id="138602696">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">-2147483356</int>
+						<string key="NSFrame">{{79, 724}, {512, 42}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<int key="IBUIContentMode">7</int>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<string key="IBUIText">Consider Paliative Care</string>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">48</double>
+							<int key="NSfFlags">16</int>
+						</object>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAwLjg5MDg4MjAxMDQgMC4wMDkwODA0ODM3OTEAA</bytes>
+						</object>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
+						<float key="IBUIMinimumFontSize">10</float>
 					</object>
 				</object>
 				<string key="NSFrameSize">{768, 980}</string>
@@ -724,6 +812,22 @@
 					</object>
 					<int key="connectionID">73</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">paliativeCareSelector</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="68713922"/>
+					</object>
+					<int key="connectionID">78</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">paliativeCareText</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="138602696"/>
+					</object>
+					<int key="connectionID">80</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -768,6 +872,9 @@
 							<reference ref="125701612"/>
 							<reference ref="130494071"/>
 							<reference ref="798659507"/>
+							<reference ref="356644642"/>
+							<reference ref="68713922"/>
+							<reference ref="138602696"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -861,6 +968,21 @@
 						<reference key="object" ref="30108571"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">75</int>
+						<reference key="object" ref="356644642"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">77</int>
+						<reference key="object" ref="68713922"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">79</int>
+						<reference key="object" ref="138602696"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -890,6 +1012,10 @@
 					<string>6.IUISegmentedControlInspectorSelectedSegmentMetadataKey</string>
 					<string>60.IBPluginDependency</string>
 					<string>7.IBPluginDependency</string>
+					<string>75.IBPluginDependency</string>
+					<string>77.IBPluginDependency</string>
+					<string>77.IUISegmentedControlInspectorSelectedSegmentMetadataKey</string>
+					<string>79.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
 				</object>
 				<object class="NSMutableArray" key="dict.values">
@@ -918,6 +1044,10 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<integer value="1"/>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -932,7 +1062,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">74</int>
+			<int key="maxID">80</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -946,7 +1076,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>heightSliderChanged:</string>
 							<string>heightTextChanged:</string>
-							<string>infectionChanged:</string>
 							<string>submit:</string>
 							<string>unitSwitched:</string>
 							<string>weightSliderChanged:</string>
@@ -956,7 +1085,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UISlider</string>
 							<string>UITextField</string>
-							<string>UISegmentedControl</string>
 							<string>id</string>
 							<string>UISegmentedControl</string>
 							<string>UISlider</string>
@@ -969,7 +1097,6 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>heightSliderChanged:</string>
 							<string>heightTextChanged:</string>
-							<string>infectionChanged:</string>
 							<string>submit:</string>
 							<string>unitSwitched:</string>
 							<string>weightSliderChanged:</string>
@@ -984,10 +1111,6 @@
 							<object class="IBActionInfo">
 								<string key="name">heightTextChanged:</string>
 								<string key="candidateClassName">UITextField</string>
-							</object>
-							<object class="IBActionInfo">
-								<string key="name">infectionChanged:</string>
-								<string key="candidateClassName">UISegmentedControl</string>
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">submit:</string>
@@ -1015,6 +1138,8 @@
 							<string>heightText</string>
 							<string>heightUnitLabel</string>
 							<string>heightVal</string>
+							<string>paliativeCareSelector</string>
+							<string>paliativeCareText</string>
 							<string>patientLocation</string>
 							<string>sex</string>
 							<string>submit</string>
@@ -1029,6 +1154,8 @@
 							<string>UISlider</string>
 							<string>UITextField</string>
 							<string>UILabel</string>
+							<string>UILabel</string>
+							<string>UISegmentedControl</string>
 							<string>UILabel</string>
 							<string>UISegmentedControl</string>
 							<string>UISegmentedControl</string>
@@ -1048,6 +1175,8 @@
 							<string>heightText</string>
 							<string>heightUnitLabel</string>
 							<string>heightVal</string>
+							<string>paliativeCareSelector</string>
+							<string>paliativeCareText</string>
 							<string>patientLocation</string>
 							<string>sex</string>
 							<string>submit</string>
@@ -1073,6 +1202,14 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">heightVal</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">paliativeCareSelector</string>
+								<string key="candidateClassName">UISegmentedControl</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">paliativeCareText</string>
 								<string key="candidateClassName">UILabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">

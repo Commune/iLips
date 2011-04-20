@@ -22,6 +22,8 @@
 	IBOutlet UITextField *weightText;
 	IBOutlet UISegmentedControl *patientLocation;
     IBOutlet UISegmentedControl *unitSelector;
+	IBOutlet UISegmentedControl *paliativeCareSelector;
+	IBOutlet UILabel *paliativeCareText;
     
     NSString *heightUnit;
     NSString *weightUnit;
