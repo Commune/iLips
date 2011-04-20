@@ -48,15 +48,20 @@
 }
 
 -(IBAction) submit:(id)sender {
-	int gender = sex.selectedSegmentIndex;
-	// Height in m
-	float h = [heightUnit isEqualToString:@"cm"]?height.value:[self inToCm:height.value]/1000;
-	// Weight in kg
-	float w = [weightUnit isEqualToString:@"kg"]?weight.value:[self lbToKg:weight.value];
-	int patientLoc = patientLocation.selectedSegmentIndex;
-	patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc];
-	DataEntryController *dataEntryView = [[DataEntryController alloc] initWithPatient:patient];
-	[self.navigationController pushViewController:dataEntryView animated:YES];
+	if (paliativeCareSelector.selectedSegmentIndex == 0) {
+		paliativeCareText.hidden = NO;
+	} else {
+		paliativeCareText.hidden = YES;
+		int gender = sex.selectedSegmentIndex;
+		// Height in m
+		float h = [heightUnit isEqualToString:@"cm"]?height.value:[self inToCm:height.value]/1000;
+		// Weight in kg
+		float w = [weightUnit isEqualToString:@"kg"]?weight.value:[self lbToKg:weight.value];
+		int patientLoc = patientLocation.selectedSegmentIndex;
+		patient = [[Patient alloc] initWithParams:gender:h:w:patientLoc];
+		DataEntryController *dataEntryView = [[DataEntryController alloc] initWithPatient:patient];
+		[self.navigationController pushViewController:dataEntryView animated:YES];
+	}
 }
 
 

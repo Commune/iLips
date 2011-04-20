@@ -36,6 +36,8 @@
     IBOutlet YesNoButton *spo2Switch;
 	IBOutlet YesNoButton *acidosisSwitch;
 	IBOutlet YesNoButton *diabetesSwitch;
+	IBOutlet YesNoButton *vasoactiveSwitch;
+	IBOutlet YesNoButton *bleedingSwitch;
 	
 	
 	IBOutlet YesNoButton *infectionPresent;
