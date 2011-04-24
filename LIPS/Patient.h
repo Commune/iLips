@@ -10,13 +10,16 @@
 
 @class SQLiteAdapter;
 
-typedef enum {PatientGenderMale,PatientGenderFemale}PatientGender;
+typedef enum {
+	PatientGenderMale,PatientGenderFemale}PatientGender;
 
 @interface Patient : NSObject {
 	NSMutableDictionary *symptoms;
 	
 	float height;
 	float weight;
+	float dayHospital;
+	float pid;
 	PatientGender gender;
 	
 	NSString *patientLocation;
@@ -28,7 +31,7 @@ typedef enum {PatientGenderMale,PatientGenderFemale}PatientGender;
 	
 }
 
--(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc;
+-(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc day:(float)d;
 -(void)printSelf;
 -(float)getAdditionalRisks;
 -(void)initializeSymptoms;
@@ -43,7 +46,7 @@ typedef enum {PatientGenderMale,PatientGenderFemale}PatientGender;
 -(BOOL)conservativeFluids;
 
 @property (assign) PatientGender gender;
-@property (assign) float weight, height;
+@property (assign) float weight, height, pid, dayHospital;
 @property (assign) NSString *patientLocation, *infectionLocation;
 @property (assign) NSMutableDictionary *symptoms;
 

@@ -48,20 +48,31 @@
 }
 
 -(IBAction) submit:(id)sender {
+	// checking if paliative care is desired
 	if (paliativeCareSelector.selectedSegmentIndex == 0) {
 		paliativeCareText.hidden = NO;
 	} else {
 		paliativeCareText.hidden = YES;
+		
+		
 		int genderInt = sex.selectedSegmentIndex;
 		PatientGender gender;
 		if(genderInt==0) gender = PatientGenderMale;
 		else gender = PatientGenderFemale;
+		
 		// Height in m
 		float h = [heightUnit isEqualToString:@"cm"]?height.value/100:[self inToCm:height.value]/100;
 		// Weight in kg
 		float w = [weightUnit isEqualToString:@"kg"]?weight.value:[self lbToKg:weight.value];
+		
 		int patientLoc = patientLocation.selectedSegmentIndex;
-		patient = [[Patient alloc] initWithGender:gender height:h weight:w location:patientLoc];
+		float pid = [patientID.text floatValue];
+		if (!pid) {
+			// create a unique, random number
+		}
+		
+		patient = [[Patient alloc] initWithGender:gender height:h weight:w location:patientLoc day:[dayHospital.text floatValue]];
+		
 		DataEntryController *dataEntryView = [[DataEntryController alloc] initWithPatient:patient];
 		[self.navigationController pushViewController:dataEntryView animated:YES];
 	}

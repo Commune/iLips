@@ -24,6 +24,8 @@
     IBOutlet UISegmentedControl *unitSelector;
 	IBOutlet UISegmentedControl *paliativeCareSelector;
 	IBOutlet UILabel *paliativeCareText;
+	IBOutlet UITextField *patientID;
+	IBOutlet UITextField *dayHospital;
     
     NSString *heightUnit;
     NSString *weightUnit;
