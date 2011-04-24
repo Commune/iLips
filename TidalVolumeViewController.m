@@ -34,6 +34,8 @@
 - (void)dealloc
 {
 	[volumeLabel release];
+	[sliderValueLabel release];
+	[slider release];
     [super dealloc];
 }
 
@@ -51,18 +53,30 @@
 {
     [super viewDidLoad];
 	
-	//float height = [[DecisionFetcher patient] height];
-	//float weight = [[DecisionFetcher patient] weight];
+	float height = [DecisionFetcher patient].height;
+    PatientGender gender = [DecisionFetcher patient].gender;
+	switch (gender) {
+		case PatientGenderMale:
+			IBW = 50.0 + 2.3 * (height*100/2.54 - 60);
+			break;
+			
+		case PatientGenderFemale:
+			IBW = 45.5 + (height*100/2.54 - 60);
+			break;
+	}
+    
+    [self sliderMoved:slider];
 	
-
-	
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
 	[volumeLabel release];
 	volumeLabel = nil;
+	[sliderValueLabel release];
+	sliderValueLabel = nil;
+	[slider release];
+	slider = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -74,4 +88,8 @@
 	return YES;
 }
 
+- (IBAction)sliderMoved:(UISlider *)sender {
+    sliderValueLabel.text = [NSString stringWithFormat:@"%0.2f",sender.value];
+    volumeLabel.text = [NSString stringWithFormat:@"%0.2f",IBW*sender.value];
+}
 @end

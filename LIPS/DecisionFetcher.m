@@ -67,11 +67,12 @@ static Patient *patient;
 
 +(void)addPatientProperties:(Patient *)aPatient {
 	if(aPatient) {
-	patient = aPatient;
-	[patient retain];
-	[self assignResponse:@"Infection" withValue:[patient.infectionLocation isEqualToString:@""]?@"No":@"Yes"];
-	[self assignResponse:@"Infection Location" withValue:patient.infectionLocation];
-	[self assignResponse:@"Patient Location" withValue:patient.patientLocation];
+		patient = aPatient;
+		[patient retain];
+		[self assignResponse:@"Infection" withValue:[patient.infectionLocation isEqualToString:@""]?@"No":@"Yes"];
+		[self assignResponse:@"Infection Location" withValue:patient.infectionLocation];
+		[self assignResponse:@"Patient Location" withValue:patient.patientLocation];
+		[self assignResponse:@"Shock" withValue:patient.shock?@"Yes":@"No"];
 	}
 }
 

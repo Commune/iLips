@@ -14,12 +14,15 @@
     float score;
     IBOutlet UILabel *lowScoreLabel;
 	IBOutlet UILabel *alertLabel;
+    IBOutlet UIButton *respiratoryButton;
     IBOutlet UIButton *infectionButton;
     IBOutlet UIButton *shockButton;
 }
 - (IBAction)infectionTreatment:(id)sender;
 - (IBAction)shockTreatment:(id)sender;
 - (IBAction)checklistTreatment:(id)sender;
+- (IBAction)respiratoryTreatment:(id)sender;
+
 
 - (id)initWithScore:(float)lipsScore;
 

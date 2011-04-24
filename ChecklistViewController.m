@@ -7,7 +7,7 @@
 //
 
 #import "ChecklistViewController.h"
-#import "CheckBox.h";
+#import "CheckBox.h"
 
 static ChecklistViewController *checkList;
 
@@ -20,7 +20,7 @@ static ChecklistViewController *checkList;
 
 - (void)clear {
 	for(CheckBox *c in checkBoxes) {
-        c.on = NO;
+        c.on = NO; 
     }
 }
 

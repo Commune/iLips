@@ -14,11 +14,12 @@
 
 @implementation Patient
 
+
 /*
  Initializes a patient with information from basic data entry screen
  */
--(Patient *)initWithParams:(int)gender:(float)h:(float)w:(int)patientLoc{
-	sex = gender;
+-(Patient *)initWithGender:(PatientGender)g height:(float)h weight:(float)w location:(int)patientLoc {
+	self.gender = g;
 	height = h;
 	weight = w;
 	patientLocation = [self getPatientLocation:patientLoc];
@@ -59,7 +60,7 @@
 }
 
 -(void)setInfectionLocation:(NSString *)infecLoc {
-	[infectionLocation initWithString:infecLoc];
+	infectionLocation = [infecLoc retain];
 }
 
 -(NSString *)infectionLocation {
@@ -67,11 +68,11 @@
 }
 
 -(void) printSelf {
-	NSString *gender;
-	if (sex == 0) {
-		gender = @"I am a male!\n";
+	NSString *genderString;
+	if (gender == PatientGenderMale) {
+		genderString = @"I am a male!\n";
 	} else {
-		gender = @"I am a female!\n";
+		genderString = @"I am a female!\n";
 	}
 	
 	NSString *mesurements = [NSString stringWithFormat:@"\nI am %0.0f inches tall, and weigh %0.1f kilograms.", height, weight];
@@ -136,7 +137,16 @@
 	NSMutableDictionary *allPatientData = [[[NSMutableDictionary alloc] init] autorelease];
 	[allPatientData setObject:[NSNumber numberWithFloat:height] forKey:@"Height"];
 	[allPatientData setObject:[NSNumber numberWithFloat:weight] forKey:@"Weight"];
-	[allPatientData setObject:[NSNumber numberWithInt:sex] forKey:@"Sex"];
+	NSString *genderString;
+	switch(gender) {
+		case PatientGenderMale:
+			genderString = @"Male";
+			break;
+		case PatientGenderFemale:
+			genderString = @"Female";
+			break;
+	}
+	[allPatientData setObject:genderString forKey:@"Sex"];
 	[allPatientData setObject:patientLocation forKey:@"Patient Location"];
 	[allPatientData setObject:infectionLocation forKey:@"Infection Location"];
 	[allPatientData setObject:symptoms forKey:@"Symptoms"];
@@ -157,8 +167,7 @@
 -(BOOL)conservativeFluids {
 	NSMutableDictionary *bleeding = [symptoms objectForKey:@"Active Bleeding"];
 	NSMutableDictionary *vasoactive = [symptoms objectForKey:@"Vasoactive Medication"];
-	NSMutableDictionary *shock = [symptoms objectForKey:@"Shock"];
-	if ([bleeding objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && [vasoactive objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && [shock objectForKey:@"Present"] == [NSNumber numberWithBool:YES]) {
+	if ([bleeding objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && [vasoactive objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && shock) {
 		return YES;
 	} else {
 		return NO;
@@ -167,6 +176,6 @@
 }
 
 @dynamic infectionLocation;
-@synthesize height, weight, sex, patientLocation;
+@synthesize height, weight, gender, patientLocation,shock;
 
 @end

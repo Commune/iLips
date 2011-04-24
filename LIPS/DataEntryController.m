@@ -95,7 +95,8 @@
 }
 
 -(IBAction) infectionChanged:(YesNoButton *)sender {
-	int infecPresent = sender.on;
+	BOOL infecPresent = sender.on;
+	[DecisionFetcher assignResponse:@"Infection" withValue:infecPresent?@"Yes":@"No"];
 	infectionSource.hidden = !infecPresent;
 	sepsisLabel.hidden = !infecPresent;
 	sepsisSwitch.hidden = !infecPresent;
@@ -106,6 +107,7 @@
 		pneumoniaLabel.hidden = YES;
 	}
 	[infectionSource selectRow:0 inComponent:0 animated:NO];
+	infecLoc = [infectionLocations objectAtIndex:0];
 }
 
 
@@ -120,11 +122,9 @@
 		[self.navigationController pushViewController:fluid animated:YES];
 
 	} else {
-		NSString *shockResponse = shockSwitch.on?@"Yes":@"No";
-		NSString *infectionResponse = infectionPresent.on?@"Yes":@"No";
-		[DecisionFetcher assignResponse:@"Shock" withValue:shockResponse];
-		[DecisionFetcher assignResponse:@"Infection" withValue:infectionResponse];
-		
+		thePatient.shock = shockSwitch.on;
+		thePatient.infectionLocation = infectionPresent.on?infecLoc:@"";	
+		[DecisionFetcher addPatientProperties:thePatient];
 		ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];
 		[self.navigationController pushViewController:scoreView animated:YES];
 	}

@@ -141,6 +141,60 @@
 		<key>Title</key>
 		<string>Infection in Urine</string>
 	</dict>
+	<key>Intubation/Mechanical Ventilation Required</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;ul&gt;
+&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
+&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
+&lt;li&gt;6-8 ml/kg/ IBW (see MORE) 
+&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
+&lt;li&gt;PEEP&gt; =5
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;font size=&quot;7&quot;&gt;Aspiration Precautions&lt;/font&gt;
+&lt;li&gt;Elevate Head of the Bed &gt;30-45 degrees 
+&lt;li&gt;Oral Care with Chlorhexidine 
+&lt;li&gt;Gastric Acid Neutralization with IVH2 Blockers
+&lt;/ul&gt;</string>
+			<string>Tidal</string>
+		</array>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Intubation or Mechanical Ventilation Required</string>
+	</dict>
+	<key>Non-Invasive Ventilation</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>Is the patient&apos;s MAP &lt; 60 or is there a need for vasopressors?</string>
+		</array>
+		<key>Class</key>
+		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>On Non-Invasive Ventilation</string>
+	</dict>
+	<key>Not Vented</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
+&lt;/ul&gt;
+&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
+&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
+&lt;li&gt;6-8 ml/kg/ IBW (see MORE) 
+&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
+&lt;li&gt;PEEP&gt; =5
+&lt;/ul&gt;</string>
+			<string>Tidal</string>
+		</array>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Not Vented</string>
+	</dict>
 	<key>Removable Source</key>
 	<dict>
 		<key>Arguments</key>
@@ -152,6 +206,46 @@
 		<key>Title</key>
 		<string>Removable Source</string>
 	</dict>
+	<key>Respiratory Status</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>What is the patient&apos;s respiratory status?</string>
+			<string>Non-Invasive Ventilation</string>
+			<string>Intubation/Mechanical Ventilation Required</string>
+			<string>Not Vented</string>
+		</array>
+		<key>Class</key>
+		<string>MultipleChoiceViewController</string>
+		<key>Title</key>
+		<string>Respiratory Status</string>
+	</dict>
+	<key>Respiratory Support 1</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;ul&gt;
+&lt;font size=&quot;7&quot;&gt;Respiratory Support&lt;/font&gt;
+&lt;li&gt;Reassess work of breathing 30 minutes into non-invasive ventilation and consider early intubation for:
+&lt;ul&gt;
+&lt;li&gt;severe hypoxemia (P:F ratio &lt;150)&lt;li&gt;lack of improvement in respiratory rate, use of accessory muscles, PaCO2 &gt; 40 with pH &gt;7.35
+&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
+&lt;/ul&gt;
+&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
+&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
+&lt;li&gt;6-8 ml/kg/ IBW (see MORE) 
+&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
+&lt;li&gt;PEEP&gt; =5
+&lt;/ul&gt;</string>
+			<string>Tidal</string>
+		</array>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>RSI</string>
+	</dict>
 	<key>Resuscitate</key>
 	<dict>
 		<key>Arguments</key>
@@ -162,31 +256,6 @@
 		<string>SuggestionViewController</string>
 		<key>Title</key>
 		<string>Resuscitate</string>
-	</dict>
-	<key>Respiratory Status</key>
-	<dict>
-		<key>Class</key>
-		<string>MultipleChoiceViewController</string>
-		<key>Title</key>
-		<string>Respiratory Status</string>
-		<key>Arguments</key>
-		<array>
-			<string>What is the patient&apos;s respiratory status?</string>
-			<string>Non-Invasive Ventilation</string>
-			<string>Intubation/Mechanical Ventilation Required</string>
-			<string>Not Vented</string>
-		</array>
-	</dict>
-	<key>Non-Invasive Ventilation</key>
-	<dict>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>On Non-Invasive Ventilation</string>
-		<key>Arguments</key>
-		<array>
-			<string>Is the patient&apos;s MAP &lt; 60 or is there a need for vasopressors?</string>
-		</array>
 	</dict>
 	<key>Resuscitate, Transfuse</key>
 	<dict>
@@ -203,6 +272,17 @@
 		<key>Title</key>
 		<string>Resuscitate and Transfuse</string>
 	</dict>
+	<key>RSI</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;font size=&quot;7&quot;&gt;If mechanical ventilation is needed, consider Rapid Sequence Intubation IV H2 Blocker.&lt;/font&gt;</string>
+		</array>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>RSI</string>
+	</dict>
 	<key>Shock</key>
 	<dict>
 		<key>Arguments</key>
@@ -218,101 +298,21 @@
 	<dict>
 		<key>Arguments</key>
 		<array>
-			<string>Stop/Maintain Euvolumia (CVP 8-10)</string>
+			<string>&lt;font size=&quot;7&quot;&gt;Stop/Maintain Euvolumia (CVP 8-10)&lt;/font&gt;</string>
 		</array>
 		<key>Class</key>
 		<string>SuggestionViewController</string>
 		<key>Title</key>
 		<string>Stop</string>
 	</dict>
-	<key>RSI</key>
-	<dict>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>RSI</string>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;font size=&quot;7&quot;&gt;If mechanical ventilation is needed, consider Rapid Sequence Intubation IV H2 Blocker.&lt;/font&gt;</string>
-		</array>
-	</dict>
-	<key>Respiratory Support 1</key>
-	<dict>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>RSI</string>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Respiratory Support&lt;/font&gt;
-&lt;li&gt;Reassess work of breathing 30 minutes into non-invasive ventilation and consider early intubation for:
-&lt;ul&gt;
-&lt;li&gt;severe hypoxemia (P:F ratio &lt;150)&lt;li&gt;lack of improvement in respiratory rate, use of accessory muscles, PaCO2 &gt; 40 with pH &gt;7.35
-&lt;/ul&gt;
-&lt;/ul&gt;
-&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
-&lt;/ul&gt;
-&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
-&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
-&lt;li&gt;6-8 ml/kg/ IBW (Table 3) 
-&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
-&lt;li&gt;PEEP&gt; =5
-&lt;/ul&gt;</string>
-			<string>Tidal</string>
-		</array>
-	</dict>
 	<key>Tidal</key>
 	<dict>
+		<key>Arguments</key>
+		<array/>
 		<key>Class</key>
 		<string>TidalVolumeViewController</string>
 		<key>Title</key>
 		<string>Tidal Volumes</string>
-		<key>Arguments</key>
-		<array/>
-	</dict>
-	<key>Not Vented</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
-&lt;/ul&gt;
-&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
-&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
-&lt;li&gt;6-8 ml/kg/ IBW (Table 3) 
-&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
-&lt;li&gt;PEEP&gt; =5
-&lt;/ul&gt;</string>
-			<string>Tidal</string>
-		</array>
-		<key>Title</key>
-		<string>Not Vented</string>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-	</dict>
-	<key>Intubation/Mechanical Ventilation Required</key>
-	<dict>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Intubation or Mechanical Ventilation Required</string>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
-&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
-&lt;li&gt;6-8 ml/kg/ IBW (Table 3) 
-&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
-&lt;li&gt;PEEP&gt; =5
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Aspiration Precautions&lt;/font&gt;
-&lt;li&gt;Elevate Head of the Bed &gt;30-45 degrees 
-&lt;li&gt;Oral Care with Chlorhexidine 
-&lt;li&gt;Gastric Acid Neutralization with IVH2 Blockers
-&lt;/ul&gt;</string>
-			<string>Tidal</string>
-		</array>
 	</dict>
 </dict>
 </plist>

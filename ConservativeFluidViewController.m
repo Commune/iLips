@@ -15,6 +15,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+		self.navigationItem.title = @"Conservative Fluid and Transfusion";
         // Custom initialization
     }
     return self;

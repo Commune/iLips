@@ -34,13 +34,16 @@
 }
 
 - (IBAction)shockTreatment:(id)sender {
-//	[self findSuggestion:@"Shock"];
-	[self findSuggestion:@"Respiratory Status"];
+	[self findSuggestion:@"Shock"];
 }
 
 - (IBAction)checklistTreatment:(id)sender {
 	ChecklistViewController *checklist = [[ChecklistViewController alloc] init];
 	[self.navigationController pushViewController:checklist animated:YES];
+}
+
+- (IBAction)respiratoryTreatment:(id)sender {
+    [self findSuggestion:@"Respiratory Status"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -56,6 +59,7 @@
 {
 	[infectionButton release];
 	[shockButton release];
+	[respiratoryButton release];
     [super dealloc];
 }
 
@@ -81,16 +85,6 @@
 		lowScoreLabel.hidden = YES;
 		[self.view setBackgroundColor:[UIColor redColor]];
     }
-	
-	// checking for shock
-	if([[DecisionFetcher responseForQuestion:@"Shock"] isEqualToString:@"Yes"]) {
-		shockButton.hidden = NO;
-	}
-	
-	// checking for infection
-	if([[DecisionFetcher responseForQuestion:@"Infection"] isEqualToString:@"Yes"]) {
-		infectionButton.hidden = NO;
-	}
     
     [self.navigationItem setTitle:@"LIPS Score"];
 	[self.navigationController setNavigationBarHidden:NO];
@@ -104,6 +98,8 @@
 	infectionButton = nil;
 	[shockButton release];
 	shockButton = nil;
+	[respiratoryButton release];
+	respiratoryButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
