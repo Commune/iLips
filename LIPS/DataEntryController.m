@@ -122,7 +122,6 @@
 		[self.navigationController pushViewController:fluid animated:YES];
 
 	} else {
-		thePatient.shock = shockSwitch.on;
 		thePatient.infectionLocation = infectionPresent.on?infecLoc:@"";	
 		[DecisionFetcher addPatientProperties:thePatient];
 		ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];

@@ -26,8 +26,6 @@ typedef enum {PatientGenderMale,PatientGenderFemale}PatientGender;
 	
 	NSString *patientID;
 	
-	BOOL shock;
-	
 }
 
 -(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc;
@@ -47,6 +45,6 @@ typedef enum {PatientGenderMale,PatientGenderFemale}PatientGender;
 @property (assign) PatientGender gender;
 @property (assign) float weight, height;
 @property (assign) NSString *patientLocation, *infectionLocation;
-@property (assign) BOOL shock;
+@property (assign) NSMutableDictionary *symptoms;
 
 @end

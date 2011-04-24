@@ -28,7 +28,6 @@
 	sqliteAdapter = [[SQLiteAdapter alloc] init];
 	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
 	infectionLocation = [[NSString alloc] init];
-	[DecisionFetcher addPatientProperties:self];
 	return self;
 }
 
@@ -167,7 +166,8 @@
 -(BOOL)conservativeFluids {
 	NSMutableDictionary *bleeding = [symptoms objectForKey:@"Active Bleeding"];
 	NSMutableDictionary *vasoactive = [symptoms objectForKey:@"Vasoactive Medication"];
-	if ([bleeding objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && [vasoactive objectForKey:@"Present"] == [NSNumber numberWithBool:YES] && shock) {
+	NSMutableDictionary *shock = [symptoms objectForKey:@"Shock"];
+	if ([[bleeding objectForKey:@"Present"] isEqualToNumber:[NSNumber numberWithBool:NO]] && [[vasoactive objectForKey:@"Present"] isEqualToNumber:[NSNumber numberWithBool:NO]] && [[shock objectForKey:@"Present"] isEqualToNumber:[NSNumber numberWithInt:NO]]) {
 		return YES;
 	} else {
 		return NO;
@@ -176,6 +176,6 @@
 }
 
 @dynamic infectionLocation;
-@synthesize height, weight, gender, patientLocation,shock;
+@synthesize height, weight, gender, patientLocation, symptoms;
 
 @end

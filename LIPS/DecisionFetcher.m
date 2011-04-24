@@ -69,10 +69,16 @@ static Patient *patient;
 	if(aPatient) {
 		patient = aPatient;
 		[patient retain];
+		NSMutableDictionary *shockDict = [patient.symptoms objectForKey:@"Shock"];
+		BOOL shock = NO;
+		if ([[shockDict objectForKey:@"Present"] isEqualToNumber:[NSNumber numberWithBool:YES]]) {
+			shock = YES;
+		}
+		
 		[self assignResponse:@"Infection" withValue:[patient.infectionLocation isEqualToString:@""]?@"No":@"Yes"];
 		[self assignResponse:@"Infection Location" withValue:patient.infectionLocation];
 		[self assignResponse:@"Patient Location" withValue:patient.patientLocation];
-		[self assignResponse:@"Shock" withValue:patient.shock?@"Yes":@"No"];
+		[self assignResponse:@"Shock" withValue:shock?@"Yes":@"No"];
 	}
 }
 
