@@ -31,7 +31,7 @@ typedef enum {
 	
 }
 
--(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc day:(float)d;
+-(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc day:(float)d patientIdent:(float)p;
 -(void)printSelf;
 -(float)getAdditionalRisks;
 -(void)initializeSymptoms;

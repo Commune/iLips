@@ -44,6 +44,7 @@
 	IBOutlet UIPickerView *infectionSource;
 	IBOutlet UILabel *sepsisLabel;
 	IBOutlet UILabel *pneumoniaLabel;
+	IBOutlet UILabel *patientIDLabel;
 	
 	Patient *thePatient;
 	

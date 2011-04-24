@@ -19,6 +19,8 @@
 -(id)initWithPatient:(Patient *)p {
 	if (self == [super init]) {
 		thePatient = p;
+		NSLog(@"%@", [NSString stringWithFormat:@"%f", thePatient.pid]);
+		//[patientIDLabel setText:[NSString stringWithFormat:@"%f", thePatient.pid]];
 		self.navigationItem.hidesBackButton = NO;
 		
 		if (!infectionLocations) {
@@ -36,8 +38,8 @@
 		
 		if (!infecLoc) {
 			infecLoc = [[NSString alloc] init];
-
 		}
+		
 	}
 	return self;
 }

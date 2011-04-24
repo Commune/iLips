@@ -18,11 +18,12 @@
 /*
  Initializes a patient with information from basic data entry screen
  */
--(Patient *)initWithGender:(PatientGender)g height:(float)h weight:(float)w location:(int)patientLoc day:(float)d {
+-(Patient *)initWithGender:(PatientGender)g height:(float)h weight:(float)w location:(int)patientLoc day:(float)d patientIdent:(float)p {
 	self.gender = g;
 	height = h;
 	weight = w;
 	dayHospital = d;
+	pid = p;
 	patientLocation = [self getPatientLocation:patientLoc];
 	[self initializeSymptoms];
 	[self getAdditionalRisks];	
