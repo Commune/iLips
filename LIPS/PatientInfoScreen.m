@@ -66,12 +66,14 @@
 		float w = [weightUnit isEqualToString:@"kg"]?weight.value:[self lbToKg:weight.value];
 		
 		int patientLoc = patientLocation.selectedSegmentIndex;
-		float pid = [patientID.text floatValue];
-		if (!pid) {
-			// create a unique, random number
+		float pid = 0;
+		if (![patientID.text isEqualToString:@""]) {
+			pid = [patientID.text floatValue];
+		} else {
+			pid = (arc4random() % (9999999999 - 1000000000)) + 1000000000;
 		}
 		
-		patient = [[Patient alloc] initWithGender:gender height:h weight:w location:patientLoc day:[dayHospital.text floatValue]];
+		patient = [[Patient alloc] initWithGender:gender height:h weight:w location:patientLoc day:[dayHospital.text floatValue] patientIdent:pid];
 		
 		DataEntryController *dataEntryView = [[DataEntryController alloc] initWithPatient:patient];
 		[self.navigationController pushViewController:dataEntryView animated:YES];
