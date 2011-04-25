@@ -114,7 +114,8 @@
 
 
 -(void)submitPatientToDatabase {
-	if(![thePatient submitToDatabase]) {
+	BOOL success = [thePatient submitToDatabase];
+	if(!success) {
 		UIAlertView *connectionFailedAlert = [[UIAlertView alloc] initWithTitle:@"Could Not Submit to Database" message:@"The patient's daily LIPS score could not be submitted." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Retry", nil];
 		[connectionFailedAlert show];
 	}
