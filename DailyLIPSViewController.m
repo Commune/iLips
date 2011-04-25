@@ -14,14 +14,12 @@
 
 @implementation DailyLIPSViewController
 
-- (NSDictionary *) loadData {
-	NSDictionary *dailyLIPS;
+- (void) loadData {
 	Patient *patient = DecisionFetcher.patient;
 	if(!(dailyLIPS = [patient dailyLIPS])) {
 		UIAlertView *loadFailedAlert = [[UIAlertView alloc] initWithTitle:@"Load Failed" message:@"The patient's daily LIPS data could not be downloaded." delegate:self cancelButtonTitle:@"Go Back" otherButtonTitles:@"Retry", nil];
 		[loadFailedAlert show];
 	}
-	return dailyLIPS;
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -36,13 +34,15 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+		self.navigationItem.title = [NSString stringWithFormat:@"Daily LIPS Scores for Patient %qu",DecisionFetcher.patient.pid];
+		[self loadData];
     }
     return self;
 }
 
 - (void)dealloc
 {
+	[lipsTable release];
     [super dealloc];
 }
 
@@ -54,17 +54,46 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
+	id key = [[[dailyLIPS allKeys] sortedArrayUsingComparator:^(id obj1, id obj2) {
+		if([obj1 intValue] > [obj2 intValue]) 
+			return (NSComparisonResult) NSOrderedDescending;
+		else if([obj1 intValue] < [obj2 intValue])
+			return (NSComparisonResult) NSOrderedAscending;
+		return (NSComparisonResult) NSOrderedSame;
+	}] objectAtIndex:indexPath.row];
+	NSNumber *score = [dailyLIPS objectForKey:key];
+	NSString *cellString = [NSString stringWithFormat:@"%@:%@",key,score];
+	cell.textLabel.text = cellString;
+	float scaledScore = MIN([score floatValue]/10.0,1.0);
+	UIColor *bgColor = [UIColor colorWithRed:scaledScore green:0.0 blue:1.0-scaledScore alpha:1.0];
+	UIView *bgView = [[UIView alloc] initWithFrame:cell.frame];
+	bgView.backgroundColor = bgColor;
+	cell.backgroundView = bgView;
+	cell.textLabel.backgroundColor = bgColor;
+	[cell.contentView insertSubview:bgView belowSubview:cell.textLabel];
+	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [dailyLIPS count];	
+}
+
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    NSDictionary *dailyLIPS = [self loadData];
-	NSLog(@"%@",dailyLIPS);
+	[super viewDidLoad];	
 }
 
 - (void)viewDidUnload
 {
+	[lipsTable release];
+	lipsTable = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

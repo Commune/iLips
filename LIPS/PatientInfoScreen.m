@@ -169,6 +169,10 @@
 }
 
 
+- (void) closeKeyboard:(id)sender {
+	[sender resignFirstResponder];
+}
+
 // initialization methods
 
 #pragma mark - View lifecycle
@@ -180,6 +184,11 @@
 	[heightText addTarget:self action:@selector(heightTextChanged:) forControlEvents:UIControlEventEditingDidEndOnExit];
 	
 	[weightText addTarget:self action:@selector(weightTextChanged:) forControlEvents:UIControlEventEditingDidEndOnExit];
+	
+	[patientID addTarget:self action:@selector(closeKeyboard:) forControlEvents:UIControlEventEditingDidEndOnExit];
+	
+	[dayHospital addTarget:self action:@selector(closeKeyboard:) forControlEvents:UIControlEventEditingDidEndOnExit];
+
 }
 
 - (void)viewDidUnload
