@@ -10,6 +10,7 @@
 #import "SuggestionViewController.h"
 #import "DecisionFetcher.h"
 #import "ChecklistViewController.h"
+#import "DailyLIPSViewController.h"
 
 @implementation ScoreViewController
 
@@ -44,6 +45,10 @@
 
 - (IBAction)respiratoryTreatment:(id)sender {
     [self findSuggestion:@"Respiratory Status"];
+}
+
+- (IBAction)dailyLIPS:(id)sender {
+	[self.navigationController pushViewController:[[DailyLIPSViewController alloc] init] animated:YES];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

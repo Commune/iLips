@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class SQLiteAdapter;
-
 typedef enum {
 	PatientGenderMale,PatientGenderFemale}PatientGender;
 
@@ -19,19 +17,17 @@ typedef enum {
 	float height;
 	float weight;
 	float dayHospital;
-	float pid;
+	unsigned long long pid;
 	PatientGender gender;
 	
 	NSString *patientLocation;
 	NSString *infectionLocation;
 	
-	SQLiteAdapter *sqliteAdapter;
-	
 	NSString *patientID;
 	
 }
 
--(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc day:(float)d patientIdent:(float)p;
+-(Patient *)initWithGender:(PatientGender)gender height:(float)h weight:(float)w location:(int)patientLoc day:(float)d patientIdent:(unsigned long long)p;
 -(void)printSelf;
 -(float)getAdditionalRisks;
 -(void)initializeSymptoms;
@@ -41,12 +37,14 @@ typedef enum {
 -(NSString *)getConditions;
 -(NSString *)toJSON;
 -(NSString *)getID;
--(int)addToLocalDatabase;
 -(void)setInfectionLocation:(NSString *)infecLoc;
 -(BOOL)conservativeFluids;
+-(BOOL)submitToDatabase;
+-(NSDictionary *)dailyLIPS;
 
 @property (assign) PatientGender gender;
-@property (assign) float weight, height, pid, dayHospital;
+@property (assign) float weight, height, dayHospital;
+@property (assign) unsigned long long pid;
 @property (assign) NSString *patientLocation, *infectionLocation;
 @property (assign) NSMutableDictionary *symptoms;
 

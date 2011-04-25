@@ -9,8 +9,11 @@
 #import "Patient.h"
 #import "JSON.h"
 #import "SQLiteAdapter.h"
-#import "PatientEntry.h"
 #import "DecisionFetcher.h"
+#import "MysqlConnection.h"
+#import "MysqlInsert.h"
+#import "MysqlException.h"
+#import "MysqlFetch.h"
 
 @implementation Patient
 
@@ -18,7 +21,7 @@
 /*
  Initializes a patient with information from basic data entry screen
  */
--(Patient *)initWithGender:(PatientGender)g height:(float)h weight:(float)w location:(int)patientLoc day:(float)d patientIdent:(float)p {
+-(Patient *)initWithGender:(PatientGender)g height:(float)h weight:(float)w location:(int)patientLoc day:(float)d patientIdent:(unsigned long long)p {
 	self.gender = g;
 	height = h;
 	weight = w;
@@ -27,7 +30,6 @@
 	patientLocation = [self getPatientLocation:patientLoc];
 	[self initializeSymptoms];
 	[self getAdditionalRisks];	
-	sqliteAdapter = [[SQLiteAdapter alloc] init];
 	patientID = [[NSString stringWithFormat:@"%d",[[NSDate date] timeIntervalSince1970]] retain];
 	infectionLocation = [[NSString alloc] init];
 	return self;
@@ -158,12 +160,53 @@
 	return patientID;
 }
 
--(int)addToLocalDatabase {
-	PatientEntry *patient = [[[PatientEntry alloc] initWithId:[self getID] data:[self toJSON]] autorelease];
-	[sqliteAdapter deletePatient:patient];
-	int ret = [sqliteAdapter addPatient:patient];
-	return ret;
+-(MysqlConnection *)connectToMysql {
+	NSString *host = @"eclip196.db.7093929.hostedresource.com";
+	NSString *user = @"eclip196";
+	NSString *pass = @"Clip196";
+	NSString *schema = @"eclip196";
+	long flags = MYSQL_DEFAULT_CONNECTION_FLAGS;
+	MysqlConnection *connection = [MysqlConnection connectToHost:host user:user password:pass schema:schema flags:flags];
+	return connection;
 }
+
+
+-(BOOL) submitToDatabase {
+	MysqlConnection *connection;
+	if(!(connection = [self connectToMysql])) 
+		return NO;
+	MysqlInsert *insert = [MysqlInsert insertWithConnection:connection];
+	NSString *idString = [NSString stringWithFormat:@"%qu",self.pid];
+	NSNumber *dayNumber = [NSNumber numberWithInt:(int)dayHospital];
+	NSNumber *scoreNumber = [NSNumber numberWithFloat:[self calculateScore]];
+	insert.rowData = [NSDictionary dictionaryWithObjectsAndKeys:idString,@"id",dayNumber,@"day",scoreNumber,@"score", nil];
+	insert.table = @"dailyLIPS";
+	
+	@try 
+	{
+		[insert execute];
+	}
+	@catch(MysqlException *exception)
+	{
+		return NO;
+	}
+	
+	return YES;
+}
+
+-(NSDictionary *) dailyLIPS {
+	MysqlConnection *connection;
+	if(!(connection = [self connectToMysql])) 
+		return NO;
+	NSString *query = [NSString stringWithFormat:@"SELECT day,score FROM dailyLIPS where id='%qu' ORDER BY day ASC",pid];
+	MysqlFetch *fetch = [MysqlFetch fetchWithCommand:query onConnection:connection];
+	NSMutableDictionary *dailyLIPS = [[NSMutableDictionary alloc] init];
+	for(NSDictionary *row in fetch.results) {
+		[dailyLIPS setObject:[row objectForKey:@"score"] forKey:[row objectForKey:@"day"]];
+	}
+	return dailyLIPS;
+}
+
 
 -(BOOL)conservativeFluids {
 	NSMutableDictionary *bleeding = [symptoms objectForKey:@"Active Bleeding"];

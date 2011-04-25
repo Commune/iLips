@@ -112,10 +112,17 @@
 }
 
 
+
+-(void)submitPatientToDatabase {
+	if(![thePatient submitToDatabase]) {
+		UIAlertView *connectionFailedAlert = [[UIAlertView alloc] initWithTitle:@"Could Not Submit to Database" message:@"The patient's daily LIPS score could not be submitted." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Retry", nil];
+		[connectionFailedAlert show];
+	}
+}
+
 - (IBAction)submit:(id)sender {
-	// Add patient to SQLite database
-	[thePatient addToLocalDatabase];
-	
+	[self submitPatientToDatabase];
+
     float total = [thePatient calculateScore];
 	
 	if ([thePatient conservativeFluids]) {
@@ -129,6 +136,12 @@
 		[self.navigationController pushViewController:scoreView animated:YES];
 	}
 }
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Retry"])
+		[self submitPatientToDatabase];
+}
+
 
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {
 	return 1;
@@ -175,7 +188,7 @@
 {
     [super viewDidLoad];
     [self.navigationItem setTitle:@"Patient Condition"];
-    [self willRotateToInterfaceOrientation:UIInterfaceOrientationLandscapeLeft duration:0];
+	patientIDLabel.text = [NSString stringWithFormat:@"%qu",thePatient.pid];
 }
 
 - (void)viewDidUnload

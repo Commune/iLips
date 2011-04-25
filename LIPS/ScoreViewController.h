@@ -22,6 +22,7 @@
 - (IBAction)shockTreatment:(id)sender;
 - (IBAction)checklistTreatment:(id)sender;
 - (IBAction)respiratoryTreatment:(id)sender;
+- (IBAction)dailyLIPS:(id)sender;
 
 
 - (id)initWithScore:(float)lipsScore;

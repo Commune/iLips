@@ -200,16 +200,16 @@
 					<object class="IBUIButton" id="271029892">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">319</int>
-						<string key="NSFrame">{{215, 921}, {339, 42}}</string>
+						<string key="NSFrame">{{111, 908}, {250, 42}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="1007696727"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="656637845"/>
-						<string key="IBUINormalTitle">View Treatment Checklist</string>
+						<string key="IBUINormalTitle">Treatment Checklist</string>
 						<reference key="IBUIHighlightedTitleColor" ref="157663905"/>
 						<reference key="IBUINormalTitleColor" ref="642858012"/>
 						<reference key="IBUINormalTitleShadowColor" ref="649844735"/>
@@ -261,6 +261,24 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
+					</object>
+					<object class="IBUIButton" id="1007696727">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">319</int>
+						<string key="NSFrame">{{407, 908}, {250, 42}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="656637845"/>
+						<string key="IBUINormalTitle">Daily LIPS</string>
+						<reference key="IBUIHighlightedTitleColor" ref="157663905"/>
+						<reference key="IBUINormalTitleColor" ref="642858012"/>
+						<reference key="IBUINormalTitleShadowColor" ref="649844735"/>
+						<reference key="IBUINormalBackgroundImage" ref="805416572"/>
 					</object>
 				</object>
 				<string key="NSFrameSize">{768, 1004}</string>
@@ -370,6 +388,15 @@
 					</object>
 					<int key="connectionID">41</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">dailyLIPS:</string>
+						<reference key="source" ref="1007696727"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">44</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -401,10 +428,11 @@
 							<reference ref="577408708"/>
 							<reference ref="281490308"/>
 							<reference ref="916283814"/>
-							<reference ref="271029892"/>
 							<reference ref="741024233"/>
 							<reference ref="31913454"/>
 							<reference ref="775544242"/>
+							<reference ref="271029892"/>
+							<reference ref="1007696727"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -453,6 +481,11 @@
 						<reference key="object" ref="775544242"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">42</int>
+						<reference key="object" ref="1007696727"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -470,6 +503,7 @@
 					<string>37.IBPluginDependency</string>
 					<string>37.IBUIButtonInspectorSelectedStateConfigurationMetadataKey</string>
 					<string>39.IBPluginDependency</string>
+					<string>42.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -491,6 +525,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<real value="0.0"/>
 				</object>
 			</object>
@@ -506,7 +541,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">41</int>
+			<int key="maxID">44</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -519,12 +554,14 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>checklistTreatment:</string>
+							<string>dailyLIPS:</string>
 							<string>infectionTreatment:</string>
 							<string>respiratoryTreatment:</string>
 							<string>shockTreatment:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -536,6 +573,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>checklistTreatment:</string>
+							<string>dailyLIPS:</string>
 							<string>infectionTreatment:</string>
 							<string>respiratoryTreatment:</string>
 							<string>shockTreatment:</string>
@@ -544,6 +582,10 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
 								<string key="name">checklistTreatment:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">dailyLIPS:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">

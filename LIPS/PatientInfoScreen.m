@@ -66,11 +66,11 @@
 		float w = [weightUnit isEqualToString:@"kg"]?weight.value:[self lbToKg:weight.value];
 		
 		int patientLoc = patientLocation.selectedSegmentIndex;
-		float pid = 0;
+		unsigned long long pid = 0;
 		if (![patientID.text isEqualToString:@""]) {
-			pid = [patientID.text floatValue];
+			pid = [patientID.text longLongValue];
 		} else {
-			pid = (arc4random() % (9999999999 - 1000000000)) + 1000000000;
+			pid = (arc4random() % (9999999999l - 1000000000l)) + 1000000000l;
 		}
 		
 		patient = [[Patient alloc] initWithGender:gender height:h weight:w location:patientLoc day:[dayHospital.text floatValue] patientIdent:pid];

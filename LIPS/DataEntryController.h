@@ -10,7 +10,7 @@
 #import "Patient.h"
 @class YesNoButton;	
 
-@interface DataEntryController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+@interface DataEntryController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UIAlertViewDelegate> {
     UIView *portraitView;
     UIView *landscapeView;
 	
