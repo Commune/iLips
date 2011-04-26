@@ -1,387 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>Antibiotics</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;&lt;font size=&quot;5&quot;&gt;Antibiotics&lt;/font&gt;
-&lt;li&gt;Rapid administration of appropriate antibiotics
-&lt;/li&gt;&lt;/ul&gt;</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Antibiotics</string>
-	</dict>
-	<key>Antibiotics and Source Control</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;&lt;font size=&quot;5&quot;&gt;Antibiotics&lt;/font&gt;
-&lt;li&gt;Administer appropriate antibiotics within 6 hours.
-&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;font size=&quot;5&quot;&gt;Source Control&lt;/font&gt;
-&lt;li&gt;Early imaging to confirm source if appropriate
-&lt;/li&gt;&lt;li&gt;Early surgical/interventional evaluation if appropriate
-&lt;/li&gt;&lt;li&gt;Early drainage of purulent collection or removal of infected device if relevant
-&lt;/li&gt;&lt;/ul&gt;</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Antibiotics and Source Control</string>
-	</dict>
-	<key>Bleeding or Ischemia</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is the patient experiencing bleeding or ischemia?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>Bleeding/Ischemia</string>
-	</dict>
-	<key>Fluids</key>
-	<dict>
-		<key>Class</key>
-		<string>FluidManagementViewController</string>
-		<key>Title</key>
-		<string>Fluid Management</string>
-	</dict>
-	<key>Infection-Abdomen</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / amino-PCN )OR( Vancomycin /  fluoroquinolone / metronidazole)*Consider broader C.Diff coverage with PO vancomycin</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin /  fluoroquinolone / metronidazole )*Consider broader C.Diff coverage with PO vancomycin</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin /  fluoroquinolone / metronidazole / aminoglycoside )*Consider treatment for fungals, Tb*Consider broader C.Diff coverage with PO vancomycin</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Abdomen</string>
-	</dict>
-	<key>Infection-CNS</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / ceftriaxone )*Consider treatment for viral*Consider ampicillin for Listeria</string>
-			<string>( Vancomycin / cefepime )*Consider treatment for viral*Consider ampicillin for Listeria</string>
-			<string>( Vancomycin / cefepime / acyclovir / ampicillin )*Consider treatment for fungals, Tb</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Central Nervous System</string>
-	</dict>
-	<key>Infection-IV Catheter</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string></string>
-			<string>( Vancomycin / anti-pseudomonal PCN )</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in IV Catheter</string>
-	</dict>
-	<key>Infection-Lung</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / macrolide / 3rd gen cephalosporin )OR( Vancomycin /  fluoroquinolone )*Consider treatment for influenza</string>
-			<string>( Vancomycin / anti-pseudomonal PCN)OR( Vancomycin /  fluoroquinolone / Aminoglycoside )*Consider treatment for influenza</string>
-			<string>( Vancomycin / anti-pseudomonal PCN / macrolide )*Consider treatment for PCP, fungals, Tb*Consider treatment for influenza</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Lung</string>
-	</dict>
-	<key>Infection-Skin/Tissue</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin )*Consider anti-pseudomonal PCN if diabetic or vascular disease*Consider clindamycin for suspected toxic shock syndrome</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )*Consider clindamycin for suspected toxic shock syndrome</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )*Consider clindamycin for suspected toxic shock syndrome</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Skin/Tissue</string>
-	</dict>
-	<key>Infection-Unknown</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( Vancomycin / anti-pseudomonal PCN )</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )</string>
-			<string>( Vanco / carbapenem / fluoroquinolone )</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection - Source Unknown</string>
-	</dict>
-	<key>Infection-Urine</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>( 3rd generation cephalosporin )OR( fluoroquinolone )</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin /  fluoroquinolone )</string>
-			<string>( Vancomycin / anti-pseudomonal PCN )OR( Vancomycin / fluoroquinolone / Aminoglycoside )*Consider treatment for fungals, Tb</string>
-		</array>
-		<key>Class</key>
-		<string>InfectionViewController</string>
-		<key>Title</key>
-		<string>Infection in Urine</string>
-	</dict>
-	<key>Intubation/Mechanical Ventilation Required</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
-&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
-&lt;li&gt;6-8 ml/kg/ IBW (see MORE) 
-&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
-&lt;li&gt;PEEP&gt; =5
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Aspiration Precautions&lt;/font&gt;
-&lt;li&gt;Elevate Head of the Bed &gt;30-45 degrees 
-&lt;li&gt;Oral Care with Chlorhexidine 
-&lt;li&gt;Gastric Acid Neutralization with IVH2 Blockers
-&lt;/ul&gt;</string>
-			<string>Tidal</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Intubation or Mechanical Ventilation Required</string>
-	</dict>
-	<key>Non-Invasive Ventilation</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is the patient&apos;s MAP &lt; 60 or is there a need for vasopressors?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>On Non-Invasive Ventilation</string>
-	</dict>
-	<key>Not Vented</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
-&lt;/ul&gt;
-&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
-&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
-&lt;li&gt;6-8 ml/kg/ IBW (see MORE) 
-&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
-&lt;li&gt;PEEP&gt; =5
-&lt;/ul&gt;</string>
-			<string>Tidal</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Not Vented</string>
-	</dict>
-	<key>Removable Source</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is there a removable source?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>Removable Source</string>
-	</dict>
-	<key>Respiratory Status</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>What is the patient&apos;s respiratory status?</string>
-			<string>Non-Invasive Ventilation</string>
-			<string>Intubation/Mechanical Ventilation Required</string>
-			<string>Not Vented</string>
-		</array>
-		<key>Class</key>
-		<string>MultipleChoiceViewController</string>
-		<key>Title</key>
-		<string>Respiratory Status</string>
-	</dict>
-	<key>Respiratory Support 1</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Respiratory Support&lt;/font&gt;
-&lt;li&gt;Reassess work of breathing 30 minutes into non-invasive ventilation and consider early intubation for:
-&lt;ul&gt;
-&lt;li&gt;severe hypoxemia (P:F ratio &lt;150)&lt;li&gt;lack of improvement in respiratory rate, use of accessory muscles, PaCO2 &gt; 40 with pH &gt;7.35
-&lt;/ul&gt;
-&lt;/ul&gt;
-&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;If Intubation is needed&lt;/font&gt; &lt;br /&gt;&lt;font size=&quot;5&quot;&gt;Aspiration precautions&lt;/font&gt;&lt;li&gt;Consider rapid sequence intubation by experienced clinicians&lt;li&gt;Administer IV H2 antagonist to neutralize gastric acid
-&lt;/ul&gt;
-&lt;ul&gt;&lt;font size=&quot;7&quot;&gt;Minimize Ventilator Induced Lung Injury&lt;/font&gt;
-&lt;li&gt;Low Pressure (Plateau/TotalPressures &lt;25 - 30 cm H20) 
-&lt;li&gt;6-8 ml/kg/ IBW (see MORE) 
-&lt;li&gt;Increase respiratory rate asneeded up to 35 bpm to maintainventilation 
-&lt;li&gt;PEEP&gt; =5
-&lt;/ul&gt;</string>
-			<string>Tidal</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>RSI</string>
-	</dict>
-	<key>Resuscitate</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Resuscitate with crystalloid or colloid and transfuse as needed to obtain euvolemia, consider CVP monitoring to prevent fluid overload (goal CVP 8-12)</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Resuscitate</string>
-	</dict>
-	<key>Resuscitate, Transfuse</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;li&gt;Resuscitate as needed, consider vasopressor to get MAP&amp;gt;60
-&lt;/li&gt;&lt;li&gt;Avoid fluid overload targeting CVP and urine output as per Fluid Management Goals in MORE
-&lt;/li&gt;&lt;li&gt;Avoid RBC transfusion unless Hgb &amp;lt; 7g/dL
-&lt;/li&gt;</string>
-			<string>Fluids</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Resuscitate and Transfuse</string>
-	</dict>
-	<key>RSI</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;font size=&quot;7&quot;&gt;If mechanical ventilation is needed, consider Rapid Sequence Intubation IV H2 Blocker.&lt;/font&gt;</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>RSI</string>
-	</dict>
-	<key>Shock</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is the patient in shock?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>Shock</string>
-	</dict>
-	<key>Stop</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;font size=&quot;7&quot;&gt;Stop/Maintain Euvolumia (CVP 8-10)&lt;/font&gt;</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Stop</string>
-	</dict>
-	<key>Tidal</key>
-	<dict>
-		<key>Arguments</key>
-		<array/>
-		<key>Class</key>
-		<string>TidalVolumeViewController</string>
-		<key>Title</key>
-		<string>Tidal Volumes</string>
-	</dict>
-	<key>SBAR</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;ul&gt;
-&lt;font size=&quot;7&quot;&gt;Adequate Communication&lt;/font&gt;&lt;li style=&quot;font-size: 20;&quot;&gt;Contact the ICU or OR Resident/Fellow or Attending with structured SBAR Handoff: 
-&lt;ul&gt;
-&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Situation&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;
-&lt;li style=&quot;font-size: 20;&quot;&gt;Introduce yourself and the patient 
-&lt;li style=&quot;font-size: 20;&quot;&gt;Briefly describe the patients situation and reason for ICU transfer or surgery 
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Background&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;li style=&quot;font-size: 20;&quot;&gt;Briefly state the pertinent history 
-&lt;li style=&quot;font-size: 20;&quot;&gt;What got us to this point 
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Assessment&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;
-&lt;li style=&quot;font-size: 20;&quot;&gt;Identify the patient as high risk for ALI/ARDS 
-&lt;li style=&quot;font-size: 20;&quot;&gt;Indicate CLIP elements to be implemented and continued 
-&lt;li style=&quot;font-size: 20;&quot;&gt;What is going on? Use your best judgement&lt;li style=&quot;font-size: 20;&quot;&gt;What Intervention/treatment did you start and how did the patient respond? 
-&lt;li style=&quot;font-size: 20;&quot;&gt;What is the patient&apos;s current state 
-&lt;li style=&quot;font-size: 20;&quot;&gt;Is the patient improving, deteriorating, not changed? 
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Recommendation/Request&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;li style=&quot;font-size: 20;&quot;&gt;Indicate CLIP elements to be implemented and continued for duration of ICU stay or during OR&lt;li style=&quot;font-size: 20;&quot;&gt;What laboratory or radiologic tests are pending and will require follow up?
-&lt;li style=&quot;font-size: 20;&quot;&gt;Who have been consulted and what recommendations have to be followed up on? 
-&lt;li style=&quot;font-size: 20;&quot;&gt;What therapies need to be continued or followed up on? 
-&lt;li style=&quot;font-size: 20;&quot;&gt;When did the patient last receive antibiotics?
-&lt;/ul&gt;
-&lt;/ul&gt;</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Adequate Communication</string>
-	</dict>
-	<key>Nothing to Change</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>&lt;font size=&quot;7&quot;&gt;The patient is already in the ICU.  No action is necessary.&lt;/font&gt;</string>
-		</array>
-		<key>Class</key>
-		<string>SuggestionViewController</string>
-		<key>Title</key>
-		<string>Nothing to Change</string>
-	</dict>
-	<key>ICU Likely</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is the patient likely to go to the ICU?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>ICU Likely</string>
-	</dict>
-	<key>Possible Surgery</key>
-	<dict>
-		<key>Arguments</key>
-		<array>
-			<string>Is surgery a possibility?</string>
-		</array>
-		<key>Class</key>
-		<string>BinaryDecisionViewController</string>
-		<key>Title</key>
-		<string>Possible Surgery</string>
-	</dict>
-</dict>
-</plist>
