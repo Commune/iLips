@@ -81,7 +81,6 @@
 		63F6213C1331444700ABAEB0 /* bigicon.psd in Resources */ = {isa = PBXBuildFile; fileRef = 63F6213A1331444700ABAEB0 /* bigicon.psd */; };
 		A0249C86135F528E00FFEC2C /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0249C7F135F528E00FFEC2C /* GreenButton.png */; };
 		A0249C87135F528E00FFEC2C /* GreyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0249C80135F528E00FFEC2C /* GreyButton.png */; };
-		A0249C88135F528E00FFEC2C /* README in Resources */ = {isa = PBXBuildFile; fileRef = A0249C81135F528E00FFEC2C /* README */; };
 		A0249C89135F528E00FFEC2C /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0249C82135F528E00FFEC2C /* RedButton.png */; };
 /* End PBXBuildFile section */
 
@@ -273,7 +272,6 @@
 		63F6213A1331444700ABAEB0 /* bigicon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = bigicon.psd; sourceTree = "<group>"; };
 		A0249C7F135F528E00FFEC2C /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenButton.png; sourceTree = "<group>"; };
 		A0249C80135F528E00FFEC2C /* GreyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreyButton.png; sourceTree = "<group>"; };
-		A0249C81135F528E00FFEC2C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A0249C82135F528E00FFEC2C /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -536,7 +534,6 @@
 			isa = PBXGroup;
 			children = (
 				6390CCD6136544A900DE382E /* Objc_Mysql_iPhone_OSX */,
-				A0249C81135F528E00FFEC2C /* README */,
 				6395CEAF13314CEC00617C76 /* Entitlements.plist */,
 				63F621391331444700ABAEB0 /* bigicon.png */,
 				63F6213A1331444700ABAEB0 /* bigicon.psd */,
@@ -700,7 +697,6 @@
 				636DBCB513405B7000AD6089 /* conditions.plist in Resources */,
 				A0249C86135F528E00FFEC2C /* GreenButton.png in Resources */,
 				A0249C87135F528E00FFEC2C /* GreyButton.png in Resources */,
-				A0249C88135F528E00FFEC2C /* README in Resources */,
 				A0249C89135F528E00FFEC2C /* RedButton.png in Resources */,
 				63F2CBB8135F916900D01172 /* CheckBoxUnchecked.png in Resources */,
 				63F2CBB9135F916900D01172 /* CheckBoxChecked.png in Resources */,
