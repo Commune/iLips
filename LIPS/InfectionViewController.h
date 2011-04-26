@@ -1,15 +1,8 @@
-//
-//  InfectionViewController.h
-//  LIPS
-//
-//  Created by David Herzka on 3/28/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "DecisionTreeView.h"
 
 
-@interface InfectionViewController : UIViewController {
+@interface InfectionViewController : UIViewController<DecisionTreeView> {
 	    
     IBOutlet UIWebView *advice;
     IBOutlet UILabel *empiricSuggestionLabel;
@@ -21,8 +14,6 @@
 	NSString *previousContactSuggestion;
 	NSString *immuneSuppressedSuggestion;
 }
-
--(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args;
 
 - (IBAction)removableResponse:(id)sender;
 

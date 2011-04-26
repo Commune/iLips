@@ -1,11 +1,3 @@
-//
-//  FluidManagementViewController.m
-//  LIPS
-//
-//  Created by David Herzka on 3/1/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "FluidManagementViewController.h"
 #import "DecisionFetcher.h"
 #import "Patient.h"

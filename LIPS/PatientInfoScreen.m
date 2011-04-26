@@ -1,11 +1,3 @@
-//
-//  PatientInfoScreen.m
-//  LIPS
-//
-//  Created by Duke Student on 3/18/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "PatientInfoScreen.h"
 #import "DataEntryController.h"
 

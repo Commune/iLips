@@ -1,11 +1,3 @@
-//
-//  PasswordViewController.m
-//  LIPS
-//
-//  Created by Duke Student on 4/18/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "PasswordViewController.h"
 #import "PatientInfoScreen.h"
 

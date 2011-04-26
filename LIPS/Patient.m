@@ -1,11 +1,3 @@
-//
-//  Patient.m
-//  LIPS
-//
-//  Created by Duke Student on 3/16/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "Patient.h"
 #import "DecisionFetcher.h"
 #import "MysqlConnection.h"

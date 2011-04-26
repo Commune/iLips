@@ -1,11 +1,3 @@
-//
-//  ScoreViewController.m
-//  LIPS
-//
-//  Created by David Herzka on 2/26/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "ScoreViewController.h"
 #import "SuggestionViewController.h"
 #import "DecisionFetcher.h"
@@ -25,7 +17,6 @@
 - (void)findSuggestion:(NSString*)response
 {
     [DecisionFetcher resetDecisions];
-//	[DecisionFetcher assignResponse:response withValue:@"Yes"];
     [self.navigationController pushViewController:[DecisionFetcher fetchNextViewAfter:response] animated:YES];
 
 }

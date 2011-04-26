@@ -1,11 +1,3 @@
-//
-//  DecisionFetcher.m
-//  LIPS
-//
-//  Created by David Herzka on 3/2/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "DecisionFetcher.h"
 #import "BinaryDecisionViewController.h"
 #import "Patient.h"
@@ -40,10 +32,6 @@ static Patient *patient;
 }
 
 +(UIViewController *)fetchNextViewAfter:(NSString *)nodeName {
-//    NSLog(@"%@",treatments);
-//    NSLog(@"%@",views);
-//    NSLog(@"%@",responses);
-	
     while ([responses objectForKey:nodeName]) {
         NSDictionary *treatmentOptions = [treatments objectForKey:nodeName];
         nodeName = [treatmentOptions objectForKey:[responses objectForKey:nodeName]];
@@ -57,7 +45,8 @@ static Patient *patient;
 	NSDictionary *viewDescription = [views objectForKey:nodeName];
     NSString *viewClassName = [viewDescription objectForKey:@"Class"];
     Class viewClass = NSClassFromString(viewClassName);
-    UIViewController *nextView = [[viewClass alloc] initWithName:nodeName title:[viewDescription objectForKey:@"Title"] arguments:[viewDescription objectForKey:@"Arguments"]];
+    UIViewController<DecisionTreeView> *nextView = [viewClass alloc];
+	[nextView initWithName:nodeName title:[viewDescription objectForKey:@"Title"] arguments:[viewDescription objectForKey:@"Arguments"]];
 	return nextView;
 }
 

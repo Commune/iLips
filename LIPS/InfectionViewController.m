@@ -1,11 +1,3 @@
-//
-//  InfectionViewController.m
-//  LIPS
-//
-//  Created by David Herzka on 3/28/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "InfectionViewController.h"
 
 
@@ -118,9 +110,8 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-	return YES;
+{ 
+	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 @end

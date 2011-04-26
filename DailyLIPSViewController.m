@@ -1,11 +1,3 @@
-//
-//  DailyLIPSViewController.m
-//  LIPS
-//
-//  Created by David Herzka on 4/25/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "DailyLIPSViewController.h"
 #import "Patient.h"
 #import "DecisionFetcher.h"

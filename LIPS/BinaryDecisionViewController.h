@@ -1,19 +1,11 @@
-//
-//  BinaryDecisionViewController.h
-//  LIPS
-//
-//  Created by David Herzka on 3/2/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "DecisionTreeView.h"
 
-
-@interface BinaryDecisionViewController : UIViewController {
+@interface BinaryDecisionViewController : UIViewController<DecisionTreeView> {
     NSString *question;
     NSString *nodeName;
     IBOutlet UILabel *questionLabel;
 }
--(id)initWithName:(NSString*)name title:(NSString*)title arguments:(NSArray*)args;
+
 -(IBAction)submitAnswer:(UIControl*)sender;
 @end

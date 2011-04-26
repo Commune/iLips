@@ -344,7 +344,6 @@
 		6336E742131E628800CF9851 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6351B9A3131DD57F003D8A6A /* views.plist */,
 				63CC7651135D155E008A788D /* Custom */,
 				A0249C7E135F528E00FFEC2C /* ChecklistViewController.xib */,
 				A0249C78135F4FF700FFEC2C /* ConservativeFluidViewController.xib */,
@@ -369,10 +368,11 @@
 			children = (
 				A0FFC53413341D4500A425EC /* Patient.h */,
 				A0FFC53513341D4500A425EC /* Patient.m */,
-				6351B998131DD0F1003D8A6A /* treatments.plist */,
 				6336E74C131EA33600CF9851 /* DecisionFetcher.h */,
 				6336E74D131EA33600CF9851 /* DecisionFetcher.m */,
 				A003CD66133A772D00425396 /* conditions.plist */,
+				6351B9A3131DD57F003D8A6A /* views.plist */,
+				6351B998131DD0F1003D8A6A /* treatments.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
