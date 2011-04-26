@@ -26,11 +26,6 @@
 		63579DA013656BAF00E3C597 /* DailyLIPSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63579D9E13656BAF00E3C597 /* DailyLIPSViewController.xib */; };
 		6357BCA9131AADB400AD8190 /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6357BCA7131AADB400AD8190 /* SuggestionViewController.m */; };
 		636DBCB513405B7000AD6089 /* conditions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 636DBCB413405B7000AD6089 /* conditions.plist */; };
-		636DBCC013405E1000AD6089 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCB813405E0F00AD6089 /* NSObject+SBJSON.m */; };
-		636DBCC113405E1000AD6089 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCBA13405E1000AD6089 /* NSString+SBJSON.m */; };
-		636DBCC213405E1000AD6089 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCBC13405E1000AD6089 /* SBJsonBase.m */; };
-		636DBCC313405E1000AD6089 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCBE13405E1000AD6089 /* SBJsonParser.m */; };
-		636DBCC713405E2F00AD6089 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 636DBCC613405E2F00AD6089 /* SBJsonWriter.m */; };
 		6390CD39136544A900DE382E /* MysqlCommitException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390CCD9136544A900DE382E /* MysqlCommitException.m */; };
 		6390CD3A136544A900DE382E /* MysqlException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390CCDB136544A900DE382E /* MysqlException.m */; };
 		6390CD3B136544A900DE382E /* MysqlRollbackException.m in Sources */ = {isa = PBXBuildFile; fileRef = 6390CCDD136544A900DE382E /* MysqlRollbackException.m */; };
@@ -129,17 +124,6 @@
 		6357BCA7131AADB400AD8190 /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuggestionViewController.m; path = LIPS/SuggestionViewController.m; sourceTree = "<group>"; };
 		636C15BA1331718C00A8506B /* LIPSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LIPSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		636DBCB413405B7000AD6089 /* conditions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = conditions.plist; sourceTree = "<group>"; };
-		636DBCB713405E0F00AD6089 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+SBJSON.h"; path = "LIPS/NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		636DBCB813405E0F00AD6089 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+SBJSON.m"; path = "LIPS/NSObject+SBJSON.m"; sourceTree = "<group>"; };
-		636DBCB913405E1000AD6089 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+SBJSON.h"; path = "LIPS/NSString+SBJSON.h"; sourceTree = "<group>"; };
-		636DBCBA13405E1000AD6089 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+SBJSON.m"; path = "LIPS/NSString+SBJSON.m"; sourceTree = "<group>"; };
-		636DBCBB13405E1000AD6089 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonBase.h; path = LIPS/SBJsonBase.h; sourceTree = "<group>"; };
-		636DBCBC13405E1000AD6089 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonBase.m; path = LIPS/SBJsonBase.m; sourceTree = "<group>"; };
-		636DBCBD13405E1000AD6089 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonParser.h; path = LIPS/SBJsonParser.h; sourceTree = "<group>"; };
-		636DBCBE13405E1000AD6089 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = LIPS/SBJsonParser.m; sourceTree = "<group>"; };
-		636DBCBF13405E1000AD6089 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = LIPS/SBJsonWriter.h; sourceTree = "<group>"; };
-		636DBCC513405E2F00AD6089 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = LIPS/JSON.h; sourceTree = "<group>"; };
-		636DBCC613405E2F00AD6089 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = LIPS/SBJsonWriter.m; sourceTree = "<group>"; };
 		6390CC5E1365442B00DE382E /* lf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lf.h; sourceTree = "<group>"; };
 		6390CC5F1365442B00DE382E /* m_ctype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m_ctype.h; sourceTree = "<group>"; };
 		6390CC601365442B00DE382E /* m_string.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = m_string.h; sourceTree = "<group>"; };
@@ -395,24 +379,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		636DBCC413405E1900AD6089 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				636DBCC513405E2F00AD6089 /* JSON.h */,
-				636DBCC613405E2F00AD6089 /* SBJsonWriter.m */,
-				636DBCB713405E0F00AD6089 /* NSObject+SBJSON.h */,
-				636DBCB813405E0F00AD6089 /* NSObject+SBJSON.m */,
-				636DBCB913405E1000AD6089 /* NSString+SBJSON.h */,
-				636DBCBA13405E1000AD6089 /* NSString+SBJSON.m */,
-				636DBCBB13405E1000AD6089 /* SBJsonBase.h */,
-				636DBCBC13405E1000AD6089 /* SBJsonBase.m */,
-				636DBCBD13405E1000AD6089 /* SBJsonParser.h */,
-				636DBCBE13405E1000AD6089 /* SBJsonParser.m */,
-				636DBCBF13405E1000AD6089 /* SBJsonWriter.h */,
-			);
-			name = JSON;
-			sourceTree = "<group>";
-		};
 		6390CCD6136544A900DE382E /* Objc_Mysql_iPhone_OSX */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,7 +547,6 @@
 				6390CC5F1365442B00DE382E /* m_ctype.h */,
 				6390CC601365442B00DE382E /* m_string.h */,
 				6390CC611365442B00DE382E /* my_aes.h */,
-				636DBCC413405E1900AD6089 /* JSON */,
 				6395CEAF13314CEC00617C76 /* Entitlements.plist */,
 				63F621391331444700ABAEB0 /* bigicon.png */,
 				63F6213A1331444700ABAEB0 /* bigicon.psd */,
@@ -813,11 +778,6 @@
 				63DF4FDF131EE2C700B285BD /* MultipleChoiceViewController.m in Sources */,
 				A0FFC53613341D4500A425EC /* Patient.m in Sources */,
 				A008E3311337D20E00C828D1 /* PatientInfoScreen.m in Sources */,
-				636DBCC013405E1000AD6089 /* NSObject+SBJSON.m in Sources */,
-				636DBCC113405E1000AD6089 /* NSString+SBJSON.m in Sources */,
-				636DBCC213405E1000AD6089 /* SBJsonBase.m in Sources */,
-				636DBCC313405E1000AD6089 /* SBJsonParser.m in Sources */,
-				636DBCC713405E2F00AD6089 /* SBJsonWriter.m in Sources */,
 				6323DECA13412BC3006BC1A6 /* InfectionViewController.m in Sources */,
 				63CC7645135D07E6008A788D /* PasswordViewController.m in Sources */,
 				63CC7655135D157A008A788D /* YesNoButton.m in Sources */,

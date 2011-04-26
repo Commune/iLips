@@ -7,11 +7,10 @@
 //
 
 #import "Patient.h"
-#import "JSON.h"
-#import "SQLiteAdapter.h"
 #import "DecisionFetcher.h"
 #import "MysqlConnection.h"
 #import "MysqlInsert.h"
+#import "MysqlDelete.h"
 #import "MysqlException.h"
 #import "MysqlFetch.h"
 #import "TargetConditionals.h"
@@ -136,27 +135,6 @@
 	[symptoms setValue:condition forKey:symptom];
 }
 
-
--(NSString *)toJSON {
-	NSMutableDictionary *allPatientData = [[[NSMutableDictionary alloc] init] autorelease];
-	[allPatientData setObject:[NSNumber numberWithFloat:height] forKey:@"Height"];
-	[allPatientData setObject:[NSNumber numberWithFloat:weight] forKey:@"Weight"];
-	NSString *genderString;
-	switch(gender) {
-		case PatientGenderMale:
-			genderString = @"Male";
-			break;
-		case PatientGenderFemale:
-			genderString = @"Female";
-			break;
-	}
-	[allPatientData setObject:genderString forKey:@"Sex"];
-	[allPatientData setObject:patientLocation forKey:@"Patient Location"];
-	[allPatientData setObject:infectionLocation forKey:@"Infection Location"];
-	[allPatientData setObject:symptoms forKey:@"Symptoms"];
-	return [allPatientData JSONRepresentation];
-}
-
 -(NSString *)getID {
 	return patientID;
 }
@@ -183,15 +161,26 @@
 	MysqlConnection *connection;
 	if(!(connection = [self connectToMysql])) 
 		return NO;
-	MysqlInsert *insert = [MysqlInsert insertWithConnection:connection];
 	NSString *idString = [NSString stringWithFormat:@"%qu",self.pid];
 	NSNumber *dayNumber = [NSNumber numberWithInt:(int)dayHospital];
+	
+	// To remove previous data matching id and day of hospitalization
+	MysqlDelete *delete = [MysqlDelete deleteWithConnection:connection];
+	delete.tableName = @"dailyLIPS";
+	delete.qualifier = [[NSString stringWithFormat:@"id = %@ AND day=%@",idString,dayNumber] retain];
+	
+	// To insert new data
+	MysqlInsert *insert = [MysqlInsert insertWithConnection:connection];
 	NSNumber *scoreNumber = [NSNumber numberWithFloat:[self calculateScore]];
-	insert.rowData = [NSDictionary dictionaryWithObjectsAndKeys:idString,@"id",dayNumber,@"day",scoreNumber,@"score", nil];
+	NSDate *date = [NSDate date];
+	insert.rowData = [NSDictionary dictionaryWithObjectsAndKeys:idString,@"id",dayNumber,@"day",scoreNumber,@"score",[date description],@"time", nil];
 	insert.table = @"dailyLIPS";
+	
+	
 	
 	@try 
 	{
+		[delete execute];
 		[insert execute];
 	}
 	@catch(MysqlException *exception)

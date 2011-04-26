@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 typedef enum {
-	PatientGenderMale,PatientGenderFemale}PatientGender;
+	PatientGenderMale,
+	PatientGenderFemale
+}PatientGender;
 
 @interface Patient : NSObject {
 	NSMutableDictionary *symptoms;
@@ -35,7 +37,6 @@ typedef enum {
 -(void)tripCondition:(NSString *)symptom:(int)present;
 -(float)calculateScore;
 -(NSString *)getConditions;
--(NSString *)toJSON;
 -(NSString *)getID;
 -(void)setInfectionLocation:(NSString *)infecLoc;
 -(BOOL)conservativeFluids;

@@ -122,7 +122,6 @@
 }
 
 - (IBAction)submit:(id)sender {
-	[self submitPatientToDatabase];
 
     float total = [thePatient calculateScore];
 	
@@ -134,6 +133,7 @@
 		thePatient.infectionLocation = infectionPresent.on?infecLoc:@"";	
 		[DecisionFetcher addPatientProperties:thePatient];
 		ScoreViewController *scoreView = [[ScoreViewController alloc] initWithScore:total];
+		[self submitPatientToDatabase];
 		[self.navigationController pushViewController:scoreView animated:YES];
 	}
 }

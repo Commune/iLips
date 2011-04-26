@@ -65,11 +65,9 @@
 		return (NSComparisonResult) NSOrderedSame;
 	}] objectAtIndex:indexPath.row];
 	NSNumber *score = [dailyLIPS objectForKey:day];
-	NSString *cellString = [NSString stringWithFormat:@"%@:%@",day,score];
 	
-	cell.textLabel.text = cellString;
 	float scaledScore = MIN([score floatValue]/10.0,1.0);
-	UIColor *bgColor = [UIColor colorWithRed:scaledScore green:0.0 blue:1.0-scaledScore alpha:1.0];
+	UIColor *bgColor = [UIColor colorWithRed:scaledScore green:0.0 blue:1.0-scaledScore alpha:0.2];
 	
 	CGRect frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, self.view.frame.size.width, cell.frame.size.height);
 	UIView *bgView = [[UIView alloc] initWithFrame:frame];
