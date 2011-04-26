@@ -100,7 +100,7 @@
 					<object class="IBUIButton" id="916283814">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">319</int>
-						<string key="NSFrame">{{167, 706}, {435, 54}}</string>
+						<string key="NSFrame">{{167, 607}, {435, 54}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="31913454"/>
@@ -134,10 +134,10 @@
 					<object class="IBUIButton" id="31913454">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">319</int>
-						<string key="NSFrame">{{167, 776}, {435, 54}}</string>
+						<string key="NSFrame">{{167, 677}, {435, 54}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="271029892"/>
+						<reference key="NSNextKeyView" ref="228724355"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<int key="IBUIContentHorizontalAlignment">0</int>
@@ -218,7 +218,7 @@
 					<object class="IBUIButton" id="741024233">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">319</int>
-						<string key="NSFrame">{{167, 636}, {435, 54}}</string>
+						<string key="NSFrame">{{167, 537}, {435, 54}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="916283814"/>
@@ -236,7 +236,7 @@
 					<object class="IBUILabel" id="775544242">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{190, 543}, {389, 58}}</string>
+						<string key="NSFrame">{{190, 449}, {389, 58}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="741024233"/>
@@ -275,6 +275,42 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<reference key="IBUIFont" ref="656637845"/>
 						<string key="IBUINormalTitle">Daily LIPS</string>
+						<reference key="IBUIHighlightedTitleColor" ref="157663905"/>
+						<reference key="IBUINormalTitleColor" ref="642858012"/>
+						<reference key="IBUINormalTitleShadowColor" ref="649844735"/>
+						<reference key="IBUINormalBackgroundImage" ref="805416572"/>
+					</object>
+					<object class="IBUIButton" id="228724355">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">319</int>
+						<string key="NSFrame">{{167, 747}, {435, 54}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="971488428"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="656637845"/>
+						<string key="IBUINormalTitle">ICU</string>
+						<reference key="IBUIHighlightedTitleColor" ref="157663905"/>
+						<reference key="IBUINormalTitleColor" ref="642858012"/>
+						<reference key="IBUINormalTitleShadowColor" ref="649844735"/>
+						<reference key="IBUINormalBackgroundImage" ref="805416572"/>
+					</object>
+					<object class="IBUIButton" id="971488428">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">319</int>
+						<string key="NSFrame">{{167, 817}, {435, 54}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="271029892"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="656637845"/>
+						<string key="IBUINormalTitle">Surgery</string>
 						<reference key="IBUIHighlightedTitleColor" ref="157663905"/>
 						<reference key="IBUINormalTitleColor" ref="642858012"/>
 						<reference key="IBUINormalTitleShadowColor" ref="649844735"/>
@@ -397,6 +433,24 @@
 					</object>
 					<int key="connectionID">44</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">icuTreatment:</string>
+						<reference key="source" ref="228724355"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">48</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">surgeryTreatment:</string>
+						<reference key="source" ref="971488428"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">51</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -427,12 +481,14 @@
 							<reference ref="335441559"/>
 							<reference ref="577408708"/>
 							<reference ref="281490308"/>
-							<reference ref="916283814"/>
-							<reference ref="741024233"/>
-							<reference ref="31913454"/>
-							<reference ref="775544242"/>
 							<reference ref="271029892"/>
 							<reference ref="1007696727"/>
+							<reference ref="916283814"/>
+							<reference ref="31913454"/>
+							<reference ref="741024233"/>
+							<reference ref="228724355"/>
+							<reference ref="971488428"/>
+							<reference ref="775544242"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -486,6 +542,16 @@
 						<reference key="object" ref="1007696727"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">45</int>
+						<reference key="object" ref="228724355"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">47</int>
+						<reference key="object" ref="971488428"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -504,6 +570,8 @@
 					<string>37.IBUIButtonInspectorSelectedStateConfigurationMetadataKey</string>
 					<string>39.IBPluginDependency</string>
 					<string>42.IBPluginDependency</string>
+					<string>45.IBPluginDependency</string>
+					<string>47.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
@@ -526,6 +594,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<real value="0.0"/>
 				</object>
 			</object>
@@ -541,7 +611,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">44</int>
+			<int key="maxID">51</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -555,12 +625,16 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>checklistTreatment:</string>
 							<string>dailyLIPS:</string>
+							<string>icuTreatment:</string>
 							<string>infectionTreatment:</string>
 							<string>respiratoryTreatment:</string>
 							<string>shockTreatment:</string>
+							<string>surgeryTreatment:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -574,9 +648,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>checklistTreatment:</string>
 							<string>dailyLIPS:</string>
+							<string>icuTreatment:</string>
 							<string>infectionTreatment:</string>
 							<string>respiratoryTreatment:</string>
 							<string>shockTreatment:</string>
+							<string>surgeryTreatment:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -589,6 +665,10 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
+								<string key="name">icuTreatment:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
 								<string key="name">infectionTreatment:</string>
 								<string key="candidateClassName">id</string>
 							</object>
@@ -598,6 +678,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">shockTreatment:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">surgeryTreatment:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>

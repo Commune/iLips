@@ -79,6 +79,11 @@ static Patient *patient;
 		[self assignResponse:@"Infection Location" withValue:patient.infectionLocation];
 		[self assignResponse:@"Patient Location" withValue:patient.patientLocation];
 		[self assignResponse:@"Shock" withValue:shock?@"Yes":@"No"];
+		
+		if([patient.patientLocation isEqualToString:@"ICU"]) {
+			[self assignResponse:@"ICU Likely" withValue:@"Already in ICU"];
+		}
+		
 	}
 }
 

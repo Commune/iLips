@@ -51,6 +51,14 @@
 	[self.navigationController pushViewController:[[DailyLIPSViewController alloc] init] animated:YES];
 }
 
+- (IBAction)icuTreatment:(id)sender {
+    [self findSuggestion:@"ICU Likely"];
+}
+
+- (IBAction)surgeryTreatment:(id)sender {
+    [self findSuggestion:@"Possible Surgery"];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

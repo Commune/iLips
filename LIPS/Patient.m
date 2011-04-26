@@ -14,6 +14,7 @@
 #import "MysqlInsert.h"
 #import "MysqlException.h"
 #import "MysqlFetch.h"
+#import "TargetConditionals.h"
 
 @implementation Patient
 
@@ -166,8 +167,15 @@
 	NSString *pass = @"Clip196";
 	NSString *schema = @"eclip196";
 	long flags = MYSQL_DEFAULT_CONNECTION_FLAGS;
-	MysqlConnection *connection = [MysqlConnection connectToHost:host user:user password:pass schema:schema flags:flags];
-	return connection;
+	if(!TARGET_IPHONE_SIMULATOR) {
+		MysqlConnection *connection = [MysqlConnection connectToHost:host user:user password:pass schema:schema flags:flags];
+		return connection;
+	}
+	else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Mysql Connect" message:@"The MySQL library cannot be used in the iPhone simulator.  No data will be sent or received from the daily LIPS database." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+		[alert show];
+		return nil;
+	}
 }
 
 

@@ -57,24 +57,44 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@""];
-	id key = [[[dailyLIPS allKeys] sortedArrayUsingComparator:^(id obj1, id obj2) {
+	id day = [[[dailyLIPS allKeys] sortedArrayUsingComparator:^(id obj1, id obj2) {
 		if([obj1 intValue] > [obj2 intValue]) 
 			return (NSComparisonResult) NSOrderedDescending;
 		else if([obj1 intValue] < [obj2 intValue])
 			return (NSComparisonResult) NSOrderedAscending;
 		return (NSComparisonResult) NSOrderedSame;
 	}] objectAtIndex:indexPath.row];
-	NSNumber *score = [dailyLIPS objectForKey:key];
-	NSString *cellString = [NSString stringWithFormat:@"%@:%@",key,score];
+	NSNumber *score = [dailyLIPS objectForKey:day];
+	NSString *cellString = [NSString stringWithFormat:@"%@:%@",day,score];
+	
 	cell.textLabel.text = cellString;
 	float scaledScore = MIN([score floatValue]/10.0,1.0);
 	UIColor *bgColor = [UIColor colorWithRed:scaledScore green:0.0 blue:1.0-scaledScore alpha:1.0];
-	UIView *bgView = [[UIView alloc] initWithFrame:cell.frame];
+	
+	CGRect frame = CGRectMake(cell.frame.origin.x, cell.frame.origin.y, self.view.frame.size.width, cell.frame.size.height);
+	UIView *bgView = [[UIView alloc] initWithFrame:frame];
 	bgView.backgroundColor = bgColor;
 	cell.backgroundView = bgView;
 	cell.textLabel.backgroundColor = bgColor;
-	[cell.contentView insertSubview:bgView belowSubview:cell.textLabel];
+	[cell.contentView insertSubview:bgView aboveSubview:cell.textLabel];
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
+	
+	CGRect dayLabelFrame = bgView.frame;
+	dayLabelFrame.size.width /= 2;
+	UILabel *dayLabel = [[UILabel alloc] initWithFrame:dayLabelFrame];
+	dayLabel.backgroundColor = [UIColor clearColor];
+	dayLabel.text = [NSString stringWithFormat:@"%@",day];
+	dayLabel.textAlignment = UITextAlignmentCenter;
+	[cell.contentView insertSubview:dayLabel aboveSubview:bgView];
+	
+	CGRect scoreLabelFrame = dayLabelFrame;
+	scoreLabelFrame.origin.x += scoreLabelFrame.size.width;
+	UILabel *scoreLabel = [[UILabel alloc] initWithFrame:scoreLabelFrame];
+	scoreLabel.backgroundColor = [UIColor clearColor];
+	scoreLabel.text = [NSString stringWithFormat:@"%@",score];
+	scoreLabel.textAlignment = UITextAlignmentCenter;
+	[cell.contentView insertSubview:scoreLabel aboveSubview:bgView];
+	
 	return cell;
 }
 
@@ -101,8 +121,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-	return YES;
+	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
 }
 
 @end

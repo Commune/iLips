@@ -33,6 +33,13 @@
 		<key>Urine</key>
 		<string>Infection-Urine</string>
 	</dict>
+	<key>Non-Invasive Ventilation</key>
+	<dict>
+		<key>No</key>
+		<string>Respiratory Support 1</string>
+		<key>Yes</key>
+		<string>RSI</string>
+	</dict>
 	<key>Respiratory Status</key>
 	<dict>
 		<key>Intubation/Mechanical Ventilation Required</key>
@@ -54,12 +61,21 @@
 		<key>Yes</key>
 		<string>Bleeding or Ischemia</string>
 	</dict>
-	<key>Non-Invasive Ventilation</key>
+	<key>ICU Likely</key>
 	<dict>
 		<key>Yes</key>
-		<string>RSI</string>
+		<string>SBAR</string>
 		<key>No</key>
-		<string>Respiratory Support 1</string>
+		<string>SBAR</string>
+		<key>Already in ICU</key>
+		<string>Nothing to Change</string>
+	</dict>
+	<key>Possible Surgery</key>
+	<dict>
+		<key>Yes</key>
+		<string>SBAR</string>
+		<key>No</key>
+		<string>SBAR</string>
 	</dict>
 </dict>
 </plist>

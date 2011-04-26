@@ -314,5 +314,74 @@
 		<key>Title</key>
 		<string>Tidal Volumes</string>
 	</dict>
+	<key>SBAR</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;ul&gt;
+&lt;font size=&quot;7&quot;&gt;Adequate Communication&lt;/font&gt;&lt;li style=&quot;font-size: 20;&quot;&gt;Contact the ICU or OR Resident/Fellow or Attending with structured SBAR Handoff: 
+&lt;ul&gt;
+&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Situation&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;
+&lt;li style=&quot;font-size: 20;&quot;&gt;Introduce yourself and the patient 
+&lt;li style=&quot;font-size: 20;&quot;&gt;Briefly describe the patients situation and reason for ICU transfer or surgery 
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Background&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;li style=&quot;font-size: 20;&quot;&gt;Briefly state the pertinent history 
+&lt;li style=&quot;font-size: 20;&quot;&gt;What got us to this point 
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Assessment&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;
+&lt;li style=&quot;font-size: 20;&quot;&gt;Identify the patient as high risk for ALI/ARDS 
+&lt;li style=&quot;font-size: 20;&quot;&gt;Indicate CLIP elements to be implemented and continued 
+&lt;li style=&quot;font-size: 20;&quot;&gt;What is going on? Use your best judgement&lt;li style=&quot;font-size: 20;&quot;&gt;What Intervention/treatment did you start and how did the patient respond? 
+&lt;li style=&quot;font-size: 20;&quot;&gt;What is the patient&apos;s current state 
+&lt;li style=&quot;font-size: 20;&quot;&gt;Is the patient improving, deteriorating, not changed? 
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;font size=&quot;6&quot;&gt;&lt;i&gt;&lt;b&gt;Recommendation/Request&lt;/b&gt;&lt;/i&gt;&lt;/font&gt;&lt;li style=&quot;font-size: 20;&quot;&gt;Indicate CLIP elements to be implemented and continued for duration of ICU stay or during OR&lt;li style=&quot;font-size: 20;&quot;&gt;What laboratory or radiologic tests are pending and will require follow up?
+&lt;li style=&quot;font-size: 20;&quot;&gt;Who have been consulted and what recommendations have to be followed up on? 
+&lt;li style=&quot;font-size: 20;&quot;&gt;What therapies need to be continued or followed up on? 
+&lt;li style=&quot;font-size: 20;&quot;&gt;When did the patient last receive antibiotics?
+&lt;/ul&gt;
+&lt;/ul&gt;</string>
+		</array>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Adequate Communication</string>
+	</dict>
+	<key>Nothing to Change</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>&lt;font size=&quot;7&quot;&gt;The patient is already in the ICU.  No action is necessary.&lt;/font&gt;</string>
+		</array>
+		<key>Class</key>
+		<string>SuggestionViewController</string>
+		<key>Title</key>
+		<string>Nothing to Change</string>
+	</dict>
+	<key>ICU Likely</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>Is the patient likely to go to the ICU?</string>
+		</array>
+		<key>Class</key>
+		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>ICU Likely</string>
+	</dict>
+	<key>Possible Surgery</key>
+	<dict>
+		<key>Arguments</key>
+		<array>
+			<string>Is surgery a possibility?</string>
+		</array>
+		<key>Class</key>
+		<string>BinaryDecisionViewController</string>
+		<key>Title</key>
+		<string>Possible Surgery</string>
+	</dict>
 </dict>
 </plist>

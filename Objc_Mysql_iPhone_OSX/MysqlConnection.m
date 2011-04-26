@@ -29,7 +29,7 @@
                              flags:(unsigned long)flags;
 {
   MysqlConnection *newObject = [[self alloc] init];
-  
+  	
   mysql_init(&(newObject->_connection));
   if (!mysql_real_connect(&(newObject->_connection),
                           [host cStringUsingEncoding:NSUTF8StringEncoding],
