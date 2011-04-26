@@ -81,7 +81,6 @@
 		A0249C87135F528E00FFEC2C /* GreyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0249C80135F528E00FFEC2C /* GreyButton.png */; };
 		A0249C88135F528E00FFEC2C /* README in Resources */ = {isa = PBXBuildFile; fileRef = A0249C81135F528E00FFEC2C /* README */; };
 		A0249C89135F528E00FFEC2C /* RedButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A0249C82135F528E00FFEC2C /* RedButton.png */; };
-		A0249C8A135F528E00FFEC2C /* tidalvolume.png in Resources */ = {isa = PBXBuildFile; fileRef = A0249C83135F528E00FFEC2C /* tidalvolume.png */; };
 		A0E8995813391BB200B46495 /* PatientInfoScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E8995713391BB200B46495 /* PatientInfoScreen.xib */; };
 		A0FFC53613341D4500A425EC /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FFC53513341D4500A425EC /* Patient.m */; };
 /* End PBXBuildFile section */
@@ -278,7 +277,6 @@
 		A0249C80135F528E00FFEC2C /* GreyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreyButton.png; sourceTree = "<group>"; };
 		A0249C81135F528E00FFEC2C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A0249C82135F528E00FFEC2C /* RedButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedButton.png; sourceTree = "<group>"; };
-		A0249C83135F528E00FFEC2C /* tidalvolume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tidalvolume.png; sourceTree = "<group>"; };
 		A0E8995713391BB200B46495 /* PatientInfoScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PatientInfoScreen.xib; path = LIPS/PatientInfoScreen.xib; sourceTree = "<group>"; };
 		A0FFC53413341D4500A425EC /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Patient.h; path = LIPS/Patient.h; sourceTree = "<group>"; };
 		A0FFC53513341D4500A425EC /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patient.m; path = LIPS/Patient.m; sourceTree = "<group>"; };
@@ -525,7 +523,6 @@
 				63F2CBB6135F916900D01172 /* CheckBoxUnchecked.png */,
 				63F2CBB7135F916900D01172 /* CheckBoxChecked.png */,
 				A0249C80135F528E00FFEC2C /* GreyButton.png */,
-				A0249C83135F528E00FFEC2C /* tidalvolume.png */,
 				A0249C82135F528E00FFEC2C /* RedButton.png */,
 				A0249C7F135F528E00FFEC2C /* GreenButton.png */,
 				63CC7653135D157A008A788D /* YesNoButton.h */,
@@ -727,7 +724,6 @@
 				A0249C87135F528E00FFEC2C /* GreyButton.png in Resources */,
 				A0249C88135F528E00FFEC2C /* README in Resources */,
 				A0249C89135F528E00FFEC2C /* RedButton.png in Resources */,
-				A0249C8A135F528E00FFEC2C /* tidalvolume.png in Resources */,
 				63F2CBB8135F916900D01172 /* CheckBoxUnchecked.png in Resources */,
 				63F2CBB9135F916900D01172 /* CheckBoxChecked.png in Resources */,
 				6390CD44136544AA00DE382E /* notes.txt in Resources */,
