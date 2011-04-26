@@ -1,1665 +1,0 @@
-TiLIPS
-v3
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Info.plist LIPS/LIPS-Info.plist
-cProcessPCH /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch.gch LIPS/LIPS-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ScoreViewController.o /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+SBJSON.o /Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonParser.o /Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientInfoScreen.o /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/main.o /Users/david/Documents/CPS196/iLips/LIPS/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/LIPSAppDelegate.o /Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SuggestionViewController.o /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/FluidManagementViewController.o /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DataEntryController.o /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DecisionFetcher.o /Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/BinaryDecisionViewController.o /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/MultipleChoiceViewController.o /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/Patient.o /Users/david/Documents/CPS196/iLips/LIPS/Patient.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSObject+SBJSON.o /Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonBase.o /Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonWriter.o /Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SQLiteAdapter.o /Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientEntry.o /Users/david/Documents/CPS196/iLips/PatientEntry.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+DB.o /Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/InfectionViewController.o /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PasswordViewController.o /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/YesNoButton.o /Users/david/Documents/CPS196/iLips/YesNoButton.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/TidalVolumeViewController.o /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ConservativeFluidViewController.o /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ChecklistViewController.o /Users/david/Documents/CPS196/iLips/ChecklistViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ToggleButton.o /Users/david/Documents/CPS196/iLips/ToggleButton.m normal i386 objective-c com.apple.compilers.llvmgcc42
-cLd /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS normal i386
-cGenerateDSYMFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYM /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS
-cCopyStringsFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj/InfoPlist.strings LIPS/en.lproj/InfoPlist.strings
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib
-cCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/treatments.plist LIPS/treatments.plist
-cCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/views.plist LIPS/views.plist
-cCpResource LIPS/labels.txt build/Debug-iphonesimulator/iLIPS.app/labels.txt
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib
-cCpResource icon-72.png build/Debug-iphonesimulator/iLIPS.app/icon-72.png
-cCpResource Default-Portrait~ipad.png build/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png
-cCpResource Default-Landscape~ipad.png build/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png
-cCpResource Default-Landscape.psd build/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psd
-cCpResource Default-Portrait.psd build/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd
-cCpResource icon.psd build/Debug-iphonesimulator/iLIPS.app/icon.psd
-cCpResource bigicon.png build/Debug-iphonesimulator/iLIPS.app/bigicon.png
-cCpResource bigicon.psd build/Debug-iphonesimulator/iLIPS.app/bigicon.psd
-cCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Entitlements.plist Entitlements.plist
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xib
-cCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/conditions.plist conditions.plist
-cCpResource LIPS/PatientsDatabase.sqlite build/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xib
-cCompileXIB /Users/david/Documents/CPS196/iLips/ChecklistViewController.xib
-cCpResource GreenButton.png build/Debug-iphonesimulator/iLIPS.app/GreenButton.png
-cCpResource GreyButton.png build/Debug-iphonesimulator/iLIPS.app/GreyButton.png
-cCpResource README build/Debug-iphonesimulator/iLIPS.app/README
-cCpResource RedButton.png build/Debug-iphonesimulator/iLIPS.app/RedButton.png
-cCpResource tidalvolume.png build/Debug-iphonesimulator/iLIPS.app/tidalvolume.png
-cTouch /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-c000000004D5C9B4E0000000000000110
-t1297914702
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004D54CFFA00000000002999B0
-t1297403898
-s2726320
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004D54CFE5000000000029DA70
-t1297403877
-s2742896
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004D54CFB80000000000001466
-t1297403832
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004D5615B40000000000000AA1
-t1297487284
-s2721
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004D5616030000000000766870
-t1297487363
-s7759984
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/Availability.h
-c000000004D4F7A2B0000000000001B19
-t1297054251
-s6937
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/sqlite3.h
-c000000004D54CB5C0000000000045296
-t1297402716
-s283286
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/lib/libsqlite3.0.dylib
-c000000004D54CB720000000000099500
-t1297402738
-s627968
-
-N/Users/david/Documents/CPS196/iLips/ChecklistViewController.h
-c000000004DACCFB900000000000000F3
-t1303171001
-s243
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/ChecklistViewController.m
-c000000004DACCFB9000000000000047D
-t1303171001
-s1149
-i"ChecklistViewController.h"
-
-N/Users/david/Documents/CPS196/iLips/ChecklistViewController.xib
-c000000004DAF32F00000000000007036
-t1303327472
-s28726
-
-N/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.h
-c000000004DAF32F00000000000000103
-t1303327472
-s259
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m
-c000000004DAF32F00000000000000495
-t1303327472
-s1173
-i"ConservativeFluidViewController.h"
-
-N/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xib
-c000000004DAF32F00000000000004B1C
-t1303327472
-s19228
-
-N/Users/david/Documents/CPS196/iLips/DecisionTreeView.h
-c000000004DAEF3FB000000000000012B
-t1303311355
-s299
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/Default-Landscape.psd
-c000000004DA2000A00000000004AC01A
-t1302462474
-s4898842
-
-N/Users/david/Documents/CPS196/iLips/Default-Landscape~ipad.png
-c000000004DA2005E00000000000340BB
-t1302462558
-s213179
-
-N/Users/david/Documents/CPS196/iLips/Default-Portrait.psd
-c000000004DA2002500000000004B9098
-t1302462501
-s4952216
-
-N/Users/david/Documents/CPS196/iLips/Default-Portrait~ipad.png
-c000000004DA20040000000000003422F
-t1302462528
-s213551
-
-N/Users/david/Documents/CPS196/iLips/Entitlements.plist
-c000000004D88185100000000000000E1
-t1300764753
-s225
-
-N/Users/david/Documents/CPS196/iLips/GreenButton.png
-c000000004DAE246300000000000009B6
-t1303258211
-s2486
-
-N/Users/david/Documents/CPS196/iLips/GreyButton.png
-c000000004DAE88BD0000000000000928
-t1303283901
-s2344
-
-N/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.h
-c000000004D88B58A00000000000001CA
-t1300805002
-s458
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m
-c000000004D88B5900000000000000743
-t1300805008
-s1859
-i"BinaryDecisionViewController.h"
-i"DecisionFetcher.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib
-c000000004DAF08FE0000000000003771
-t1303316734
-s14193
-
-N/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.h
-c000000004DAF32F0000000000000069D
-t1303327472
-s1693
-i<UIKit/UIKit.h>
-i"Patient.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m
-c000000004DAF3BF3000000000000190F
-t1303329779
-s6415
-i"DataEntryController.h"
-i"ScoreViewController.h"
-i"DecisionFetcher.h"
-i"Patient.h"
-i"YesNoButton.h"
-i"ConservativeFluidViewController.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib
-c000000004DAF3BF3000000000001BA30
-t1303329779
-s113200
-
-N/Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.h
-c000000004DAEF4FA000000000000023F
-t1303311610
-s575
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m
-c000000004DAEF4DD0000000000000A17
-t1303311581
-s2583
-i"DecisionFetcher.h"
-i"BinaryDecisionViewController.h"
-i"Patient.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.h
-c000000004DAEFADD000000000000039B
-t1303313117
-s923
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m
-c000000004DAEFB3B0000000000001204
-t1303313211
-s4612
-i"FluidManagementViewController.h"
-i"DecisionFetcher.h"
-i"Patient.h"
-i"YesNoButton.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib
-c000000004DAEFB730000000000008D10
-t1303313267
-s36112
-
-N/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.h
-c000000004D916F9300000000000002DE
-t1301376915
-s734
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m
-c000000004DADF1C40000000000000F30
-t1303245252
-s3888
-i"InfectionViewController.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib
-c000000004D9393CF00000000000066CB
-t1301517263
-s26315
-
-N/Users/david/Documents/CPS196/iLips/LIPS/JSON.h
-c000000004D2B12CC0000000000000AC5
-t1294668492
-s2757
-i"SBJsonParser.h"
-i"SBJsonWriter.h"
-i"NSObject+SBJSON.h"
-i"NSString+SBJSON.h"
-i<JSON/SBJsonParser.h>
-i<JSON/SBJsonWriter.h>
-i<JSON/NSObject+SBJSON.h>
-i<JSON/NSString+SBJSON.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/LIPS-Prefix.pch
-c000000004D881851000000000000013A
-t1300764753
-s314
-i<Availability.h>
-i<UIKit/UIKit.h>
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.h
-c000000004DAE595C0000000000000172
-t1303271772
-s370
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m
-c000000004DAF44B00000000000000B38
-t1303332016
-s2872
-i"LIPSAppDelegate.h"
-i"PasswordViewController.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.h
-c000000004D88B5D400000000000001E0
-t1300805076
-s480
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m
-c000000004DAF10DD0000000000000EAF
-t1303318749
-s3759
-i"MultipleChoiceViewController.h"
-i"DecisionFetcher.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib
-c000000004DAE881300000000000022D0
-t1303283731
-s8912
-
-N/Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.h
-c000000004D2B12CC000000000000085F
-t1294668492
-s2143
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m
-c000000004D2B12CC000000000000077D
-t1294668492
-s1917
-i"NSObject+SBJSON.h"
-i"SBJsonWriter.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.h
-c000000004D902DE30000000000000115
-t1301294563
-s277
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m
-c000000004D90394500000000000001FF
-t1301297477
-s511
-i"NSString+DB.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.h
-c000000004D2B12CC00000000000007F0
-t1294668492
-s2032
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m
-c000000004D2B12CC000000000000075D
-t1294668492
-s1885
-i"NSString+SBJSON.h"
-i"SBJsonParser.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.h
-c000000004DACCFB90000000000000131
-t1303171001
-s305
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m
-c000000004DAE74310000000000000796
-t1303278641
-s1942
-i"PasswordViewController.h"
-i"PatientInfoScreen.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib
-c000000004DAF32F000000000000040BD
-t1303327472
-s16573
-
-N/Users/david/Documents/CPS196/iLips/LIPS/Patient.h
-c000000004DAF32F000000000000003E9
-t1303327472
-s1001
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/Patient.m
-c000000004DAF4126000000000000169D
-t1303331110
-s5789
-i"Patient.h"
-i"JSON.h"
-i"SQLiteAdapter.h"
-i"PatientEntry.h"
-i"DecisionFetcher.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.h
-c000000004DAF32F000000000000004B1
-t1303327472
-s1201
-i<UIKit/UIKit.h>
-i"Patient.h"
-i"DataEntryController.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m
-c000000004DAF32F0000000000000164C
-t1303327472
-s5708
-i"PatientInfoScreen.h"
-i"DataEntryController.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xib
-c000000004DAF44EC000000000000D1BB
-t1303332076
-s53691
-
-N/Users/david/Documents/CPS196/iLips/LIPS/PatientsDatabase.sqlite
-c000000004D9030570000000000018000
-t1301295191
-s98304
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.h
-c000000004D2B12CC0000000000000B82
-t1294668492
-s2946
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m
-c000000004D2B12CC0000000000000AC1
-t1294668492
-s2753
-i"SBJsonBase.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.h
-c000000004D2B12CC0000000000000C8F
-t1294668492
-s3215
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m
-c000000004D2B12CC0000000000003B7A
-t1294668492
-s15226
-i"SBJsonParser.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.h
-c000000004D2B12CC00000000000011D9
-t1294668492
-s4569
-i<Foundation/Foundation.h>
-i"SBJsonBase.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m
-c000000004D2B12CC000000000000206D
-t1294668492
-s8301
-i"SBJsonWriter.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.h
-c000000004D902D790000000000000200
-t1301294457
-s512
-i<UIKit/UIKit.h>
-i<sqlite3.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m
-c000000004DAE717B0000000000000D03
-t1303277947
-s3331
-i"SQLiteAdapter.h"
-i"PatientEntry.h"
-i"NSString+DB.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.h
-c000000004DAF32F1000000000000024D
-t1303327473
-s589
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m
-c000000004DAF3BF30000000000000B03
-t1303329779
-s2819
-i"ScoreViewController.h"
-i"SuggestionViewController.h"
-i"DecisionFetcher.h"
-i"ChecklistViewController.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib
-c000000004DAF44EC0000000000005C0A
-t1303332076
-s23562
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.h
-c000000004D9B80CD00000000000001E0
-t1302036685
-s480
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m
-c000000004DAF13E1000000000000080A
-t1303319521
-s2058
-i"SuggestionViewController.h"
-i"DecisionFetcher.h"
-
-N/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xib
-c000000004DAF131A0000000000003597
-t1303319322
-s13719
-
-N/Users/david/Documents/CPS196/iLips/LIPS/en.lproj/InfoPlist.strings
-c000000004D881851000000000000002D
-t1300764753
-s45
-
-N/Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib
-c000000004DAE590D000000000000225F
-t1303271693
-s8799
-
-N/Users/david/Documents/CPS196/iLips/LIPS/labels.txt
-c000000004D881851000000000000003A
-t1300764753
-s58
-
-N/Users/david/Documents/CPS196/iLips/LIPS/main.m
-c000000004D8818510000000000000160
-t1300764753
-s352
-i<UIKit/UIKit.h>
-
-N/Users/david/Documents/CPS196/iLips/LIPS/treatments.plist
-c000000004DAF0B080000000000000640
-t1303317256
-s1600
-
-N/Users/david/Documents/CPS196/iLips/LIPS/views.plist
-c000000004DAF16E80000000000002CBA
-t1303320296
-s11450
-
-N/Users/david/Documents/CPS196/iLips/PatientEntry.h
-c000000004D903C0B0000000000000197
-t1301298187
-s407
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/PatientEntry.m
-c000000004D903DD1000000000000018C
-t1301298641
-s396
-i"PatientEntry.h"
-
-N/Users/david/Documents/CPS196/iLips/README
-c000000004D881851000000000000001C
-t1300764753
-s28
-
-N/Users/david/Documents/CPS196/iLips/RedButton.png
-c000000004DAE244F00000000000009C3
-t1303258191
-s2499
-
-N/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.h
-c000000004DAEF4960000000000000149
-t1303311510
-s329
-i<UIKit/UIKit.h>
-i"DecisionTreeView.h"
-
-N/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m
-c000000004DAF32F1000000000000061D
-t1303327473
-s1565
-i"TidalVolumeViewController.h"
-i"DecisionFetcher.h"
-i"Patient.h"
-
-N/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xib
-c000000004DAF151300000000000020DF
-t1303319827
-s8415
-
-N/Users/david/Documents/CPS196/iLips/ToggleButton.h
-c000000004DAF4DE00000000000000291
-t1303334368
-s657
-i<Foundation/Foundation.h>
-
-N/Users/david/Documents/CPS196/iLips/ToggleButton.m
-c000000004DAF4DB40000000000000466
-t1303334324
-s1126
-i"ToggleButton.h"
-
-N/Users/david/Documents/CPS196/iLips/YesNoButton.h
-c000000004DAF49DA00000000000000F4
-t1303333338
-s244
-i<Foundation/Foundation.h>
-i"ToggleButton.h"
-
-N/Users/david/Documents/CPS196/iLips/YesNoButton.m
-c000000004DAF4E290000000000000191
-t1303334441
-s401
-i"YesNoButton.h"
-
-N/Users/david/Documents/CPS196/iLips/bigicon.png
-c000000004DA2004E0000000000022272
-t1302462542
-s139890
-
-N/Users/david/Documents/CPS196/iLips/bigicon.psd
-c000000004DA1FFD100000000001C8E76
-t1302462417
-s1871478
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYM
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/BinaryDecisionViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/ChecklistViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/ConservativeFluidViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/DataEntryController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psd
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Entitlements.plist
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/FluidManagementViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/GreenButton.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/GreyButton.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/InfectionViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Info.plist
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/MultipleChoiceViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PasswordViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PatientInfoScreen.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PkgInfo
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/README
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/RedButton.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/ScoreViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/SuggestionViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/TidalVolumeViewController.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/bigicon.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/bigicon.psd
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/conditions.plist
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj/InfoPlist.strings
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj/MainWindow.nib
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/icon-72.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/icon.psd
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/labels.txt
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/tidalvolume.png
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/treatments.plist
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/views.plist
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/BinaryDecisionViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ChecklistViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ConservativeFluidViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DataEntryController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DecisionFetcher.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/FluidManagementViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/InfectionViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/LIPSAppDelegate.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/MultipleChoiceViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSObject+SBJSON.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+DB.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+SBJSON.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PasswordViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/Patient.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientEntry.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientInfoScreen.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonBase.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonParser.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonWriter.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SQLiteAdapter.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ScoreViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SuggestionViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/TidalVolumeViewController.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ToggleButton.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/YesNoButton.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/iLIPS.LinkFileList
-c000000004DAF4E390000000000000CF0
-t1303334457
-s3312
-
-N/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/main.o
-t2
-s0
-
-N/Users/david/Documents/CPS196/iLips/conditions.plist
-c000000004DAF32F10000000000000CFC
-t1303327473
-s3324
-
-N/Users/david/Documents/CPS196/iLips/icon-72.png
-c000000004DA200CD0000000000001751
-t1302462669
-s5969
-
-N/Users/david/Documents/CPS196/iLips/icon.psd
-c000000004DA200C100000000000189E2
-t1302462657
-s100834
-
-N/Users/david/Documents/CPS196/iLips/tidalvolume.png
-c000000004DAEF1A80000000000026829
-t1303310760
-s157737
-
-N/var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch.gch
-t1303277711
-s12295600
-
-NLIPS/LIPS-Info.plist
-c000000004DAF3CDE00000000000005FF
-t1303330014
-s1535
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/ChecklistViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/Patient.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/LIPS/main.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/PatientEntry.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/ToggleButton.m
-r0
-
-CBuild AST from /Users/david/Documents/CPS196/iLips/YesNoButton.m
-r0
-
-CCheck dependencies
-r0
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies69c365b9855fb341^71c7afb9855fb341^---0#1#0#--18"Check dependencies
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/BinaryDecisionViewController.o /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.646598
-e325027258.808503
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/BinaryDecisionViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m31b1a5ba855fb341^dd08cfba855fb341^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m0000000000000000^2101"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/BinaryDecisionViewController.o LIPS/BinaryDecisionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/BinaryDecisionViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ChecklistViewController.o /Users/david/Documents/CPS196/iLips/ChecklistViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.165845
-e325027259.255533
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ChecklistViewController.o
-x/Users/david/Documents/CPS196/iLips/ChecklistViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/david/Documents/CPS196/iLips/ChecklistViewController.m31992abb855fb341^166a41bb855fb341^---0#0#0#-19%DVTDocumentLocation2@77"file://localhost/Users/david/Documents/CPS196/iLips/ChecklistViewController.m0000000000000000^2071"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ChecklistViewController.o ChecklistViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/ChecklistViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ChecklistViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ConservativeFluidViewController.o /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.148664
-e325027259.247388
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ConservativeFluidViewController.o
-x/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compile /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m503926bb855fb341^25593fbb855fb341^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m0000000000000000^2103"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ConservativeFluidViewController.o ConservativeFluidViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ConservativeFluidViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DataEntryController.o /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.514275
-e325027258.743478
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DataEntryController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m06d883ba855fb341^0d54beba855fb341^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m0000000000000000^2065"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DataEntryController.o LIPS/DataEntryController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DataEntryController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DecisionFetcher.o /Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.631665
-e325027258.808500
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DecisionFetcher.o
-x/Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m7adea1ba855fb341^b0ffceba855fb341^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m0000000000000000^2049"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DecisionFetcher.o LIPS/DecisionFetcher.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/DecisionFetcher.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/DecisionFetcher.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/FluidManagementViewController.o /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.499085
-e325027258.697406
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/FluidManagementViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection80"Compile /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m96ed7fba855fb341^0588b2ba855fb341^---0#0#0#-19%DVTDocumentLocation2@88"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m0000000000000000^2105"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/FluidManagementViewController.o LIPS/FluidManagementViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/FluidManagementViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/InfectionViewController.o /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.011042
-e325027259.175870
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/InfectionViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m65fd02bb855fb341^90102dbb855fb341^---0#0#0#-19%DVTDocumentLocation2@82"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m0000000000000000^2081"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/InfectionViewController.o LIPS/InfectionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/InfectionViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/LIPSAppDelegate.o /Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.466041
-e325027258.646231
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/LIPSAppDelegate.o
-x/Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.mea7977ba855fb341^336fa5ba855fb341^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m0000000000000000^2049"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/LIPSAppDelegate.o LIPS/LIPSAppDelegate.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/LIPSAppDelegate.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/LIPSAppDelegate.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/MultipleChoiceViewController.o /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.697747
-e325027258.876281
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/MultipleChoiceViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.mf3c9b2ba855fb341^027ee1ba855fb341^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m0000000000000000^2101"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/MultipleChoiceViewController.o LIPS/MultipleChoiceViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/MultipleChoiceViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSObject+SBJSON.o /Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.808834
-e325027258.897865
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSObject+SBJSON.o
-x/Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.mf435cfba855fb341^7809e6ba855fb341^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m0000000000000000^2049"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSObject+SBJSON.o LIPS/NSObject+SBJSON.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/NSObject+SBJSON.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSObject+SBJSON.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+DB.o /Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.955352
-e325027259.037403
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+DB.o
-x/Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Compile /Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.mfeb9f4ba855fb341^cb9d09bb855fb341^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m0000000000000000^2033"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+DB.o LIPS/NSString+DB.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/NSString+DB.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+DB.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+SBJSON.o /Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027257.711613
-e325027258.404015
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+SBJSON.o
-x/Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.mb857b6b9855fb341^df6c67ba855fb341^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m0000000000000000^2049"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+SBJSON.o LIPS/NSString+SBJSON.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/NSString+SBJSON.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/NSString+SBJSON.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PasswordViewController.o /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.021531
-e325027259.165498
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PasswordViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.mefac05bb855fb341^556a2abb855fb341^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m0000000000000000^2077"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PasswordViewController.o LIPS/PasswordViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PasswordViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/Patient.o /Users/david/Documents/CPS196/iLips/LIPS/Patient.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.743824
-e325027258.915962
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/Patient.o
-x/Users/david/Documents/CPS196/iLips/LIPS/Patient.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/david/Documents/CPS196/iLips/LIPS/Patient.m8595beba855fb341^f0a7eaba855fb341^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/Patient.m0000000000000000^2017"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/Patient.o LIPS/Patient.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/Patient.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/Patient.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientEntry.o /Users/david/Documents/CPS196/iLips/PatientEntry.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.916188
-e325027259.010711
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientEntry.o
-x/Users/david/Documents/CPS196/iLips/PatientEntry.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/david/Documents/CPS196/iLips/PatientEntry.medb7eaba855fb341^f62903bb855fb341^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/david/Documents/CPS196/iLips/PatientEntry.m0000000000000000^2027"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientEntry.o PatientEntry.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/PatientEntry.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientEntry.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientInfoScreen.o /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027257.712527
-e325027258.514046
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientInfoScreen.o
-x/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Compile /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m9c8cb6b9855fb341^429883ba855fb341^---0#0#0#-19%DVTDocumentLocation2@76"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m0000000000000000^2057"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientInfoScreen.o LIPS/PatientInfoScreen.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/PatientInfoScreen.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonBase.o /Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.809067
-e325027258.954658
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonBase.o
-x/Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.me141cfba855fb341^7a6ff4ba855fb341^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m0000000000000000^2029"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonBase.o LIPS/SBJsonBase.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/SBJsonBase.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonBase.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonParser.o /Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027257.711694
-e325027258.498816
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonParser.o
-x/Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m2f6bb6b9855fb341^9eb17fba855fb341^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m0000000000000000^2037"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonParser.o LIPS/SBJsonParser.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/SBJsonParser.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonParser.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonWriter.o /Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.876887
-e325027259.021283
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonWriter.o
-x/Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Compile /Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.md3a4e0ba855fb341^778205bb855fb341^---0#0#0#-19%DVTDocumentLocation2@71"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m0000000000000000^2037"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonWriter.o LIPS/SBJsonWriter.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/SBJsonWriter.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SBJsonWriter.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SQLiteAdapter.o /Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.898168
-e325027259.027759
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SQLiteAdapter.o
-x/Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.mec18e7ba855fb341^d02607bb855fb341^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m0000000000000000^2041"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SQLiteAdapter.o LIPS/SQLiteAdapter.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/SQLiteAdapter.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SQLiteAdapter.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ScoreViewController.o /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027257.711593
-e325027258.465779
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ScoreViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m5952b6b9855fb341^d53c77ba855fb341^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m0000000000000000^2065"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ScoreViewController.o LIPS/ScoreViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ScoreViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SuggestionViewController.o /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.480142
-e325027258.630648
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SuggestionViewController.o
-x/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m588f7bba855fb341^c18ca1ba855fb341^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m0000000000000000^2085"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SuggestionViewController.o LIPS/SuggestionViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/SuggestionViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/TidalVolumeViewController.o /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.037708
-e325027259.172240
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/TidalVolumeViewController.o
-x/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m42d009bb855fb341^b9172cbb855fb341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m0000000000000000^2079"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/TidalVolumeViewController.o TidalVolumeViewController.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/TidalVolumeViewController.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ToggleButton.o /Users/david/Documents/CPS196/iLips/ToggleButton.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.172643
-e325027259.278233
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ToggleButton.o
-x/Users/david/Documents/CPS196/iLips/ToggleButton.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/david/Documents/CPS196/iLips/ToggleButton.m96592cbb855fb341^5c3947bb855fb341^---0#0#0#-19%DVTDocumentLocation2@66"file://localhost/Users/david/Documents/CPS196/iLips/ToggleButton.m0000000000000000^2027"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ToggleButton.o ToggleButton.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/ToggleButton.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/ToggleButton.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/YesNoButton.o /Users/david/Documents/CPS196/iLips/YesNoButton.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027259.028123
-e325027259.148243
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/YesNoButton.o
-x/Users/david/Documents/CPS196/iLips/YesNoButton.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/david/Documents/CPS196/iLips/YesNoButton.mfb5a07bb855fb341^54fe25bb855fb341^---0#0#0#-19%DVTDocumentLocation2@65"file://localhost/Users/david/Documents/CPS196/iLips/YesNoButton.m0000000000000000^2023"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/YesNoButton.o YesNoButton.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/YesNoButton.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/YesNoButton.o
-
-CCompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/main.o /Users/david/Documents/CPS196/iLips/LIPS/main.m normal i386 objective-c com.apple.compilers.llvmgcc42
-s325027258.404241
-e325027258.479657
-r1
-xCompileC
-xbuild/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/main.o
-x/Users/david/Documents/CPS196/iLips/LIPS/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvmgcc42
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Compile /Users/david/Documents/CPS196/iLips/LIPS/main.ma9a367ba855fb341^36ca7aba855fb341^---0#0#0#-19%DVTDocumentLocation2@63"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/main.m0000000000000000^2005"CompileC build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/main.o LIPS/main.m normal i386 objective-c com.apple.compilers.llvmgcc42    cd /Users/david/Documents/CPS196/iLips    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -DDEBUG -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-generated-files.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-own-target-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-all-target-headers.hmap -iquote /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/iLIPS-project-headers.hmap -I/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/include -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources/i386 -I/Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/DerivedSources -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -include /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch -c /Users/david/Documents/CPS196/iLips/LIPS/main.m -o /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/main.o
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/ChecklistViewController.xib
-s325027261.158226
-e325027261.212365
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/ChecklistViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compiling /Users/david/Documents/CPS196/iLips/ChecklistViewController.xib6f9c28bd855fb341^785e36bd855fb341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/david/Documents/CPS196/iLips/ChecklistViewController.xib0000000000000000^633"CompileXIB ChecklistViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/ChecklistViewController.nib /Users/david/Documents/CPS196/iLips/ChecklistViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xib
-s325027261.130966
-e325027261.179983
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compiling /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xibaea021bd855fb341^1e542ebd855fb341^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xib0000000000000000^657"CompileXIB ConservativeFluidViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/ConservativeFluidViewController.nib /Users/david/Documents/CPS196/iLips/ConservativeFluidViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib
-s325027260.637321
-e325027260.944013
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compiling /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib3047a3bc855fb341^04acf1bc855fb341^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib0000000000000000^658"CompileXIB LIPS/BinaryDecisionViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/BinaryDecisionViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/BinaryDecisionViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib
-s325027259.446993
-e325027261.096258
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compiling /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib878972bb855fb341^cdad18bd855fb341^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib0000000000000000^631"CompileXIB LIPS/DataEntryController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/DataEntryController.nib /Users/david/Documents/CPS196/iLips/LIPS/DataEntryController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib
-s325027259.428588
-e325027260.704137
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compiling /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib7ee16dbb855fb341^c842b4bc855fb341^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib0000000000000000^661"CompileXIB LIPS/FluidManagementViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/FluidManagementViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/FluidManagementViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib
-s325027261.033006
-e325027261.202979
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compiling /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib098908bd855fb341^f20634bd855fb341^---0#0#0#-19%DVTDocumentLocation2@84"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib0000000000000000^643"CompileXIB LIPS/InfectionViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/InfectionViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/InfectionViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib
-s325027260.684733
-e325027260.719517
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compiling /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib4964afbc855fb341^4432b8bc855fb341^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib0000000000000000^658"CompileXIB LIPS/MultipleChoiceViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/MultipleChoiceViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/MultipleChoiceViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib
-s325027261.048574
-e325027261.130602
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Compiling /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib6c950cbd855fb341^477221bd855fb341^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib0000000000000000^640"CompileXIB LIPS/PasswordViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PasswordViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/PasswordViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xib
-s325027260.871910
-e325027261.048308
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Compiling /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xibe049dfbc855fb341^ea5d0cbd855fb341^---0#0#0#-19%DVTDocumentLocation2@78"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xib0000000000000000^625"CompileXIB LIPS/PatientInfoScreen.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PatientInfoScreen.nib /Users/david/Documents/CPS196/iLips/LIPS/PatientInfoScreen.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib
-s325027259.428582
-e325027260.684215
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compiling /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib57cf6dbb855fb341^1a35afbc855fb341^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib0000000000000000^631"CompileXIB LIPS/ScoreViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/ScoreViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/ScoreViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xib
-s325027261.041631
-e325027261.193310
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compiling /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xibb0c50abd855fb341^957f31bd855fb341^---0#0#0#-19%DVTDocumentLocation2@85"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xib0000000000000000^646"CompileXIB LIPS/SuggestionViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/SuggestionViewController.nib /Users/david/Documents/CPS196/iLips/LIPS/SuggestionViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib
-s325027259.428579
-e325027260.637113
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compiling /Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib92cd6dbb855fb341^8927a3bc855fb341^---0#0#0#-19%DVTDocumentLocation2@80"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib0000000000000000^631"CompileXIB LIPS/en.lproj/MainWindow.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj/MainWindow.nib /Users/david/Documents/CPS196/iLips/LIPS/en.lproj/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCompileXIB /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xib
-s325027261.096820
-e325027261.158008
-r1
-xCompileXIB
-x/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xib
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compiling /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xibc9e418bd855fb341^c07628bd855fb341^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xib0000000000000000^639"CompileXIB TidalVolumeViewController.xib    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/TidalVolumeViewController.nib /Users/david/Documents/CPS196/iLips/TidalVolumeViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
-
-CCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Entitlements.plist Entitlements.plist
-s325027260.793747
-e325027261.031844
-r1
-xCopyPlistFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Entitlements.plist
-xEntitlements.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection23"Copy Entitlements.plistbe4dcbbc855fb341^d02508bd855fb341^---0#0#0#-19%DVTDocumentLocation2@70"file://localhost/Users/david/Documents/CPS196/iLips/Entitlements.plist0000000000000000^409"CopyPlistFile build/Debug-iphonesimulator/iLIPS.app/Entitlements.plist Entitlements.plist    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app -- Entitlements.plist
-
-CCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/conditions.plist conditions.plist
-s325027260.944195
-e325027261.032880
-r1
-xCopyPlistFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/conditions.plist
-xconditions.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection21"Copy conditions.plist32ccf1bc855fb341^492d08bd855fb341^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/david/Documents/CPS196/iLips/conditions.plist0000000000000000^403"CopyPlistFile build/Debug-iphonesimulator/iLIPS.app/conditions.plist conditions.plist    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app -- conditions.plist
-
-CCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/treatments.plist LIPS/treatments.plist
-s325027259.432000
-e325027259.437894
-r1
-xCopyPlistFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/treatments.plist
-xLIPS/treatments.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection26"Copy LIPS/treatments.plist85b06ebb855fb341^105970bb855fb341^---0#0#0#-19%DVTDocumentLocation2@73"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/treatments.plist0000000000000000^413"CopyPlistFile build/Debug-iphonesimulator/iLIPS.app/treatments.plist LIPS/treatments.plist    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app -- LIPS/treatments.plist
-
-CCopyPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/views.plist LIPS/views.plist
-s325027259.438062
-e325027259.442455
-r1
-xCopyPlistFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/views.plist
-xLIPS/views.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection21"Copy LIPS/views.plistb03c70bb855fb341^bb4471bb855fb341^---0#0#0#-19%DVTDocumentLocation2@68"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/views.plist0000000000000000^398"CopyPlistFile build/Debug-iphonesimulator/iLIPS.app/views.plist LIPS/views.plist    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyPlist --convert binary1 --outdir /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app -- LIPS/views.plist
-
-CCopyStringsFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj/InfoPlist.strings LIPS/en.lproj/InfoPlist.strings
-s325027259.428362
-e325027259.431848
-r1
-xCopyStringsFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj/InfoPlist.strings
-xLIPS/en.lproj/InfoPlist.strings
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy LIPS/en.lproj/InfoPlist.stringsb5c16dbb855fb341^6d8f6ebb855fb341^---0#0#0#-19%DVTDocumentLocation2@83"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/en.lproj/InfoPlist.strings0000000000000000^495"CopyStringsFile build/Debug-iphonesimulator/iLIPS.app/en.lproj/InfoPlist.strings LIPS/en.lproj/InfoPlist.strings    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/en.lproj -- LIPS/en.lproj/InfoPlist.strings
-
-CCpResource Default-Landscape.psd build/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psd
-s325027260.715210
-e325027260.871731
-r1
-xCpResource
-xDefault-Landscape.psd
-xbuild/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psd
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psdae2eb7bc855fb341^172adfbc855fb341^---0#0#0#-19%DVTDocumentLocation2@111"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psd000020442305f041^498"CpResource Default-Landscape.psd build/Debug-iphonesimulator/iLIPS.app/Default-Landscape.psd    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/Default-Landscape.psd /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource Default-Landscape~ipad.png build/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png
-s325027260.711919
-e325027260.715034
-r1
-xCpResource
-xDefault-Landscape~ipad.png
-xbuild/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png0859b6bc855fb341^630db7bc855fb341^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png000020442305f041^517"CpResource "Default-Landscape~ipad.png" "build/Debug-iphonesimulator/iLIPS.app/Default-Landscape~ipad.png"    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/Default-Landscape~ipad.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource Default-Portrait.psd build/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd
-s325027260.719714
-e325027260.780723
-r1
-xCpResource
-xDefault-Portrait.psd
-xbuild/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd295fb8bc855fb341^72dec7bc855fb341^---0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd000020442305f041^495"CpResource Default-Portrait.psd build/Debug-iphonesimulator/iLIPS.app/Default-Portrait.psd    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/Default-Portrait.psd /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource Default-Portrait~ipad.png build/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png
-s325027260.707429
-e325027260.711752
-r1
-xCpResource
-xDefault-Portrait~ipad.png
-xbuild/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png5d33b5bc855fb341^5c3ab6bc855fb341^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png000020442305f041^514"CpResource "Default-Portrait~ipad.png" "build/Debug-iphonesimulator/iLIPS.app/Default-Portrait~ipad.png"    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/Default-Portrait~ipad.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource GreenButton.png build/Debug-iphonesimulator/iLIPS.app/GreenButton.png
-s325027261.180209
-e325027261.183553
-r1
-xCpResource
-xGreenButton.png
-xbuild/Debug-iphonesimulator/iLIPS.app/GreenButton.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/Debug-iphonesimulator/iLIPS.app/GreenButton.png3b3a2ebd855fb341^20092fbd855fb341^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/GreenButton.png000020442305f041^480"CpResource GreenButton.png build/Debug-iphonesimulator/iLIPS.app/GreenButton.png    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/GreenButton.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource GreyButton.png build/Debug-iphonesimulator/iLIPS.app/GreyButton.png
-s325027261.183741
-e325027261.187265
-r1
-xCpResource
-xGreyButton.png
-xbuild/Debug-iphonesimulator/iLIPS.app/GreyButton.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphonesimulator/iLIPS.app/GreyButton.png5b222fbd855fb341^e1ef2fbd855fb341^---0#0#0#-19%DVTDocumentLocation2@104"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/GreyButton.png000020442305f041^477"CpResource GreyButton.png build/Debug-iphonesimulator/iLIPS.app/GreyButton.png    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/GreyButton.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource LIPS/PatientsDatabase.sqlite build/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite
-s325027261.032240
-e325027261.041218
-r1
-xCpResource
-xLIPS/PatientsDatabase.sqlite
-xbuild/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite605a08bd855fb341^f3930abd855fb341^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite000020442305f041^514"CpResource LIPS/PatientsDatabase.sqlite build/Debug-iphonesimulator/iLIPS.app/PatientsDatabase.sqlite    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/LIPS/PatientsDatabase.sqlite /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource LIPS/labels.txt build/Debug-iphonesimulator/iLIPS.app/labels.txt
-s325027259.442600
-e325027259.446845
-r1
-xCpResource
-xLIPS/labels.txt
-xbuild/Debug-iphonesimulator/iLIPS.app/labels.txt
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/iLIPS.app/labels.txt1b6571bb855fb341^f69a72bb855fb341^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/labels.txt000020442305f041^475"CpResource LIPS/labels.txt build/Debug-iphonesimulator/iLIPS.app/labels.txt    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/LIPS/labels.txt /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource README build/Debug-iphonesimulator/iLIPS.app/README
-s325027261.187433
-e325027261.191291
-r1
-xCpResource
-xREADME
-xbuild/Debug-iphonesimulator/iLIPS.app/README
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/Debug-iphonesimulator/iLIPS.app/README981330bd855fb341^da0331bd855fb341^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/README000020442305f041^453"CpResource README build/Debug-iphonesimulator/iLIPS.app/README    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/README /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource RedButton.png build/Debug-iphonesimulator/iLIPS.app/RedButton.png
-s325027261.191451
-e325027261.194584
-r1
-xCpResource
-xRedButton.png
-xbuild/Debug-iphonesimulator/iLIPS.app/RedButton.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Debug-iphonesimulator/iLIPS.app/RedButton.png3f1b31bd855fb341^2ae131bd855fb341^---0#0#0#-19%DVTDocumentLocation2@103"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/RedButton.png000020442305f041^474"CpResource RedButton.png build/Debug-iphonesimulator/iLIPS.app/RedButton.png    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/RedButton.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource bigicon.png build/Debug-iphonesimulator/iLIPS.app/bigicon.png
-s325027260.784348
-e325027260.787110
-r1
-xCpResource
-xbigicon.png
-xbuild/Debug-iphonesimulator/iLIPS.app/bigicon.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphonesimulator/iLIPS.app/bigicon.pngbedbc8bc855fb341^7c81c9bc855fb341^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/bigicon.png000020442305f041^468"CpResource bigicon.png build/Debug-iphonesimulator/iLIPS.app/bigicon.png    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/bigicon.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource bigicon.psd build/Debug-iphonesimulator/iLIPS.app/bigicon.psd
-s325027260.787292
-e325027260.793498
-r1
-xCpResource
-xbigicon.psd
-xbuild/Debug-iphonesimulator/iLIPS.app/bigicon.psd
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphonesimulator/iLIPS.app/bigicon.psd27a4c9bc855fb341^0323cbbc855fb341^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/bigicon.psd000020442305f041^468"CpResource bigicon.psd build/Debug-iphonesimulator/iLIPS.app/bigicon.psd    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/bigicon.psd /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource icon-72.png build/Debug-iphonesimulator/iLIPS.app/icon-72.png
-s325027260.704344
-e325027260.707236
-r1
-xCpResource
-xicon-72.png
-xbuild/Debug-iphonesimulator/iLIPS.app/icon-72.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphonesimulator/iLIPS.app/icon-72.png3c6ab4bc855fb341^9010b5bc855fb341^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/icon-72.png000020442305f041^468"CpResource icon-72.png build/Debug-iphonesimulator/iLIPS.app/icon-72.png    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/icon-72.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource icon.psd build/Debug-iphonesimulator/iLIPS.app/icon.psd
-s325027260.780884
-e325027260.784186
-r1
-xCpResource
-xicon.psd
-xbuild/Debug-iphonesimulator/iLIPS.app/icon.psd
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/Debug-iphonesimulator/iLIPS.app/icon.psd0c01c8bc855fb341^adc0c8bc855fb341^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/icon.psd000020442305f041^459"CpResource icon.psd build/Debug-iphonesimulator/iLIPS.app/icon.psd    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/icon.psd /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CCpResource tidalvolume.png build/Debug-iphonesimulator/iLIPS.app/tidalvolume.png
-s325027261.194503
-e325027261.199458
-r1
-xCpResource
-xtidalvolume.png
-xbuild/Debug-iphonesimulator/iLIPS.app/tidalvolume.png
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/Debug-iphonesimulator/iLIPS.app/tidalvolume.png9fe531bd855fb341^d81133bd855fb341^---0#0#0#-19%DVTDocumentLocation2@105"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/tidalvolume.png000020442305f041^480"CpResource tidalvolume.png build/Debug-iphonesimulator/iLIPS.app/tidalvolume.png    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/david/Documents/CPS196/iLips/tidalvolume.png /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
-CGenerateDSYMFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYM /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS
-s325027259.370991
-e325027259.426676
-r1
-xGenerateDSYMFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYM
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Generating /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYMe4125fbb855fb341^e73a6dbb855fb341^---0#0#0#-19%DVTDocumentLocation2@94"file://localhost/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYM000020442305f041^472"GenerateDSYMFile build/Debug-iphonesimulator/iLIPS.app.dSYM build/Debug-iphonesimulator/iLIPS.app/iLIPS    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS -o /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app.dSYM
-
-CLd /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS normal i386
-s325027259.278531
-e325027259.370668
-r1
-xLd
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS
-xnormal
-xi386
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Link /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPSa66247bb855fb341^0d8c60bb855fb341^---0#0#0#--950"Ld build/Debug-iphonesimulator/iLIPS.app/iLIPS normal i386    cd /Users/david/Documents/CPS196/iLips    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/llvm-gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -F/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator -filelist /Users/david/Documents/CPS196/iLips/build/LIPS.build/Debug-iphonesimulator/iLIPS.build/Objects-normal/i386/iLIPS.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -lsqlite3.0 -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/iLIPS
-
-CProcessInfoPlistFile /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Info.plist LIPS/LIPS-Info.plist
-s325027257.705066
-e325027257.709658
-r1
-xProcessInfoPlistFile
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Info.plist
-xLIPS/LIPS-Info.plist
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection28"Process LIPS/LIPS-Info.plist06a1b4b9855fb341^36acb5b9855fb341^---0#0#0#-19%DVTDocumentLocation2@72"file://localhost/Users/david/Documents/CPS196/iLips/LIPS/LIPS-Info.plist0000000000000000^559"ProcessInfoPlistFile build/Debug-iphonesimulator/iLIPS.app/Info.plist LIPS/LIPS-Info.plist    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility LIPS/LIPS-Info.plist -genpkginfo /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app/Info.plist
-
-CProcessPCH /Users/david/Library/Developer/Xcode/DerivedData/LIPS-ahmqnlyutjfgicgocgxsfqdwuqhy/Index/PrecompiledHeaders/LIPS-Prefix-gmlmbvzfwuopnmbduqgyjavcceui_ast/LIPS-Prefix.pch.pth LIPS/LIPS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /var/folders/Ln/Ln8s6P4kH1q+m9MqPOPRZE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/LIPS-Prefix-bccqcpljenzdkifwoconwigbecbz/LIPS-Prefix.pch.gch LIPS/LIPS-Prefix.pch normal i386 objective-c com.apple.compilers.llvmgcc42
-r0
-
-CTouch /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-s325027261.214045
-e325027261.222228
-r1
-xTouch
-x/Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Touch /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app48dd36bd855fb341^00e438bd855fb341^---0#0#0#--314"Touch build/Debug-iphonesimulator/iLIPS.app    cd /Users/david/Documents/CPS196/iLips    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/david/Documents/CPS196/iLips/build/Debug-iphonesimulator/iLIPS.app
-
